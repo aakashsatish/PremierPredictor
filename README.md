@@ -1,4 +1,5 @@
 # Premier League Tracker 🏆
+NOTE: Waiting for the 2025-2026 season to release predictions
 
 A machine learning project for predicting Premier League match outcomes using historical data and advanced statistical modeling.
 
