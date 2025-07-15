@@ -1,4 +1,5 @@
 # Premier League Tracker 🏆
+NOTE: Waiting for the 2025-2026 season to release predictions
 
 I created a machine learning system that predicts Premier League match outcomes using historical data. The idea came to me when I was watching the games and wondering if I could use my software engineering skills to predict results. So I built this - it scrapes match data from fbref.com and uses a Random Forest model to predict who's likely to win or draw/tie.
 
@@ -166,4 +167,4 @@ I chose Random Forest because:
 
 ---
 
-**Ready to predict the 2025-2026 season! 🚀**
+**Ready for the 2025-2026 season! 🚀**
