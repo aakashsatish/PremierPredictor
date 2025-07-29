@@ -1,0 +1,454 @@
+🏆 EPL Tracker - 2025-2026 Season Detailed Predictions
+======================================================================
+
+📊 OVERALL STATISTICS
+------------------------------
+Total Matches: 417
+Predicted Wins: 339
+Predicted Losses/Draws: 78
+Average Win Probability: 45.7%
+
+🏆 TEAM PERFORMANCE SUMMARY
+------------------------------
+Manchester City: 57.4% avg win prob, 19 predicted wins
+Liverpool: 54.8% avg win prob, 19 predicted wins
+Arsenal: 53.9% avg win prob, 19 predicted wins
+Aston Villa: 53.3% avg win prob, 19 predicted wins
+Chelsea: 51.6% avg win prob, 18 predicted wins
+Brentford: 48.3% avg win prob, 17 predicted wins
+Everton: 45.7% avg win prob, 14 predicted wins
+Fulham: 45.4% avg win prob, 14 predicted wins
+Bournemouth: 44.8% avg win prob, 14 predicted wins
+Crystal Palace: 44.2% avg win prob, 14 predicted wins
+Nott'ham Forest: 42.7% avg win prob, 14 predicted wins
+West Ham: 42.7% avg win prob, 14 predicted wins
+Tottenham: 42.7% avg win prob, 14 predicted wins
+Sunderland: 42.7% avg win prob, 14 predicted wins
+Wolves: 42.7% avg win prob, 14 predicted wins
+Newcastle Utd: 42.7% avg win prob, 14 predicted wins
+Manchester Utd: 42.7% avg win prob, 14 predicted wins
+Brighton: 42.7% avg win prob, 14 predicted wins
+Leeds United: 37.8% avg win prob, 13 predicted wins
+Burnley: 34.8% avg win prob, 10 predicted wins
+
+📅 ALL MATCHES BY MATCHWEEK
+------------------------------
+
+Matchweek 1 (10 matches):
+  Win - Liverpool vs Bournemouth (2025-08-15 20:00) - 56.2% win probability
+  Win - Aston Villa vs Newcastle Utd (2025-08-16 12:30) - 55.5% win probability
+  Win - Sunderland vs West Ham (2025-08-16 15:00) - 46.0% win probability
+  Win - Tottenham vs Burnley (2025-08-16 15:00) - 47.1% win probability
+  Win - Brighton vs Fulham (2025-08-16 15:00) - 44.4% win probability
+  Loss/Draw - Wolves vs Manchester City (2025-08-16 17:30) - 30.9% win probability
+  Win - Nott'ham Forest vs Brentford (2025-08-17 14:00) - 42.2% win probability
+  Win - Chelsea vs Crystal Palace (2025-08-17 14:00) - 54.4% win probability
+  Loss/Draw - Manchester Utd vs Arsenal (2025-08-17 16:30) - 34.8% win probability
+  Win - Leeds United vs Everton (2025-08-18 20:00) - 40.2% win probability
+Matchweek 2 (10 matches):
+  Loss/Draw - West Ham vs Chelsea (2025-08-22 20:00) - 36.9% win probability
+  Win - Manchester City vs Tottenham (2025-08-23 12:30) - 59.3% win probability
+  Win - Bournemouth vs Wolves (2025-08-23 15:00) - 47.8% win probability
+  Win - Brentford vs Aston Villa (2025-08-23 15:00) - 40.5% win probability
+  Win - Burnley vs Sunderland (2025-08-23 15:00) - 36.6% win probability
+  Win - Arsenal vs Leeds United (2025-08-23 17:30) - 59.6% win probability
+  Win - Crystal Palace vs Nott'ham Forest (2025-08-24 14:00) - 47.4% win probability
+  Win - Everton vs Brighton (2025-08-24 14:00) - 48.6% win probability
+  Win - Fulham vs Manchester Utd (2025-08-24 16:30) - 48.2% win probability
+  Loss/Draw - Newcastle Utd vs Liverpool (2025-08-25 20:00) - 35.5% win probability
+Matchweek 3 (10 matches):
+  Win - Aston Villa vs Crystal Palace (2025-08-29 20:00) - 55.9% win probability
+  Win - Chelsea vs Fulham (2025-08-30 12:30) - 52.4% win probability
+  Win - Sunderland vs Brentford (2025-08-30 15:00) - 42.2% win probability
+  Win - Wolves vs Everton (2025-08-30 15:00) - 44.8% win probability
+  Win - Tottenham vs Bournemouth (2025-08-30 15:00) - 45.1% win probability
+  Win - Manchester Utd vs Burnley (2025-08-30 15:00) - 47.1% win probability
+  Win - Leeds United vs Newcastle Utd (2025-08-30 17:30) - 39.9% win probability
+  Loss/Draw - Brighton vs Manchester City (2025-08-31 14:00) - 30.9% win probability
+  Win - Nott'ham Forest vs West Ham (2025-08-31 14:00) - 46.0% win probability
+  Win - Liverpool vs Arsenal (2025-08-31 16:30) - 46.3% win probability
+Matchweek 4 (10 matches):
+  Win - Arsenal vs Nott'ham Forest (2025-09-13 12:30) - 56.1% win probability
+  Win - Crystal Palace vs Sunderland (2025-09-13 15:00) - 47.4% win probability
+  Win - Bournemouth vs Brighton (2025-09-13 15:00) - 47.8% win probability
+  Loss/Draw - Everton vs Aston Villa (2025-09-13 15:00) - 38.2% win probability
+  Win - Fulham vs Leeds United (2025-09-13 15:00) - 51.0% win probability
+  Win - Newcastle Utd vs Wolves (2025-09-13 15:00) - 46.0% win probability
+  Win - West Ham vs Tottenham (2025-09-13 17:30) - 46.0% win probability
+  Win - Brentford vs Chelsea (2025-09-13 20:00) - 41.9% win probability
+  Loss/Draw - Burnley vs Liverpool (2025-09-14 14:00) - 30.5% win probability
+  Win - Manchester City vs Manchester Utd (2025-09-14 16:30) - 59.3% win probability
+Matchweek 5 (10 matches):
+  Win - Liverpool vs Everton (2025-09-20 12:30) - 55.9% win probability
+  Win - Bournemouth vs Newcastle Utd (2025-09-20 15:00) - 47.8% win probability
+  Win - Brighton vs Tottenham (2025-09-20 15:00) - 46.0% win probability
+  Win - Wolves vs Leeds United (2025-09-20 15:00) - 46.0% win probability
+  Win - West Ham vs Crystal Palace (2025-09-20 15:00) - 46.3% win probability
+  Win - Burnley vs Nott'ham Forest (2025-09-20 15:00) - 36.6% win probability
+  Loss/Draw - Manchester Utd vs Chelsea (2025-09-20 17:30) - 36.9% win probability
+  Win - Fulham vs Brentford (2025-09-20 20:00) - 44.4% win probability
+  Loss/Draw - Sunderland vs Aston Villa (2025-09-21 14:00) - 35.6% win probability
+  Win - Arsenal vs Manchester City (2025-09-21 16:30) - 41.2% win probability
+Matchweek 6 (10 matches):
+  Win - Brentford vs Manchester Utd (2025-09-27 12:30) - 50.8% win probability
+  Win - Aston Villa vs Fulham (2025-09-27 15:00) - 54.0% win probability
+  Win - Manchester City vs Burnley (2025-09-27 15:00) - 64.8% win probability
+  Win - Leeds United vs Bournemouth (2025-09-27 15:00) - 39.7% win probability
+  Loss/Draw - Crystal Palace vs Liverpool (2025-09-27 15:00) - 36.9% win probability
+  Win - Chelsea vs Brighton (2025-09-27 15:00) - 53.9% win probability
+  Win - Nott'ham Forest vs Sunderland (2025-09-27 17:30) - 46.0% win probability
+  Win - Tottenham vs Wolves (2025-09-28 14:00) - 46.0% win probability
+  Loss/Draw - Newcastle Utd vs Arsenal (2025-09-28 16:30) - 34.8% win probability
+  Win - Everton vs West Ham (2025-09-29 20:00) - 48.6% win probability
+Matchweek 7 (10 matches):
+  Win - Arsenal vs West Ham (2025-10-04 15:00) - 56.1% win probability
+  Win - Wolves vs Brighton (2025-10-04 15:00) - 46.0% win probability
+  Win - Chelsea vs Liverpool (2025-10-04 15:00) - 43.8% win probability
+  Win - Newcastle Utd vs Nott'ham Forest (2025-10-04 15:00) - 46.0% win probability
+  Win - Manchester Utd vs Sunderland (2025-10-04 15:00) - 46.0% win probability
+  Win - Aston Villa vs Burnley (2025-10-04 15:00) - 61.2% win probability
+  Win - Everton vs Crystal Palace (2025-10-04 15:00) - 49.1% win probability
+  Win - Leeds United vs Tottenham (2025-10-04 15:00) - 39.9% win probability
+  Loss/Draw - Brentford vs Manchester City (2025-10-04 15:00) - 35.8% win probability
+  Win - Bournemouth vs Fulham (2025-10-04 15:00) - 46.3% win probability
+Matchweek 8 (10 matches):
+  Win - Manchester City vs Everton (2025-10-18 15:00) - 58.2% win probability
+  Loss/Draw - Nott'ham Forest vs Chelsea (2025-10-18 15:00) - 36.9% win probability
+  Win - Sunderland vs Wolves (2025-10-18 15:00) - 46.0% win probability
+  Loss/Draw - Tottenham vs Aston Villa (2025-10-18 15:00) - 35.6% win probability
+  Win - Liverpool vs Manchester Utd (2025-10-18 15:00) - 57.0% win probability
+  Win - Crystal Palace vs Bournemouth (2025-10-18 15:00) - 46.5% win probability
+  Win - West Ham vs Brentford (2025-10-18 15:00) - 42.2% win probability
+  Win - Burnley vs Leeds United (2025-10-18 15:00) - 36.6% win probability
+  Loss/Draw - Fulham vs Arsenal (2025-10-18 15:00) - 37.1% win probability
+  Win - Brighton vs Newcastle Utd (2025-10-18 15:00) - 46.0% win probability
+Matchweek 9 (10 matches):
+  Win - Bournemouth vs Nott'ham Forest (2025-10-25 15:00) - 47.8% win probability
+  Win - Newcastle Utd vs Fulham (2025-10-25 15:00) - 44.4% win probability
+  Win - Chelsea vs Sunderland (2025-10-25 15:00) - 53.9% win probability
+  Win - Leeds United vs West Ham (2025-10-25 15:00) - 39.9% win probability
+  Win - Arsenal vs Crystal Palace (2025-10-25 15:00) - 56.5% win probability
+  Win - Wolves vs Burnley (2025-10-25 15:00) - 47.1% win probability
+  Win - Everton vs Tottenham (2025-10-25 15:00) - 48.6% win probability
+  Win - Brentford vs Liverpool (2025-10-25 15:00) - 40.6% win probability
+  Win - Manchester Utd vs Brighton (2025-10-25 15:00) - 46.0% win probability
+  Win - Aston Villa vs Manchester City (2025-10-25 15:00) - 41.0% win probability
+Matchweek 10 (10 matches):
+  Win - Nott'ham Forest vs Manchester Utd (2025-11-01 15:00) - 46.0% win probability
+  Win - Crystal Palace vs Brentford (2025-11-01 15:00) - 43.6% win probability
+  Win - Sunderland vs Everton (2025-11-01 15:00) - 44.8% win probability
+  Win - Manchester City vs Bournemouth (2025-11-01 15:00) - 58.5% win probability
+  Win - West Ham vs Newcastle Utd (2025-11-01 15:00) - 46.0% win probability
+  Loss/Draw - Burnley vs Arsenal (2025-11-01 15:00) - 29.8% win probability
+  Loss/Draw - Tottenham vs Chelsea (2025-11-01 15:00) - 36.9% win probability
+  Win - Liverpool vs Aston Villa (2025-11-01 15:00) - 46.8% win probability
+  Win - Fulham vs Wolves (2025-11-01 15:00) - 48.2% win probability
+  Win - Brighton vs Leeds United (2025-11-01 15:00) - 46.0% win probability
+Matchweek 11 (10 matches):
+  Win - Tottenham vs Manchester Utd (2025-11-08 15:00) - 46.0% win probability
+  Win - Crystal Palace vs Brighton (2025-11-08 15:00) - 47.4% win probability
+  Win - Nott'ham Forest vs Leeds United (2025-11-08 15:00) - 46.0% win probability
+  Win - Chelsea vs Wolves (2025-11-08 15:00) - 53.9% win probability
+  Win - Aston Villa vs Bournemouth (2025-11-08 15:00) - 54.7% win probability
+  Win - Brentford vs Newcastle Utd (2025-11-08 15:00) - 50.8% win probability
+  Loss/Draw - Sunderland vs Arsenal (2025-11-08 15:00) - 34.8% win probability
+  Win - West Ham vs Burnley (2025-11-08 15:00) - 47.1% win probability
+  Win - Manchester City vs Liverpool (2025-11-08 15:00) - 49.6% win probability
+  Win - Everton vs Fulham (2025-11-08 15:00) - 47.0% win probability
+Matchweek 12 (10 matches):
+  Loss/Draw - Leeds United vs Aston Villa (2025-11-22 15:00) - 32.8% win probability
+  Win - Manchester Utd vs Everton (2025-11-22 15:00) - 44.8% win probability
+  Win - Arsenal vs Tottenham (2025-11-22 15:00) - 56.1% win probability
+  Win - Fulham vs Sunderland (2025-11-22 15:00) - 48.2% win probability
+  Win - Bournemouth vs West Ham (2025-11-22 15:00) - 47.8% win probability
+  Loss/Draw - Burnley vs Chelsea (2025-11-22 15:00) - 31.9% win probability
+  Win - Brighton vs Brentford (2025-11-22 15:00) - 42.2% win probability
+  Loss/Draw - Newcastle Utd vs Manchester City (2025-11-22 15:00) - 30.9% win probability
+  Win - Wolves vs Crystal Palace (2025-11-22 15:00) - 46.3% win probability
+  Win - Liverpool vs Nott'ham Forest (2025-11-22 15:00) - 57.0% win probability
+Matchweek 13 (10 matches):
+  Win - Chelsea vs Arsenal (2025-11-29 15:00) - 43.1% win probability
+  Loss/Draw - West Ham vs Liverpool (2025-11-29 15:00) - 35.5% win probability
+  Win - Aston Villa vs Wolves (2025-11-29 15:00) - 55.5% win probability
+  Win - Crystal Palace vs Manchester Utd (2025-11-29 15:00) - 47.4% win probability
+  Win - Sunderland vs Bournemouth (2025-11-29 15:00) - 45.1% win probability
+  Win - Brentford vs Burnley (2025-11-29 15:00) - 57.1% win probability
+  Win - Everton vs Newcastle Utd (2025-11-29 15:00) - 48.6% win probability
+  Win - Manchester City vs Leeds United (2025-11-29 15:00) - 62.7% win probability
+  Win - Nott'ham Forest vs Brighton (2025-11-29 15:00) - 46.0% win probability
+  Win - Tottenham vs Fulham (2025-11-29 15:00) - 44.4% win probability
+Matchweek 14 (10 matches):
+  Win - Bournemouth vs Everton (2025-12-03 20:00) - 46.7% win probability
+  Win - Wolves vs Nott'ham Forest (2025-12-03 20:00) - 46.0% win probability
+  Win - Manchester Utd vs West Ham (2025-12-03 20:00) - 46.0% win probability
+  Win - Burnley vs Crystal Palace (2025-12-03 20:00) - 36.8% win probability
+  Loss/Draw - Brighton vs Aston Villa (2025-12-03 20:00) - 35.6% win probability
+  Loss/Draw - Leeds United vs Chelsea (2025-12-03 20:00) - 34.0% win probability
+  Win - Newcastle Utd vs Tottenham (2025-12-03 20:00) - 46.0% win probability
+  Loss/Draw - Fulham vs Manchester City (2025-12-03 20:00) - 33.1% win probability
+  Win - Liverpool vs Sunderland (2025-12-03 20:00) - 57.0% win probability
+  Win - Arsenal vs Brentford (2025-12-03 20:00) - 52.4% win probability
+Matchweek 15 (10 matches):
+  Win - Tottenham vs Brentford (2025-12-06 15:00) - 42.2% win probability
+  Win - Fulham vs Crystal Palace (2025-12-06 15:00) - 48.8% win probability
+  Loss/Draw - Leeds United vs Liverpool (2025-12-06 15:00) - 32.6% win probability
+  Win - Aston Villa vs Arsenal (2025-12-06 15:00) - 45.0% win probability
+  Win - Wolves vs Manchester Utd (2025-12-06 15:00) - 46.0% win probability
+  Win - Newcastle Utd vs Burnley (2025-12-06 15:00) - 47.1% win probability
+  Win - Manchester City vs Sunderland (2025-12-06 15:00) - 59.3% win probability
+  Win - Brighton vs West Ham (2025-12-06 15:00) - 46.0% win probability
+  Loss/Draw - Bournemouth vs Chelsea (2025-12-06 15:00) - 38.7% win probability
+  Win - Everton vs Nott'ham Forest (2025-12-06 15:00) - 48.6% win probability
+Matchweek 16 (10 matches):
+  Win - Sunderland vs Newcastle Utd (2025-12-13 15:00) - 46.0% win probability
+  Win - Nott'ham Forest vs Tottenham (2025-12-13 15:00) - 46.0% win probability
+  Win - Manchester Utd vs Bournemouth (2025-12-13 15:00) - 45.1% win probability
+  Loss/Draw - West Ham vs Aston Villa (2025-12-13 15:00) - 35.6% win probability
+  Loss/Draw - Crystal Palace vs Manchester City (2025-12-13 15:00) - 32.2% win probability
+  Loss/Draw - Burnley vs Fulham (2025-12-13 15:00) - 36.7% win probability
+  Win - Brentford vs Leeds United (2025-12-13 15:00) - 54.5% win probability
+  Win - Arsenal vs Wolves (2025-12-13 15:00) - 56.1% win probability
+  Win - Liverpool vs Brighton (2025-12-13 15:00) - 57.0% win probability
+  Win - Chelsea vs Everton (2025-12-13 15:00) - 52.7% win probability
+Matchweek 17 (10 matches):
+  Win - Aston Villa vs Manchester Utd (2025-12-20 15:00) - 55.5% win probability
+  Loss/Draw - Tottenham vs Liverpool (2025-12-20 15:00) - 35.5% win probability
+  Win - Wolves vs Brentford (2025-12-20 15:00) - 42.2% win probability
+  Win - Brighton vs Sunderland (2025-12-20 15:00) - 46.0% win probability
+  Win - Bournemouth vs Burnley (2025-12-20 15:00) - 50.6% win probability
+  Loss/Draw - Newcastle Utd vs Chelsea (2025-12-20 15:00) - 36.9% win probability
+  Win - Leeds United vs Crystal Palace (2025-12-20 15:00) - 40.2% win probability
+  Win - Fulham vs Nott'ham Forest (2025-12-20 15:00) - 48.2% win probability
+  Loss/Draw - Everton vs Arsenal (2025-12-20 15:00) - 37.4% win probability
+  Win - Manchester City vs West Ham (2025-12-20 15:00) - 59.3% win probability
+Matchweek 18 (10 matches):
+  Win - West Ham vs Fulham (2025-12-27 15:00) - 44.4% win probability
+  Win - Liverpool vs Wolves (2025-12-27 15:00) - 57.0% win probability
+  Win - Crystal Palace vs Tottenham (2025-12-27 15:00) - 47.4% win probability
+  Loss/Draw - Burnley vs Everton (2025-12-27 15:00) - 36.8% win probability
+  Loss/Draw - Nott'ham Forest vs Manchester City (2025-12-27 15:00) - 30.9% win probability
+  Win - Chelsea vs Aston Villa (2025-12-27 15:00) - 43.7% win probability
+  Win - Arsenal vs Brighton (2025-12-27 15:00) - 56.1% win probability
+  Win - Manchester Utd vs Newcastle Utd (2025-12-27 15:00) - 46.0% win probability
+  Win - Brentford vs Bournemouth (2025-12-27 15:00) - 50.0% win probability
+  Win - Sunderland vs Leeds United (2025-12-27 15:00) - 46.0% win probability
+Matchweek 19 (10 matches):
+  Win - Arsenal vs Aston Villa (2025-12-30 20:00) - 45.9% win probability
+  Loss/Draw - Sunderland vs Manchester City (2025-12-30 20:00) - 30.9% win probability
+  Win - Nott'ham Forest vs Everton (2025-12-30 20:00) - 44.8% win probability
+  Win - Chelsea vs Bournemouth (2025-12-30 20:00) - 53.1% win probability
+  Win - Brentford vs Tottenham (2025-12-30 20:00) - 50.8% win probability
+  Win - Liverpool vs Leeds United (2025-12-30 20:00) - 60.6% win probability
+  Win - West Ham vs Brighton (2025-12-30 20:00) - 46.0% win probability
+  Win - Crystal Palace vs Fulham (2025-12-30 20:00) - 45.8% win probability
+  Win - Burnley vs Newcastle Utd (2025-12-30 20:00) - 36.6% win probability
+  Win - Manchester Utd vs Wolves (2025-12-30 20:00) - 46.0% win probability
+Matchweek 20 (10 matches):
+  Loss/Draw - Fulham vs Liverpool (2026-01-03 15:00) - 37.8% win probability
+  Win - Manchester City vs Chelsea (2026-01-03 15:00) - 50.9% win probability
+  Win - Wolves vs West Ham (2026-01-03 15:00) - 46.0% win probability
+  Win - Aston Villa vs Nott'ham Forest (2026-01-03 15:00) - 55.5% win probability
+  Win - Newcastle Utd vs Crystal Palace (2026-01-03 15:00) - 46.3% win probability
+  Win - Everton vs Brentford (2026-01-03 15:00) - 44.8% win probability
+  Loss/Draw - Bournemouth vs Arsenal (2026-01-03 15:00) - 36.6% win probability
+  Win - Leeds United vs Manchester Utd (2026-01-03 15:00) - 39.9% win probability
+  Win - Brighton vs Burnley (2026-01-03 15:00) - 47.1% win probability
+  Win - Tottenham vs Sunderland (2026-01-03 15:00) - 46.0% win probability
+Matchweek 21 (10 matches):
+  Win - Manchester City vs Brighton (2026-01-07 20:00) - 59.3% win probability
+  Win - West Ham vs Nott'ham Forest (2026-01-07 20:00) - 46.0% win probability
+  Loss/Draw - Crystal Palace vs Aston Villa (2026-01-07 20:00) - 37.0% win probability
+  Win - Burnley vs Manchester Utd (2026-01-07 20:00) - 36.6% win probability
+  Win - Arsenal vs Liverpool (2026-01-07 20:00) - 46.0% win probability
+  Win - Everton vs Wolves (2026-01-07 20:00) - 48.6% win probability
+  Win - Newcastle Utd vs Leeds United (2026-01-07 20:00) - 46.0% win probability
+  Win - Brentford vs Sunderland (2026-01-07 20:00) - 50.8% win probability
+  Win - Bournemouth vs Tottenham (2026-01-07 20:00) - 47.8% win probability
+  Loss/Draw - Fulham vs Chelsea (2026-01-07 20:00) - 39.2% win probability
+Matchweek 22 (10 matches):
+  Win - Leeds United vs Fulham (2026-01-17 15:00) - 40.0% win probability
+  Win - Liverpool vs Burnley (2026-01-17 15:00) - 62.9% win probability
+  Loss/Draw - Manchester Utd vs Manchester City (2026-01-17 15:00) - 30.9% win probability
+  Win - Tottenham vs West Ham (2026-01-17 15:00) - 46.0% win probability
+  Win - Aston Villa vs Everton (2026-01-17 15:00) - 54.4% win probability
+  Loss/Draw - Nott'ham Forest vs Arsenal (2026-01-17 15:00) - 34.8% win probability
+  Win - Chelsea vs Brentford (2026-01-17 15:00) - 50.2% win probability
+  Win - Sunderland vs Crystal Palace (2026-01-17 15:00) - 46.3% win probability
+  Win - Wolves vs Newcastle Utd (2026-01-17 15:00) - 46.0% win probability
+  Win - Brighton vs Bournemouth (2026-01-17 15:00) - 45.1% win probability
+Matchweek 23 (10 matches):
+  Win - Arsenal vs Manchester Utd (2026-01-24 15:00) - 56.1% win probability
+  Win - Fulham vs Brighton (2026-01-24 15:00) - 48.2% win probability
+  Win - Manchester City vs Wolves (2026-01-24 15:00) - 59.3% win probability
+  Win - Brentford vs Nott'ham Forest (2026-01-24 15:00) - 50.8% win probability
+  Win - West Ham vs Sunderland (2026-01-24 15:00) - 46.0% win probability
+  Win - Everton vs Leeds United (2026-01-24 15:00) - 51.6% win probability
+  Loss/Draw - Bournemouth vs Liverpool (2026-01-24 15:00) - 37.3% win probability
+  Loss/Draw - Crystal Palace vs Chelsea (2026-01-24 15:00) - 38.3% win probability
+  Win - Burnley vs Tottenham (2026-01-24 15:00) - 36.6% win probability
+  Loss/Draw - Newcastle Utd vs Aston Villa (2026-01-24 15:00) - 35.6% win probability
+Matchweek 24 (10 matches):
+  Win - Nott'ham Forest vs Crystal Palace (2026-01-31 15:00) - 46.3% win probability
+  Win - Chelsea vs West Ham (2026-01-31 15:00) - 53.9% win probability
+  Win - Liverpool vs Newcastle Utd (2026-01-31 15:00) - 57.0% win probability
+  Loss/Draw - Tottenham vs Manchester City (2026-01-31 15:00) - 30.9% win probability
+  Win - Aston Villa vs Brentford (2026-01-31 15:00) - 51.9% win probability
+  Win - Brighton vs Everton (2026-01-31 15:00) - 44.8% win probability
+  Loss/Draw - Leeds United vs Arsenal (2026-01-31 15:00) - 31.9% win probability
+  Win - Sunderland vs Burnley (2026-01-31 15:00) - 47.1% win probability
+  Win - Wolves vs Bournemouth (2026-01-31 15:00) - 45.1% win probability
+  Win - Manchester Utd vs Fulham (2026-01-31 15:00) - 44.4% win probability
+Matchweek 25 (10 matches):
+  Win - Newcastle Utd vs Brentford (2026-02-07 15:00) - 42.2% win probability
+  Loss/Draw - Bournemouth vs Aston Villa (2026-02-07 15:00) - 37.4% win probability
+  Win - Manchester Utd vs Tottenham (2026-02-07 15:00) - 46.0% win probability
+  Loss/Draw - Wolves vs Chelsea (2026-02-07 15:00) - 36.9% win probability
+  Win - Brighton vs Crystal Palace (2026-02-07 15:00) - 46.3% win probability
+  Win - Liverpool vs Manchester City (2026-02-07 15:00) - 42.2% win probability
+  Win - Arsenal vs Sunderland (2026-02-07 15:00) - 56.1% win probability
+  Win - Leeds United vs Nott'ham Forest (2026-02-07 15:00) - 39.9% win probability
+  Win - Burnley vs West Ham (2026-02-07 15:00) - 36.6% win probability
+  Win - Fulham vs Everton (2026-02-07 15:00) - 47.1% win probability
+Matchweek 26 (10 matches):
+  Win - Everton vs Bournemouth (2026-02-11 20:00) - 47.7% win probability
+  Win - Nott'ham Forest vs Wolves (2026-02-11 20:00) - 46.0% win probability
+  Win - Chelsea vs Leeds United (2026-02-11 20:00) - 57.5% win probability
+  Win - Crystal Palace vs Burnley (2026-02-11 20:00) - 49.7% win probability
+  Loss/Draw - Sunderland vs Liverpool (2026-02-11 20:00) - 35.5% win probability
+  Win - West Ham vs Manchester Utd (2026-02-11 20:00) - 46.0% win probability
+  Win - Manchester City vs Fulham (2026-02-11 20:00) - 57.9% win probability
+  Win - Aston Villa vs Brighton (2026-02-11 20:00) - 55.5% win probability
+  Win - Tottenham vs Newcastle Utd (2026-02-11 20:00) - 46.0% win probability
+  Loss/Draw - Brentford vs Arsenal (2026-02-11 20:00) - 39.9% win probability
+Matchweek 27 (10 matches):
+  Win - Aston Villa vs Leeds United (2026-02-21 15:00) - 58.9% win probability
+  Win - Everton vs Manchester Utd (2026-02-21 15:00) - 48.6% win probability
+  Win - Chelsea vs Burnley (2026-02-21 15:00) - 59.9% win probability
+  Loss/Draw - Tottenham vs Arsenal (2026-02-21 15:00) - 34.8% win probability
+  Loss/Draw - Nott'ham Forest vs Liverpool (2026-02-21 15:00) - 35.5% win probability
+  Win - Brentford vs Brighton (2026-02-21 15:00) - 50.8% win probability
+  Win - West Ham vs Bournemouth (2026-02-21 15:00) - 45.1% win probability
+  Win - Sunderland vs Fulham (2026-02-21 15:00) - 44.4% win probability
+  Win - Crystal Palace vs Wolves (2026-02-21 15:00) - 47.4% win probability
+  Win - Manchester City vs Newcastle Utd (2026-02-21 15:00) - 59.3% win probability
+Matchweek 28 (10 matches):
+  Win - Newcastle Utd vs Everton (2026-02-28 15:00) - 44.8% win probability
+  Loss/Draw - Burnley vs Brentford (2026-02-28 15:00) - 36.6% win probability
+  Win - Brighton vs Nott'ham Forest (2026-02-28 15:00) - 46.0% win probability
+  Win - Bournemouth vs Sunderland (2026-02-28 15:00) - 47.8% win probability
+  Win - Liverpool vs West Ham (2026-02-28 15:00) - 57.0% win probability
+  Win - Manchester Utd vs Crystal Palace (2026-02-28 15:00) - 46.3% win probability
+  Win - Fulham vs Tottenham (2026-02-28 15:00) - 48.2% win probability
+  Loss/Draw - Leeds United vs Manchester City (2026-02-28 15:00) - 28.0% win probability
+  Loss/Draw - Wolves vs Aston Villa (2026-02-28 15:00) - 35.6% win probability
+  Win - Arsenal vs Chelsea (2026-02-28 15:00) - 47.3% win probability
+Matchweek 29 (10 matches):
+  Loss/Draw - Brighton vs Arsenal (2026-03-04 20:00) - 34.8% win probability
+  Loss/Draw - Wolves vs Liverpool (2026-03-04 20:00) - 35.5% win probability
+  Win - Everton vs Burnley (2026-03-04 20:00) - 52.7% win probability
+  Win - Aston Villa vs Chelsea (2026-03-04 20:00) - 46.9% win probability
+  Win - Tottenham vs Crystal Palace (2026-03-04 20:00) - 46.3% win probability
+  Win - Fulham vs West Ham (2026-03-04 20:00) - 48.2% win probability
+  Win - Newcastle Utd vs Manchester Utd (2026-03-04 20:00) - 46.0% win probability
+  Win - Bournemouth vs Brentford (2026-03-04 20:00) - 44.0% win probability
+  Win - Manchester City vs Nott'ham Forest (2026-03-04 20:00) - 59.3% win probability
+  Win - Leeds United vs Sunderland (2026-03-04 20:00) - 39.9% win probability
+Matchweek 30 (10 matches):
+  Win - Brentford vs Wolves (2026-03-14 15:00) - 50.8% win probability
+  Loss/Draw - Burnley vs Bournemouth (2026-03-14 15:00) - 36.4% win probability
+  Loss/Draw - West Ham vs Manchester City (2026-03-14 15:00) - 30.9% win probability
+  Win - Liverpool vs Tottenham (2026-03-14 15:00) - 57.0% win probability
+  Win - Sunderland vs Brighton (2026-03-14 15:00) - 46.0% win probability
+  Loss/Draw - Manchester Utd vs Aston Villa (2026-03-14 15:00) - 35.6% win probability
+  Win - Chelsea vs Newcastle Utd (2026-03-14 15:00) - 53.9% win probability
+  Win - Crystal Palace vs Leeds United (2026-03-14 15:00) - 48.6% win probability
+  Win - Arsenal vs Everton (2026-03-14 15:00) - 54.9% win probability
+  Win - Nott'ham Forest vs Fulham (2026-03-14 15:00) - 44.4% win probability
+Matchweek 31 (10 matches):
+  Loss/Draw - Leeds United vs Brentford (2026-03-21 15:00) - 39.3% win probability
+  Win - Manchester City vs Crystal Palace (2026-03-21 15:00) - 59.7% win probability
+  Win - Tottenham vs Nott'ham Forest (2026-03-21 15:00) - 46.0% win probability
+  Loss/Draw - Wolves vs Arsenal (2026-03-21 15:00) - 34.8% win probability
+  Win - Bournemouth vs Manchester Utd (2026-03-21 15:00) - 47.8% win probability
+  Win - Newcastle Utd vs Sunderland (2026-03-21 15:00) - 46.0% win probability
+  Loss/Draw - Everton vs Chelsea (2026-03-21 15:00) - 39.5% win probability
+  Loss/Draw - Brighton vs Liverpool (2026-03-21 15:00) - 35.5% win probability
+  Win - Aston Villa vs West Ham (2026-03-21 15:00) - 55.5% win probability
+  Win - Fulham vs Burnley (2026-03-21 15:00) - 52.1% win probability
+Matchweek 32 (10 matches):
+  Loss/Draw - Nott'ham Forest vs Aston Villa (2026-04-11 15:00) - 35.6% win probability
+  Loss/Draw - Chelsea vs Manchester City (2026-04-11 15:00) - 39.1% win probability
+  Win - Crystal Palace vs Newcastle Utd (2026-04-11 15:00) - 47.4% win probability
+  Win - Sunderland vs Tottenham (2026-04-11 15:00) - 46.0% win probability
+  Win - Arsenal vs Bournemouth (2026-04-11 15:00) - 55.2% win probability
+  Win - West Ham vs Wolves (2026-04-11 15:00) - 46.0% win probability
+  Win - Burnley vs Brighton (2026-04-11 15:00) - 36.6% win probability
+  Win - Manchester Utd vs Leeds United (2026-04-11 15:00) - 46.0% win probability
+  Win - Liverpool vs Fulham (2026-04-11 15:00) - 55.5% win probability
+  Win - Brentford vs Everton (2026-04-11 15:00) - 49.7% win probability
+Matchweek 33 (10 matches):
+  Win - Tottenham vs Brighton (2026-04-18 15:00) - 46.0% win probability
+  Win - Manchester City vs Arsenal (2026-04-18 15:00) - 49.0% win probability
+  Win - Nott'ham Forest vs Burnley (2026-04-18 15:00) - 47.1% win probability
+  Win - Leeds United vs Wolves (2026-04-18 15:00) - 39.9% win probability
+  Loss/Draw - Everton vs Liverpool (2026-04-18 15:00) - 38.2% win probability
+  Win - Chelsea vs Manchester Utd (2026-04-18 15:00) - 53.9% win probability
+  Win - Newcastle Utd vs Bournemouth (2026-04-18 15:00) - 45.1% win probability
+  Win - Crystal Palace vs West Ham (2026-04-18 15:00) - 47.4% win probability
+  Win - Brentford vs Fulham (2026-04-18 15:00) - 49.3% win probability
+  Win - Aston Villa vs Sunderland (2026-04-18 15:00) - 55.5% win probability
+Matchweek 34 (10 matches):
+  Win - Bournemouth vs Leeds United (2026-04-25 15:00) - 49.6% win probability
+  Win - Sunderland vs Nott'ham Forest (2026-04-25 15:00) - 46.0% win probability
+  Win - Manchester Utd vs Brentford (2026-04-25 15:00) - 42.2% win probability
+  Loss/Draw - Burnley vs Manchester City (2026-04-25 15:00) - 26.0% win probability
+  Win - Arsenal vs Newcastle Utd (2026-04-25 15:00) - 56.1% win probability
+  Win - Wolves vs Tottenham (2026-04-25 15:00) - 46.0% win probability
+  Loss/Draw - Fulham vs Aston Villa (2026-04-25 15:00) - 37.9% win probability
+  Loss/Draw - Brighton vs Chelsea (2026-04-25 15:00) - 36.9% win probability
+  Win - Liverpool vs Crystal Palace (2026-04-25 15:00) - 57.5% win probability
+  Win - West Ham vs Everton (2026-04-25 15:00) - 44.8% win probability
+Matchweek 35 (10 matches):
+  Win - Arsenal vs Fulham (2026-05-02 15:00) - 54.6% win probability
+  Win - Wolves vs Sunderland (2026-05-02 15:00) - 46.0% win probability
+  Win - Bournemouth vs Crystal Palace (2026-05-02 15:00) - 48.4% win probability
+  Win - Newcastle Utd vs Brighton (2026-05-02 15:00) - 46.0% win probability
+  Win - Aston Villa vs Tottenham (2026-05-02 15:00) - 55.5% win probability
+  Loss/Draw - Manchester Utd vs Liverpool (2026-05-02 15:00) - 35.5% win probability
+  Win - Leeds United vs Burnley (2026-05-02 15:00) - 41.0% win probability
+  Loss/Draw - Everton vs Manchester City (2026-05-02 15:00) - 33.4% win probability
+  Win - Brentford vs West Ham (2026-05-02 15:00) - 50.8% win probability
+  Win - Chelsea vs Nott'ham Forest (2026-05-02 15:00) - 53.9% win probability
+Matchweek 36 (10 matches):
+  Loss/Draw - West Ham vs Arsenal (2026-05-09 15:00) - 34.8% win probability
+  Win - Brighton vs Wolves (2026-05-09 15:00) - 46.0% win probability
+  Win - Tottenham vs Leeds United (2026-05-09 15:00) - 46.0% win probability
+  Win - Crystal Palace vs Everton (2026-05-09 15:00) - 46.2% win probability
+  Win - Manchester City vs Brentford (2026-05-09 15:00) - 55.8% win probability
+  Win - Nott'ham Forest vs Newcastle Utd (2026-05-09 15:00) - 46.0% win probability
+  Loss/Draw - Burnley vs Aston Villa (2026-05-09 15:00) - 30.7% win probability
+  Win - Fulham vs Bournemouth (2026-05-09 15:00) - 47.4% win probability
+  Win - Liverpool vs Chelsea (2026-05-09 15:00) - 48.3% win probability
+  Win - Sunderland vs Manchester Utd (2026-05-09 15:00) - 46.0% win probability
+Matchweek 37 (10 matches):
+  Win - Everton vs Sunderland (2026-05-17 15:00) - 48.6% win probability
+  Win - Leeds United vs Brighton (2026-05-17 15:00) - 39.9% win probability
+  Win - Chelsea vs Tottenham (2026-05-17 15:00) - 53.9% win probability
+  Win - Manchester Utd vs Nott'ham Forest (2026-05-17 15:00) - 46.0% win probability
+  Win - Newcastle Utd vs West Ham (2026-05-17 15:00) - 46.0% win probability
+  Win - Wolves vs Fulham (2026-05-17 15:00) - 44.4% win probability
+  Win - Aston Villa vs Liverpool (2026-05-17 15:00) - 45.6% win probability
+  Win - Brentford vs Crystal Palace (2026-05-17 15:00) - 51.3% win probability
+  Win - Arsenal vs Burnley (2026-05-17 15:00) - 62.0% win probability
+  Loss/Draw - Bournemouth vs Manchester City (2026-05-17 15:00) - 32.6% win probability
+Matchweek 38 (10 matches):
+  Loss/Draw - Crystal Palace vs Arsenal (2026-05-24 16:00) - 36.2% win probability
+  Win - Manchester City vs Aston Villa (2026-05-24 16:00) - 49.4% win probability
+  Win - West Ham vs Leeds United (2026-05-24 16:00) - 46.0% win probability
+  Win - Tottenham vs Everton (2026-05-24 16:00) - 44.8% win probability
+  Win - Brighton vs Manchester Utd (2026-05-24 16:00) - 46.0% win probability
+  Win - Liverpool vs Brentford (2026-05-24 16:00) - 53.4% win probability
+  Win - Fulham vs Newcastle Utd (2026-05-24 16:00) - 48.2% win probability
+  Win - Nott'ham Forest vs Bournemouth (2026-05-24 16:00) - 45.1% win probability
+  Loss/Draw - Sunderland vs Chelsea (2026-05-24 16:00) - 36.9% win probability
+  Win - Burnley vs Wolves (2026-05-24 16:00) - 36.6% win probability
