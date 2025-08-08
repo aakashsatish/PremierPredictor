@@ -57,7 +57,7 @@ python production_predictions.py
 
 ### 3. View Results
 - **2025_2026_production_predictions.csv** - Complete season predictions
-- **ACCURACY_ANALYSIS.md** - Detailed accuracy testing results
+- **docs/ACCURACY_ANALYSIS.md** - Detailed accuracy testing results
 
 ## 📁 **Project Structure**
 
@@ -65,13 +65,16 @@ python production_predictions.py
 EPL_Tracker/
 ├── production_predictions.py          # 🎯 Main production system
 ├── test_model_accuracy.py            # 📊 Accuracy testing framework
+├── config.py                         # ⚙️ Configuration management
 ├── matches.csv                       # 📈 Historical data (3,800+ matches)
 ├── 2025_2026_production_predictions.csv  # 🏆 Current season predictions
-├── ACCURACY_ANALYSIS.md              # 📋 Detailed accuracy results
-├── ENHANCED_IMPLEMENTATION_SUMMARY.md    # 📖 Implementation documentation
 ├── requirements.txt                   # 📦 Python dependencies
 ├── README.md                         # 📚 This file
-├── archive/                          # 📦 Archived experimental files
+├── docs/                             # 📖 Documentation
+│   ├── ACCURACY_ANALYSIS.md          # 📊 Detailed accuracy results
+│   ├── DEPLOYMENT.md                 # 🚀 Deployment guide
+│   └── ENHANCED_IMPLEMENTATION_SUMMARY.md  # 📖 Technical details
+├── archive/                          # 📦 Archived files
 │   ├── experimental/                 # 🔬 Experimental approaches
 │   └── old_versions/                 # 📁 Previous versions
 └── venv/                            # 🐍 Virtual environment
