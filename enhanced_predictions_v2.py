@@ -350,12 +350,35 @@ def main():
     print("🚀 EPL Tracker - Enhanced Predictions v2.0")
     print("=" * 60)
     
-    # Scrape fixtures
-    fixtures_df = scrape_real_2025_2026_fixtures()
-    
-    if fixtures_df is None or len(fixtures_df) == 0:
-        print("❌ Failed to scrape fixtures")
-        return
+    # Try to load existing fixtures first
+    try:
+        print("📋 Loading existing fixtures data...")
+        fixtures_df = pd.read_csv("2025_2026_improved_predictions.csv")
+        
+        # Extract fixture information from existing predictions
+        fixtures_data = []
+        for idx, row in fixtures_df.iterrows():
+            if pd.notna(row['team']) and pd.notna(row['opponent']):
+                fixture = {
+                    'matchweek': row.get('matchweek', ''),
+                    'day': row.get('day', ''),
+                    'date': row.get('date', ''),
+                    'time': row.get('time', ''),
+                    'home': row['team'],
+                    'away': row['opponent']
+                }
+                fixtures_data.append(fixture)
+        
+        fixtures_df = pd.DataFrame(fixtures_data)
+        print(f"✅ Loaded {len(fixtures_df)} fixtures from existing data")
+        
+    except FileNotFoundError:
+        print("❌ No existing fixtures found, attempting to scrape...")
+        fixtures_df = scrape_real_2025_2026_fixtures()
+        
+        if fixtures_df is None or len(fixtures_df) == 0:
+            print("❌ Failed to get fixtures data")
+            return
     
     # Create enhanced predictions
     predictions = create_enhanced_predictions(fixtures_df)
