@@ -1,0 +1,2080 @@
+================================================================================
+EPL TRACKER - 2025/2026 SEASON PREDICTIONS
+================================================================================
+
+Model: Random Forest + Team Strength Comparison
+Accuracy: 64.5% (based on historical testing)
+Method: 70% team strength + 30% machine learning
+
+Confidence Levels:
+- High: >65% win probability
+- Medium: 55-65% win probability
+- Low: <55% win probability
+
+================================================================================
+
+MATCHWEEK 1
+----------------------------------------
+
+Fri 2025-08-15 20:00
+Liverpool vs Bournemouth
+PREDICTION: Liverpool WIN [Medium]
+Probabilities: Liverpool 57.1% | Bournemouth 27.9% | Draw 15.0%
+
+Sat 2025-08-16 12:30
+Aston Villa vs Newcastle Utd
+PREDICTION: Aston Villa WIN [Medium]
+Probabilities: Aston Villa 62.8% | Newcastle Utd 22.2% | Draw 15.0%
+
+Sat 2025-08-16 15:00
+Sunderland vs West Ham
+PREDICTION: Sunderland WIN [Medium]
+Probabilities: Sunderland 55.3% | West Ham 29.7% | Draw 15.0%
+
+Sat 2025-08-16 15:00
+Tottenham vs Burnley
+PREDICTION: Tottenham WIN [Medium]
+Probabilities: Tottenham 62.3% | Burnley 22.7% | Draw 15.0%
+
+Sat 2025-08-16 15:00
+Brighton vs Fulham
+PREDICTION: Brighton WIN [Low]
+Probabilities: Brighton 53.2% | Fulham 31.8% | Draw 15.0%
+
+Sat 2025-08-16 17:30
+Wolves vs Manchester City
+PREDICTION: Manchester City WIN or DRAW [Low]
+Probabilities: Wolves 41.0% | Manchester City 44.0% | Draw 15.0%
+
+Sun 2025-08-17 14:00
+Nott'ham Forest vs Brentford
+PREDICTION: Nott'ham Forest WIN [Low]
+Probabilities: Nott'ham Forest 50.9% | Brentford 34.1% | Draw 15.0%
+
+Sun 2025-08-17 14:00
+Chelsea vs Crystal Palace
+PREDICTION: Chelsea WIN [Medium]
+Probabilities: Chelsea 61.2% | Crystal Palace 23.8% | Draw 15.0%
+
+Sun 2025-08-17 16:30
+Manchester Utd vs Arsenal
+PREDICTION: Arsenal WIN or DRAW [Low]
+Probabilities: Manchester Utd 44.8% | Arsenal 40.2% | Draw 15.0%
+
+Mon 2025-08-18 20:00
+Leeds United vs Everton
+PREDICTION: Everton WIN or DRAW [Low]
+Probabilities: Leeds United 44.6% | Everton 40.4% | Draw 15.0%
+
+MATCHWEEK 2
+----------------------------------------
+
+Fri 2025-08-22 20:00
+West Ham vs Chelsea
+PREDICTION: Chelsea WIN or DRAW [Low]
+Probabilities: West Ham 45.7% | Chelsea 39.3% | Draw 15.0%
+
+Sat 2025-08-23 12:30
+Manchester City vs Tottenham
+PREDICTION: Manchester City WIN [High]
+Probabilities: Manchester City 69.0% | Tottenham 16.0% | Draw 15.0%
+
+Sat 2025-08-23 15:00
+Bournemouth vs Wolves
+PREDICTION: Bournemouth WIN [Low]
+Probabilities: Bournemouth 50.0% | Wolves 35.0% | Draw 15.0%
+
+Sat 2025-08-23 15:00
+Brentford vs Aston Villa
+PREDICTION: Brentford WIN [Low]
+Probabilities: Brentford 50.0% | Aston Villa 35.0% | Draw 15.0%
+
+Sat 2025-08-23 15:00
+Burnley vs Sunderland
+PREDICTION: Sunderland WIN or DRAW [Low]
+Probabilities: Burnley 41.1% | Sunderland 43.9% | Draw 15.0%
+
+Sat 2025-08-23 17:30
+Arsenal vs Leeds United
+PREDICTION: Arsenal WIN [Medium]
+Probabilities: Arsenal 64.7% | Leeds United 20.3% | Draw 15.0%
+
+Sun 2025-08-24 14:00
+Crystal Palace vs Nott'ham Forest
+PREDICTION: Crystal Palace WIN [Medium]
+Probabilities: Crystal Palace 55.4% | Nott'ham Forest 29.6% | Draw 15.0%
+
+Sun 2025-08-24 14:00
+Everton vs Brighton
+PREDICTION: Everton WIN [Medium]
+Probabilities: Everton 57.2% | Brighton 27.8% | Draw 15.0%
+
+Sun 2025-08-24 16:30
+Fulham vs Manchester Utd
+PREDICTION: Fulham WIN [Low]
+Probabilities: Fulham 51.4% | Manchester Utd 33.6% | Draw 15.0%
+
+Mon 2025-08-25 20:00
+Newcastle Utd vs Liverpool
+PREDICTION: Liverpool WIN or DRAW [Low]
+Probabilities: Newcastle Utd 45.1% | Liverpool 39.9% | Draw 15.0%
+
+MATCHWEEK 3
+----------------------------------------
+
+Fri 2025-08-29 20:00
+Aston Villa vs Crystal Palace
+PREDICTION: Aston Villa WIN [Medium]
+Probabilities: Aston Villa 63.8% | Crystal Palace 21.2% | Draw 15.0%
+
+Sat 2025-08-30 12:30
+Chelsea vs Fulham
+PREDICTION: Chelsea WIN [Medium]
+Probabilities: Chelsea 59.2% | Fulham 25.8% | Draw 15.0%
+
+Sat 2025-08-30 15:00
+Sunderland vs Brentford
+PREDICTION: Sunderland WIN [Low]
+Probabilities: Sunderland 50.7% | Brentford 34.3% | Draw 15.0%
+
+Sat 2025-08-30 15:00
+Wolves vs Everton
+PREDICTION: Wolves WIN [Low]
+Probabilities: Wolves 53.5% | Everton 31.5% | Draw 15.0%
+
+Sat 2025-08-30 15:00
+Tottenham vs Bournemouth
+PREDICTION: Tottenham WIN [Low]
+Probabilities: Tottenham 54.5% | Bournemouth 30.5% | Draw 15.0%
+
+Sat 2025-08-30 15:00
+Manchester Utd vs Burnley
+PREDICTION: Manchester Utd WIN [Medium]
+Probabilities: Manchester Utd 62.3% | Burnley 22.7% | Draw 15.0%
+
+Sat 2025-08-30 17:30
+Leeds United vs Newcastle Utd
+PREDICTION: Newcastle Utd WIN or DRAW [Low]
+Probabilities: Leeds United 46.4% | Newcastle Utd 38.6% | Draw 15.0%
+
+Sun 2025-08-31 14:00
+Brighton vs Manchester City
+PREDICTION: Manchester City WIN or DRAW [Low]
+Probabilities: Brighton 41.5% | Manchester City 43.5% | Draw 15.0%
+
+Sun 2025-08-31 14:00
+Nott'ham Forest vs West Ham
+PREDICTION: Nott'ham Forest WIN [Medium]
+Probabilities: Nott'ham Forest 55.5% | West Ham 29.5% | Draw 15.0%
+
+Sun 2025-08-31 16:30
+Liverpool vs Arsenal
+PREDICTION: Arsenal WIN or DRAW [Low]
+Probabilities: Liverpool 47.9% | Arsenal 37.1% | Draw 15.0%
+
+MATCHWEEK 4
+----------------------------------------
+
+Sat 2025-09-13 12:30
+Arsenal vs Nott'ham Forest
+PREDICTION: Arsenal WIN [Medium]
+Probabilities: Arsenal 60.2% | Nott'ham Forest 24.8% | Draw 15.0%
+
+Sat 2025-09-13 15:00
+Crystal Palace vs Sunderland
+PREDICTION: Crystal Palace WIN [Medium]
+Probabilities: Crystal Palace 55.7% | Sunderland 29.3% | Draw 15.0%
+
+Sat 2025-09-13 15:00
+Bournemouth vs Brighton
+PREDICTION: Bournemouth WIN [Low]
+Probabilities: Bournemouth 50.0% | Brighton 35.0% | Draw 15.0%
+
+Sat 2025-09-13 15:00
+Everton vs Aston Villa
+PREDICTION: Aston Villa WIN or DRAW [Low]
+Probabilities: Everton 45.9% | Aston Villa 39.1% | Draw 15.0%
+
+Sat 2025-09-13 15:00
+Fulham vs Leeds United
+PREDICTION: Fulham WIN [Medium]
+Probabilities: Fulham 57.1% | Leeds United 27.9% | Draw 15.0%
+
+Sat 2025-09-13 15:00
+Newcastle Utd vs Wolves
+PREDICTION: Newcastle Utd WIN [Medium]
+Probabilities: Newcastle Utd 55.3% | Wolves 29.7% | Draw 15.0%
+
+Sat 2025-09-13 17:30
+West Ham vs Tottenham
+PREDICTION: West Ham WIN [Medium]
+Probabilities: West Ham 55.0% | Tottenham 30.0% | Draw 15.0%
+
+Sat 2025-09-13 20:00
+Brentford vs Chelsea
+PREDICTION: Brentford WIN [Low]
+Probabilities: Brentford 52.0% | Chelsea 33.0% | Draw 15.0%
+
+Sun 2025-09-14 14:00
+Burnley vs Liverpool
+PREDICTION: Liverpool WIN or DRAW [Low]
+Probabilities: Burnley 31.5% | Liverpool 53.5% | Draw 15.0%
+
+Sun 2025-09-14 16:30
+Manchester City vs Manchester Utd
+PREDICTION: Manchester City WIN [High]
+Probabilities: Manchester City 69.4% | Manchester Utd 15.6% | Draw 15.0%
+
+MATCHWEEK 5
+----------------------------------------
+
+Sat 2025-09-20 12:30
+Liverpool vs Everton
+PREDICTION: Liverpool WIN [Medium]
+Probabilities: Liverpool 57.0% | Everton 28.0% | Draw 15.0%
+
+Sat 2025-09-20 15:00
+Bournemouth vs Newcastle Utd
+PREDICTION: Bournemouth WIN [Low]
+Probabilities: Bournemouth 50.0% | Newcastle Utd 35.0% | Draw 15.0%
+
+Sat 2025-09-20 15:00
+Brighton vs Tottenham
+PREDICTION: Brighton WIN [Medium]
+Probabilities: Brighton 55.3% | Tottenham 29.7% | Draw 15.0%
+
+Sat 2025-09-20 15:00
+Wolves vs Leeds United
+PREDICTION: Wolves WIN [Medium]
+Probabilities: Wolves 60.6% | Leeds United 24.4% | Draw 15.0%
+
+Sat 2025-09-20 15:00
+West Ham vs Crystal Palace
+PREDICTION: West Ham WIN [Medium]
+Probabilities: West Ham 55.8% | Crystal Palace 29.2% | Draw 15.0%
+
+Sat 2025-09-20 15:00
+Burnley vs Nott'ham Forest
+PREDICTION: Nott'ham Forest WIN or DRAW [Low]
+Probabilities: Burnley 41.1% | Nott'ham Forest 43.9% | Draw 15.0%
+
+Sat 2025-09-20 17:30
+Manchester Utd vs Chelsea
+PREDICTION: Chelsea WIN or DRAW [Low]
+Probabilities: Manchester Utd 45.8% | Chelsea 39.2% | Draw 15.0%
+
+Sat 2025-09-20 20:00
+Fulham vs Brentford
+PREDICTION: Brentford WIN or DRAW [Low]
+Probabilities: Fulham 46.9% | Brentford 38.1% | Draw 15.0%
+
+Sun 2025-09-21 14:00
+Sunderland vs Aston Villa
+PREDICTION: Aston Villa WIN or DRAW [Low]
+Probabilities: Sunderland 44.4% | Aston Villa 40.6% | Draw 15.0%
+
+Sun 2025-09-21 16:30
+Arsenal vs Manchester City
+PREDICTION: Manchester City WIN or DRAW [Low]
+Probabilities: Arsenal 46.8% | Manchester City 38.2% | Draw 15.0%
+
+MATCHWEEK 6
+----------------------------------------
+
+Sat 2025-09-27 12:30
+Brentford vs Manchester Utd
+PREDICTION: Brentford WIN [Medium]
+Probabilities: Brentford 60.7% | Manchester Utd 24.3% | Draw 15.0%
+
+Sat 2025-09-27 15:00
+Aston Villa vs Fulham
+PREDICTION: Aston Villa WIN [Medium]
+Probabilities: Aston Villa 61.8% | Fulham 23.2% | Draw 15.0%
+
+Sat 2025-09-27 15:00
+Manchester City vs Burnley
+PREDICTION: Manchester City WIN [High]
+Probabilities: Manchester City 74.6% | Burnley 10.4% | Draw 15.0%
+
+Sat 2025-09-27 15:00
+Leeds United vs Bournemouth
+PREDICTION: Bournemouth WIN or DRAW [Low]
+Probabilities: Leeds United 45.8% | Bournemouth 39.2% | Draw 15.0%
+
+Sat 2025-09-27 15:00
+Crystal Palace vs Liverpool
+PREDICTION: Liverpool WIN or DRAW [Low]
+Probabilities: Crystal Palace 45.9% | Liverpool 39.1% | Draw 15.0%
+
+Sat 2025-09-27 15:00
+Chelsea vs Brighton
+PREDICTION: Chelsea WIN [Medium]
+Probabilities: Chelsea 61.0% | Brighton 24.0% | Draw 15.0%
+
+Sat 2025-09-27 17:30
+Nott'ham Forest vs Sunderland
+PREDICTION: Nott'ham Forest WIN [Medium]
+Probabilities: Nott'ham Forest 55.0% | Sunderland 30.0% | Draw 15.0%
+
+Sun 2025-09-28 14:00
+Tottenham vs Wolves
+PREDICTION: Tottenham WIN [Medium]
+Probabilities: Tottenham 55.5% | Wolves 29.5% | Draw 15.0%
+
+Sun 2025-09-28 16:30
+Newcastle Utd vs Arsenal
+PREDICTION: Arsenal WIN or DRAW [Low]
+Probabilities: Newcastle Utd 44.8% | Arsenal 40.2% | Draw 15.0%
+
+Mon 2025-09-29 20:00
+Everton vs West Ham
+PREDICTION: Everton WIN [Medium]
+Probabilities: Everton 58.3% | West Ham 26.7% | Draw 15.0%
+
+MATCHWEEK 7
+----------------------------------------
+
+Sat 2025-10-04 15:00
+Arsenal vs West Ham
+PREDICTION: Arsenal WIN [Medium]
+Probabilities: Arsenal 60.2% | West Ham 24.8% | Draw 15.0%
+
+Sat 2025-10-04 15:00
+Wolves vs Brighton
+PREDICTION: Wolves WIN [Medium]
+Probabilities: Wolves 55.3% | Brighton 29.7% | Draw 15.0%
+
+Sat 2025-10-04 15:00
+Chelsea vs Liverpool
+PREDICTION: Chelsea WIN [Low]
+Probabilities: Chelsea 51.6% | Liverpool 33.4% | Draw 15.0%
+
+Sat 2025-10-04 15:00
+Newcastle Utd vs Nott'ham Forest
+PREDICTION: Newcastle Utd WIN [Medium]
+Probabilities: Newcastle Utd 55.3% | Nott'ham Forest 29.7% | Draw 15.0%
+
+Sat 2025-10-04 15:00
+Manchester Utd vs Sunderland
+PREDICTION: Manchester Utd WIN [Medium]
+Probabilities: Manchester Utd 55.3% | Sunderland 29.7% | Draw 15.0%
+
+Sat 2025-10-04 15:00
+Aston Villa vs Burnley
+PREDICTION: Aston Villa WIN [High]
+Probabilities: Aston Villa 69.3% | Burnley 15.7% | Draw 15.0%
+
+Sat 2025-10-04 15:00
+Everton vs Crystal Palace
+PREDICTION: Everton WIN [Medium]
+Probabilities: Everton 57.5% | Crystal Palace 27.5% | Draw 15.0%
+
+Sat 2025-10-04 15:00
+Leeds United vs Tottenham
+PREDICTION: Tottenham WIN or DRAW [Low]
+Probabilities: Leeds United 46.6% | Tottenham 38.4% | Draw 15.0%
+
+Sat 2025-10-04 15:00
+Brentford vs Manchester City
+PREDICTION: Manchester City WIN or DRAW [Low]
+Probabilities: Brentford 47.1% | Manchester City 37.9% | Draw 15.0%
+
+Sat 2025-10-04 15:00
+Bournemouth vs Fulham
+PREDICTION: Fulham WIN or DRAW [Low]
+Probabilities: Bournemouth 47.9% | Fulham 37.1% | Draw 15.0%
+
+MATCHWEEK 8
+----------------------------------------
+
+Sat 2025-10-18 15:00
+Manchester City vs Everton
+PREDICTION: Manchester City WIN [High]
+Probabilities: Manchester City 67.9% | Everton 17.1% | Draw 15.0%
+
+Sat 2025-10-18 15:00
+Nott'ham Forest vs Chelsea
+PREDICTION: Chelsea WIN or DRAW [Low]
+Probabilities: Nott'ham Forest 46.1% | Chelsea 38.9% | Draw 15.0%
+
+Sat 2025-10-18 15:00
+Sunderland vs Wolves
+PREDICTION: Sunderland WIN [Medium]
+Probabilities: Sunderland 55.3% | Wolves 29.7% | Draw 15.0%
+
+Sat 2025-10-18 15:00
+Tottenham vs Aston Villa
+PREDICTION: Aston Villa WIN or DRAW [Low]
+Probabilities: Tottenham 44.2% | Aston Villa 40.8% | Draw 15.0%
+
+Sat 2025-10-18 15:00
+Liverpool vs Manchester Utd
+PREDICTION: Liverpool WIN [Medium]
+Probabilities: Liverpool 58.0% | Manchester Utd 27.0% | Draw 15.0%
+
+Sat 2025-10-18 15:00
+Crystal Palace vs Bournemouth
+PREDICTION: Crystal Palace WIN [Low]
+Probabilities: Crystal Palace 54.9% | Bournemouth 30.1% | Draw 15.0%
+
+Sat 2025-10-18 15:00
+West Ham vs Brentford
+PREDICTION: West Ham WIN [Low]
+Probabilities: West Ham 50.7% | Brentford 34.3% | Draw 15.0%
+
+Sat 2025-10-18 15:00
+Burnley vs Leeds United
+PREDICTION: Leeds United WIN or DRAW [Low]
+Probabilities: Burnley 46.6% | Leeds United 38.4% | Draw 15.0%
+
+Sat 2025-10-18 15:00
+Fulham vs Arsenal
+PREDICTION: Arsenal WIN or DRAW [Low]
+Probabilities: Fulham 41.8% | Arsenal 43.2% | Draw 15.0%
+
+Sat 2025-10-18 15:00
+Brighton vs Newcastle Utd
+PREDICTION: Brighton WIN [Medium]
+Probabilities: Brighton 55.3% | Newcastle Utd 29.7% | Draw 15.0%
+
+MATCHWEEK 9
+----------------------------------------
+
+Sat 2025-10-25 15:00
+Bournemouth vs Nott'ham Forest
+PREDICTION: Bournemouth WIN [Low]
+Probabilities: Bournemouth 50.0% | Nott'ham Forest 35.0% | Draw 15.0%
+
+Sat 2025-10-25 15:00
+Newcastle Utd vs Fulham
+PREDICTION: Newcastle Utd WIN [Low]
+Probabilities: Newcastle Utd 53.2% | Fulham 31.8% | Draw 15.0%
+
+Sat 2025-10-25 15:00
+Chelsea vs Sunderland
+PREDICTION: Chelsea WIN [Medium]
+Probabilities: Chelsea 61.0% | Sunderland 24.0% | Draw 15.0%
+
+Sat 2025-10-25 15:00
+Leeds United vs West Ham
+PREDICTION: West Ham WIN or DRAW [Low]
+Probabilities: Leeds United 46.6% | West Ham 38.4% | Draw 15.0%
+
+Sat 2025-10-25 15:00
+Arsenal vs Crystal Palace
+PREDICTION: Arsenal WIN [Medium]
+Probabilities: Arsenal 60.6% | Crystal Palace 24.4% | Draw 15.0%
+
+Sat 2025-10-25 15:00
+Wolves vs Burnley
+PREDICTION: Wolves WIN [Medium]
+Probabilities: Wolves 62.3% | Burnley 22.7% | Draw 15.0%
+
+Sat 2025-10-25 15:00
+Everton vs Tottenham
+PREDICTION: Everton WIN [Medium]
+Probabilities: Everton 57.0% | Tottenham 28.0% | Draw 15.0%
+
+Sat 2025-10-25 15:00
+Brentford vs Liverpool
+PREDICTION: Brentford WIN [Low]
+Probabilities: Brentford 51.4% | Liverpool 33.6% | Draw 15.0%
+
+Sat 2025-10-25 15:00
+Manchester Utd vs Brighton
+PREDICTION: Manchester Utd WIN [Medium]
+Probabilities: Manchester Utd 55.3% | Brighton 29.7% | Draw 15.0%
+
+Sat 2025-10-25 15:00
+Aston Villa vs Manchester City
+PREDICTION: Aston Villa WIN [Low]
+Probabilities: Aston Villa 50.3% | Manchester City 34.7% | Draw 15.0%
+
+MATCHWEEK 10
+----------------------------------------
+
+Sat 2025-11-01 15:00
+Nott'ham Forest vs Manchester Utd
+PREDICTION: Nott'ham Forest WIN [Medium]
+Probabilities: Nott'ham Forest 55.3% | Manchester Utd 29.7% | Draw 15.0%
+
+Sat 2025-11-01 15:00
+Crystal Palace vs Brentford
+PREDICTION: Crystal Palace WIN [Low]
+Probabilities: Crystal Palace 51.1% | Brentford 33.9% | Draw 15.0%
+
+Sat 2025-11-01 15:00
+Sunderland vs Everton
+PREDICTION: Sunderland WIN [Low]
+Probabilities: Sunderland 53.5% | Everton 31.5% | Draw 15.0%
+
+Sat 2025-11-01 15:00
+Manchester City vs Bournemouth
+PREDICTION: Manchester City WIN [High]
+Probabilities: Manchester City 68.7% | Bournemouth 16.3% | Draw 15.0%
+
+Sat 2025-11-01 15:00
+West Ham vs Newcastle Utd
+PREDICTION: West Ham WIN [Medium]
+Probabilities: West Ham 55.3% | Newcastle Utd 29.7% | Draw 15.0%
+
+Sat 2025-11-01 15:00
+Burnley vs Arsenal
+PREDICTION: Arsenal WIN or DRAW [Low]
+Probabilities: Burnley 31.0% | Arsenal 54.0% | Draw 15.0%
+
+Sat 2025-11-01 15:00
+Tottenham vs Chelsea
+PREDICTION: Chelsea WIN or DRAW [Low]
+Probabilities: Tottenham 46.1% | Chelsea 38.9% | Draw 15.0%
+
+Sat 2025-11-01 15:00
+Liverpool vs Aston Villa
+PREDICTION: Aston Villa WIN or DRAW [Low]
+Probabilities: Liverpool 47.6% | Aston Villa 37.4% | Draw 15.0%
+
+Sat 2025-11-01 15:00
+Fulham vs Wolves
+PREDICTION: Fulham WIN [Low]
+Probabilities: Fulham 52.0% | Wolves 33.0% | Draw 15.0%
+
+Sat 2025-11-01 15:00
+Brighton vs Leeds United
+PREDICTION: Brighton WIN [Medium]
+Probabilities: Brighton 60.6% | Leeds United 24.4% | Draw 15.0%
+
+MATCHWEEK 11
+----------------------------------------
+
+Sat 2025-11-08 15:00
+Tottenham vs Manchester Utd
+PREDICTION: Tottenham WIN [Medium]
+Probabilities: Tottenham 55.3% | Manchester Utd 29.7% | Draw 15.0%
+
+Sat 2025-11-08 15:00
+Crystal Palace vs Brighton
+PREDICTION: Crystal Palace WIN [Medium]
+Probabilities: Crystal Palace 55.7% | Brighton 29.3% | Draw 15.0%
+
+Sat 2025-11-08 15:00
+Nott'ham Forest vs Leeds United
+PREDICTION: Nott'ham Forest WIN [Medium]
+Probabilities: Nott'ham Forest 60.6% | Leeds United 24.4% | Draw 15.0%
+
+Sat 2025-11-08 15:00
+Chelsea vs Wolves
+PREDICTION: Chelsea WIN [Medium]
+Probabilities: Chelsea 61.0% | Wolves 24.0% | Draw 15.0%
+
+Sat 2025-11-08 15:00
+Aston Villa vs Bournemouth
+PREDICTION: Aston Villa WIN [Medium]
+Probabilities: Aston Villa 62.9% | Bournemouth 22.1% | Draw 15.0%
+
+Sat 2025-11-08 15:00
+Brentford vs Newcastle Utd
+PREDICTION: Brentford WIN [Medium]
+Probabilities: Brentford 61.0% | Newcastle Utd 24.0% | Draw 15.0%
+
+Sat 2025-11-08 15:00
+Sunderland vs Arsenal
+PREDICTION: Arsenal WIN or DRAW [Low]
+Probabilities: Sunderland 45.0% | Arsenal 40.0% | Draw 15.0%
+
+Sat 2025-11-08 15:00
+West Ham vs Burnley
+PREDICTION: West Ham WIN [Medium]
+Probabilities: West Ham 62.3% | Burnley 22.7% | Draw 15.0%
+
+Sat 2025-11-08 15:00
+Manchester City vs Liverpool
+PREDICTION: Manchester City WIN [Medium]
+Probabilities: Manchester City 60.7% | Liverpool 24.3% | Draw 15.0%
+
+Sat 2025-11-08 15:00
+Everton vs Fulham
+PREDICTION: Everton WIN [Low]
+Probabilities: Everton 55.0% | Fulham 30.0% | Draw 15.0%
+
+MATCHWEEK 12
+----------------------------------------
+
+Sat 2025-11-22 15:00
+Leeds United vs Aston Villa
+PREDICTION: Aston Villa WIN or DRAW [Low]
+Probabilities: Leeds United 35.6% | Aston Villa 49.4% | Draw 15.0%
+
+Sat 2025-11-22 15:00
+Manchester Utd vs Everton
+PREDICTION: Manchester Utd WIN [Low]
+Probabilities: Manchester Utd 53.5% | Everton 31.5% | Draw 15.0%
+
+Sat 2025-11-22 15:00
+Arsenal vs Tottenham
+PREDICTION: Arsenal WIN [Medium]
+Probabilities: Arsenal 60.2% | Tottenham 24.8% | Draw 15.0%
+
+Sat 2025-11-22 15:00
+Fulham vs Sunderland
+PREDICTION: Fulham WIN [Low]
+Probabilities: Fulham 52.0% | Sunderland 33.0% | Draw 15.0%
+
+Sat 2025-11-22 15:00
+Bournemouth vs West Ham
+PREDICTION: Bournemouth WIN [Low]
+Probabilities: Bournemouth 50.0% | West Ham 35.0% | Draw 15.0%
+
+Sat 2025-11-22 15:00
+Burnley vs Chelsea
+PREDICTION: Chelsea WIN or DRAW [Low]
+Probabilities: Burnley 32.0% | Chelsea 53.0% | Draw 15.0%
+
+Sat 2025-11-22 15:00
+Brighton vs Brentford
+PREDICTION: Brighton WIN [Low]
+Probabilities: Brighton 50.7% | Brentford 34.3% | Draw 15.0%
+
+Sat 2025-11-22 15:00
+Newcastle Utd vs Manchester City
+PREDICTION: Manchester City WIN or DRAW [Low]
+Probabilities: Newcastle Utd 41.3% | Manchester City 43.7% | Draw 15.0%
+
+Sat 2025-11-22 15:00
+Wolves vs Crystal Palace
+PREDICTION: Wolves WIN [Medium]
+Probabilities: Wolves 55.8% | Crystal Palace 29.2% | Draw 15.0%
+
+Sat 2025-11-22 15:00
+Liverpool vs Nott'ham Forest
+PREDICTION: Liverpool WIN [Medium]
+Probabilities: Liverpool 58.0% | Nott'ham Forest 27.0% | Draw 15.0%
+
+MATCHWEEK 13
+----------------------------------------
+
+Sat 2025-11-29 15:00
+Chelsea vs Arsenal
+PREDICTION: Chelsea WIN [Low]
+Probabilities: Chelsea 51.1% | Arsenal 33.9% | Draw 15.0%
+
+Sat 2025-11-29 15:00
+West Ham vs Liverpool
+PREDICTION: Liverpool WIN or DRAW [Low]
+Probabilities: West Ham 45.5% | Liverpool 39.5% | Draw 15.0%
+
+Sat 2025-11-29 15:00
+Aston Villa vs Wolves
+PREDICTION: Aston Villa WIN [Medium]
+Probabilities: Aston Villa 63.6% | Wolves 21.4% | Draw 15.0%
+
+Sat 2025-11-29 15:00
+Crystal Palace vs Manchester Utd
+PREDICTION: Crystal Palace WIN [Medium]
+Probabilities: Crystal Palace 55.7% | Manchester Utd 29.3% | Draw 15.0%
+
+Sat 2025-11-29 15:00
+Sunderland vs Bournemouth
+PREDICTION: Sunderland WIN [Low]
+Probabilities: Sunderland 54.5% | Bournemouth 30.5% | Draw 15.0%
+
+Sat 2025-11-29 15:00
+Brentford vs Burnley
+PREDICTION: Brentford WIN [High]
+Probabilities: Brentford 67.4% | Burnley 17.6% | Draw 15.0%
+
+Sat 2025-11-29 15:00
+Everton vs Newcastle Utd
+PREDICTION: Everton WIN [Medium]
+Probabilities: Everton 57.0% | Newcastle Utd 28.0% | Draw 15.0%
+
+Sat 2025-11-29 15:00
+Manchester City vs Leeds United
+PREDICTION: Manchester City WIN [High]
+Probabilities: Manchester City 73.4% | Leeds United 11.6% | Draw 15.0%
+
+Sat 2025-11-29 15:00
+Nott'ham Forest vs Brighton
+PREDICTION: Nott'ham Forest WIN [Medium]
+Probabilities: Nott'ham Forest 55.3% | Brighton 29.7% | Draw 15.0%
+
+Sat 2025-11-29 15:00
+Tottenham vs Fulham
+PREDICTION: Tottenham WIN [Low]
+Probabilities: Tottenham 53.2% | Fulham 31.8% | Draw 15.0%
+
+MATCHWEEK 14
+----------------------------------------
+
+Wed 2025-12-03 20:00
+Bournemouth vs Everton
+PREDICTION: Everton WIN or DRAW [Low]
+Probabilities: Bournemouth 48.2% | Everton 36.8% | Draw 15.0%
+
+Wed 2025-12-03 20:00
+Wolves vs Nott'ham Forest
+PREDICTION: Wolves WIN [Low]
+Probabilities: Wolves 54.9% | Nott'ham Forest 30.1% | Draw 15.0%
+
+Wed 2025-12-03 20:00
+Manchester Utd vs West Ham
+PREDICTION: Manchester Utd WIN [Low]
+Probabilities: Manchester Utd 54.9% | West Ham 30.1% | Draw 15.0%
+
+Wed 2025-12-03 20:00
+Burnley vs Crystal Palace
+PREDICTION: Crystal Palace WIN or DRAW [Low]
+Probabilities: Burnley 41.6% | Crystal Palace 43.4% | Draw 15.0%
+
+Wed 2025-12-03 20:00
+Brighton vs Aston Villa
+PREDICTION: Aston Villa WIN or DRAW [Low]
+Probabilities: Brighton 43.8% | Aston Villa 41.2% | Draw 15.0%
+
+Wed 2025-12-03 20:00
+Leeds United vs Chelsea
+PREDICTION: Chelsea WIN or DRAW [Low]
+Probabilities: Leeds United 37.2% | Chelsea 47.8% | Draw 15.0%
+
+Wed 2025-12-03 20:00
+Newcastle Utd vs Tottenham
+PREDICTION: Newcastle Utd WIN [Low]
+Probabilities: Newcastle Utd 54.9% | Tottenham 30.1% | Draw 15.0%
+
+Wed 2025-12-03 20:00
+Fulham vs Manchester City
+PREDICTION: Manchester City WIN or DRAW [Low]
+Probabilities: Fulham 37.5% | Manchester City 47.5% | Draw 15.0%
+
+Wed 2025-12-03 20:00
+Liverpool vs Sunderland
+PREDICTION: Liverpool WIN [Medium]
+Probabilities: Liverpool 57.8% | Sunderland 27.2% | Draw 15.0%
+
+Wed 2025-12-03 20:00
+Arsenal vs Brentford
+PREDICTION: Arsenal WIN [Medium]
+Probabilities: Arsenal 56.6% | Brentford 28.4% | Draw 15.0%
+
+MATCHWEEK 15
+----------------------------------------
+
+Sat 2025-12-06 15:00
+Tottenham vs Brentford
+PREDICTION: Tottenham WIN [Low]
+Probabilities: Tottenham 50.7% | Brentford 34.3% | Draw 15.0%
+
+Sat 2025-12-06 15:00
+Fulham vs Crystal Palace
+PREDICTION: Fulham WIN [Low]
+Probabilities: Fulham 52.4% | Crystal Palace 32.6% | Draw 15.0%
+
+Sat 2025-12-06 15:00
+Leeds United vs Liverpool
+PREDICTION: Liverpool WIN or DRAW [Low]
+Probabilities: Leeds United 36.9% | Liverpool 48.1% | Draw 15.0%
+
+Sat 2025-12-06 15:00
+Aston Villa vs Arsenal
+PREDICTION: Aston Villa WIN [Low]
+Probabilities: Aston Villa 54.1% | Arsenal 30.9% | Draw 15.0%
+
+Sat 2025-12-06 15:00
+Wolves vs Manchester Utd
+PREDICTION: Wolves WIN [Medium]
+Probabilities: Wolves 55.3% | Manchester Utd 29.7% | Draw 15.0%
+
+Sat 2025-12-06 15:00
+Newcastle Utd vs Burnley
+PREDICTION: Newcastle Utd WIN [Medium]
+Probabilities: Newcastle Utd 62.3% | Burnley 22.7% | Draw 15.0%
+
+Sat 2025-12-06 15:00
+Manchester City vs Sunderland
+PREDICTION: Manchester City WIN [High]
+Probabilities: Manchester City 69.4% | Sunderland 15.6% | Draw 15.0%
+
+Sat 2025-12-06 15:00
+Brighton vs West Ham
+PREDICTION: Brighton WIN [Medium]
+Probabilities: Brighton 55.3% | West Ham 29.7% | Draw 15.0%
+
+Sat 2025-12-06 15:00
+Bournemouth vs Chelsea
+PREDICTION: Chelsea WIN or DRAW [Low]
+Probabilities: Bournemouth 40.8% | Chelsea 44.2% | Draw 15.0%
+
+Sat 2025-12-06 15:00
+Everton vs Nott'ham Forest
+PREDICTION: Everton WIN [Medium]
+Probabilities: Everton 57.0% | Nott'ham Forest 28.0% | Draw 15.0%
+
+MATCHWEEK 16
+----------------------------------------
+
+Sat 2025-12-13 15:00
+Sunderland vs Newcastle Utd
+PREDICTION: Sunderland WIN [Medium]
+Probabilities: Sunderland 55.3% | Newcastle Utd 29.7% | Draw 15.0%
+
+Sat 2025-12-13 15:00
+Nott'ham Forest vs Tottenham
+PREDICTION: Nott'ham Forest WIN [Medium]
+Probabilities: Nott'ham Forest 55.3% | Tottenham 29.7% | Draw 15.0%
+
+Sat 2025-12-13 15:00
+Manchester Utd vs Bournemouth
+PREDICTION: Manchester Utd WIN [Low]
+Probabilities: Manchester Utd 54.5% | Bournemouth 30.5% | Draw 15.0%
+
+Sat 2025-12-13 15:00
+West Ham vs Aston Villa
+PREDICTION: Aston Villa WIN or DRAW [Low]
+Probabilities: West Ham 44.2% | Aston Villa 40.8% | Draw 15.0%
+
+Sat 2025-12-13 15:00
+Crystal Palace vs Manchester City
+PREDICTION: Manchester City WIN or DRAW [Low]
+Probabilities: Crystal Palace 41.7% | Manchester City 43.3% | Draw 15.0%
+
+Sat 2025-12-13 15:00
+Burnley vs Fulham
+PREDICTION: Fulham WIN or DRAW [Low]
+Probabilities: Burnley 39.0% | Fulham 46.0% | Draw 15.0%
+
+Sat 2025-12-13 15:00
+Brentford vs Leeds United
+PREDICTION: Brentford WIN [High]
+Probabilities: Brentford 65.8% | Leeds United 19.2% | Draw 15.0%
+
+Sat 2025-12-13 15:00
+Arsenal vs Wolves
+PREDICTION: Arsenal WIN [Medium]
+Probabilities: Arsenal 60.2% | Wolves 24.8% | Draw 15.0%
+
+Sat 2025-12-13 15:00
+Liverpool vs Brighton
+PREDICTION: Liverpool WIN [Medium]
+Probabilities: Liverpool 58.0% | Brighton 27.0% | Draw 15.0%
+
+Sat 2025-12-13 15:00
+Chelsea vs Everton
+PREDICTION: Chelsea WIN [Medium]
+Probabilities: Chelsea 59.4% | Everton 25.6% | Draw 15.0%
+
+MATCHWEEK 17
+----------------------------------------
+
+Sat 2025-12-20 15:00
+Aston Villa vs Manchester Utd
+PREDICTION: Aston Villa WIN [Medium]
+Probabilities: Aston Villa 63.6% | Manchester Utd 21.4% | Draw 15.0%
+
+Sat 2025-12-20 15:00
+Tottenham vs Liverpool
+PREDICTION: Liverpool WIN or DRAW [Low]
+Probabilities: Tottenham 45.5% | Liverpool 39.5% | Draw 15.0%
+
+Sat 2025-12-20 15:00
+Wolves vs Brentford
+PREDICTION: Wolves WIN [Low]
+Probabilities: Wolves 50.7% | Brentford 34.3% | Draw 15.0%
+
+Sat 2025-12-20 15:00
+Brighton vs Sunderland
+PREDICTION: Brighton WIN [Medium]
+Probabilities: Brighton 55.3% | Sunderland 29.7% | Draw 15.0%
+
+Sat 2025-12-20 15:00
+Bournemouth vs Burnley
+PREDICTION: Bournemouth WIN [Medium]
+Probabilities: Bournemouth 56.9% | Burnley 28.1% | Draw 15.0%
+
+Sat 2025-12-20 15:00
+Newcastle Utd vs Chelsea
+PREDICTION: Chelsea WIN or DRAW [Low]
+Probabilities: Newcastle Utd 46.1% | Chelsea 38.9% | Draw 15.0%
+
+Sat 2025-12-20 15:00
+Leeds United vs Crystal Palace
+PREDICTION: Crystal Palace WIN or DRAW [Low]
+Probabilities: Leeds United 47.0% | Crystal Palace 38.0% | Draw 15.0%
+
+Sat 2025-12-20 15:00
+Fulham vs Nott'ham Forest
+PREDICTION: Fulham WIN [Low]
+Probabilities: Fulham 52.0% | Nott'ham Forest 33.0% | Draw 15.0%
+
+Sat 2025-12-20 15:00
+Everton vs Arsenal
+PREDICTION: Arsenal WIN or DRAW [Low]
+Probabilities: Everton 46.8% | Arsenal 38.2% | Draw 15.0%
+
+Sat 2025-12-20 15:00
+Manchester City vs West Ham
+PREDICTION: Manchester City WIN [High]
+Probabilities: Manchester City 69.4% | West Ham 15.6% | Draw 15.0%
+
+MATCHWEEK 18
+----------------------------------------
+
+Sat 2025-12-27 15:00
+West Ham vs Fulham
+PREDICTION: West Ham WIN [Low]
+Probabilities: West Ham 53.2% | Fulham 31.8% | Draw 15.0%
+
+Sat 2025-12-27 15:00
+Liverpool vs Wolves
+PREDICTION: Liverpool WIN [Medium]
+Probabilities: Liverpool 58.0% | Wolves 27.0% | Draw 15.0%
+
+Sat 2025-12-27 15:00
+Crystal Palace vs Tottenham
+PREDICTION: Crystal Palace WIN [Medium]
+Probabilities: Crystal Palace 55.7% | Tottenham 29.3% | Draw 15.0%
+
+Sat 2025-12-27 15:00
+Burnley vs Everton
+PREDICTION: Everton WIN or DRAW [Low]
+Probabilities: Burnley 39.3% | Everton 45.7% | Draw 15.0%
+
+Sat 2025-12-27 15:00
+Nott'ham Forest vs Manchester City
+PREDICTION: Manchester City WIN or DRAW [Low]
+Probabilities: Nott'ham Forest 41.3% | Manchester City 43.7% | Draw 15.0%
+
+Sat 2025-12-27 15:00
+Chelsea vs Aston Villa
+PREDICTION: Chelsea WIN [Low]
+Probabilities: Chelsea 50.3% | Aston Villa 34.7% | Draw 15.0%
+
+Sat 2025-12-27 15:00
+Arsenal vs Brighton
+PREDICTION: Arsenal WIN [Medium]
+Probabilities: Arsenal 60.2% | Brighton 24.8% | Draw 15.0%
+
+Sat 2025-12-27 15:00
+Manchester Utd vs Newcastle Utd
+PREDICTION: Manchester Utd WIN [Medium]
+Probabilities: Manchester Utd 55.3% | Newcastle Utd 29.7% | Draw 15.0%
+
+Sat 2025-12-27 15:00
+Brentford vs Bournemouth
+PREDICTION: Brentford WIN [Medium]
+Probabilities: Brentford 60.2% | Bournemouth 24.8% | Draw 15.0%
+
+Sat 2025-12-27 15:00
+Sunderland vs Leeds United
+PREDICTION: Sunderland WIN [Medium]
+Probabilities: Sunderland 60.6% | Leeds United 24.4% | Draw 15.0%
+
+MATCHWEEK 19
+----------------------------------------
+
+Tue 2025-12-30 20:00
+Arsenal vs Aston Villa
+PREDICTION: Arsenal WIN [Low]
+Probabilities: Arsenal 50.2% | Aston Villa 34.8% | Draw 15.0%
+
+Tue 2025-12-30 20:00
+Sunderland vs Manchester City
+PREDICTION: Manchester City WIN or DRAW [Low]
+Probabilities: Sunderland 40.9% | Manchester City 44.1% | Draw 15.0%
+
+Tue 2025-12-30 20:00
+Nott'ham Forest vs Everton
+PREDICTION: Nott'ham Forest WIN [Low]
+Probabilities: Nott'ham Forest 53.1% | Everton 31.9% | Draw 15.0%
+
+Tue 2025-12-30 20:00
+Chelsea vs Bournemouth
+PREDICTION: Chelsea WIN [Medium]
+Probabilities: Chelsea 60.9% | Bournemouth 24.1% | Draw 15.0%
+
+Tue 2025-12-30 20:00
+Brentford vs Tottenham
+PREDICTION: Brentford WIN [Medium]
+Probabilities: Brentford 61.1% | Tottenham 23.9% | Draw 15.0%
+
+Tue 2025-12-30 20:00
+Liverpool vs Leeds United
+PREDICTION: Liverpool WIN [Medium]
+Probabilities: Liverpool 62.1% | Leeds United 22.9% | Draw 15.0%
+
+Tue 2025-12-30 20:00
+West Ham vs Brighton
+PREDICTION: West Ham WIN [Low]
+Probabilities: West Ham 54.9% | Brighton 30.1% | Draw 15.0%
+
+Tue 2025-12-30 20:00
+Crystal Palace vs Fulham
+PREDICTION: Crystal Palace WIN [Low]
+Probabilities: Crystal Palace 54.4% | Fulham 30.6% | Draw 15.0%
+
+Tue 2025-12-30 20:00
+Burnley vs Newcastle Utd
+PREDICTION: Newcastle Utd WIN or DRAW [Low]
+Probabilities: Burnley 41.2% | Newcastle Utd 43.8% | Draw 15.0%
+
+Tue 2025-12-30 20:00
+Manchester Utd vs Wolves
+PREDICTION: Manchester Utd WIN [Low]
+Probabilities: Manchester Utd 54.9% | Wolves 30.1% | Draw 15.0%
+
+MATCHWEEK 20
+----------------------------------------
+
+Sat 2026-01-03 15:00
+Fulham vs Liverpool
+PREDICTION: Liverpool WIN or DRAW [Low]
+Probabilities: Fulham 42.2% | Liverpool 42.8% | Draw 15.0%
+
+Sat 2026-01-03 15:00
+Manchester City vs Chelsea
+PREDICTION: Manchester City WIN [Medium]
+Probabilities: Manchester City 61.3% | Chelsea 23.7% | Draw 15.0%
+
+Sat 2026-01-03 15:00
+Wolves vs West Ham
+PREDICTION: Wolves WIN [Medium]
+Probabilities: Wolves 55.3% | West Ham 29.7% | Draw 15.0%
+
+Sat 2026-01-03 15:00
+Aston Villa vs Nott'ham Forest
+PREDICTION: Aston Villa WIN [Medium]
+Probabilities: Aston Villa 63.6% | Nott'ham Forest 21.4% | Draw 15.0%
+
+Sat 2026-01-03 15:00
+Newcastle Utd vs Crystal Palace
+PREDICTION: Newcastle Utd WIN [Medium]
+Probabilities: Newcastle Utd 55.8% | Crystal Palace 29.2% | Draw 15.0%
+
+Sat 2026-01-03 15:00
+Everton vs Brentford
+PREDICTION: Everton WIN [Low]
+Probabilities: Everton 52.5% | Brentford 32.5% | Draw 15.0%
+
+Sat 2026-01-03 15:00
+Bournemouth vs Arsenal
+PREDICTION: Arsenal WIN or DRAW [Low]
+Probabilities: Bournemouth 39.7% | Arsenal 45.3% | Draw 15.0%
+
+Sat 2026-01-03 15:00
+Leeds United vs Manchester Utd
+PREDICTION: Manchester Utd WIN or DRAW [Low]
+Probabilities: Leeds United 46.6% | Manchester Utd 38.4% | Draw 15.0%
+
+Sat 2026-01-03 15:00
+Brighton vs Burnley
+PREDICTION: Brighton WIN [Medium]
+Probabilities: Brighton 62.3% | Burnley 22.7% | Draw 15.0%
+
+Sat 2026-01-03 15:00
+Tottenham vs Sunderland
+PREDICTION: Tottenham WIN [Medium]
+Probabilities: Tottenham 55.3% | Sunderland 29.7% | Draw 15.0%
+
+MATCHWEEK 21
+----------------------------------------
+
+Wed 2026-01-07 20:00
+Manchester City vs Brighton
+PREDICTION: Manchester City WIN [High]
+Probabilities: Manchester City 69.3% | Brighton 15.7% | Draw 15.0%
+
+Wed 2026-01-07 20:00
+West Ham vs Nott'ham Forest
+PREDICTION: West Ham WIN [Low]
+Probabilities: West Ham 54.9% | Nott'ham Forest 30.1% | Draw 15.0%
+
+Wed 2026-01-07 20:00
+Crystal Palace vs Aston Villa
+PREDICTION: Aston Villa WIN or DRAW [Low]
+Probabilities: Crystal Palace 45.4% | Aston Villa 39.6% | Draw 15.0%
+
+Wed 2026-01-07 20:00
+Burnley vs Manchester Utd
+PREDICTION: Manchester Utd WIN or DRAW [Low]
+Probabilities: Burnley 41.2% | Manchester Utd 43.8% | Draw 15.0%
+
+Wed 2026-01-07 20:00
+Arsenal vs Liverpool
+PREDICTION: Arsenal WIN [Low]
+Probabilities: Arsenal 51.6% | Liverpool 33.4% | Draw 15.0%
+
+Wed 2026-01-07 20:00
+Everton vs Wolves
+PREDICTION: Everton WIN [Medium]
+Probabilities: Everton 58.3% | Wolves 26.7% | Draw 15.0%
+
+Wed 2026-01-07 20:00
+Newcastle Utd vs Leeds United
+PREDICTION: Newcastle Utd WIN [Medium]
+Probabilities: Newcastle Utd 60.2% | Leeds United 24.8% | Draw 15.0%
+
+Wed 2026-01-07 20:00
+Brentford vs Sunderland
+PREDICTION: Brentford WIN [Medium]
+Probabilities: Brentford 61.1% | Sunderland 23.9% | Draw 15.0%
+
+Wed 2026-01-07 20:00
+Bournemouth vs Tottenham
+PREDICTION: Tottenham WIN or DRAW [Low]
+Probabilities: Bournemouth 50.0% | Tottenham 35.0% | Draw 15.0%
+
+Wed 2026-01-07 20:00
+Fulham vs Chelsea
+PREDICTION: Chelsea WIN or DRAW [Low]
+Probabilities: Fulham 42.3% | Chelsea 42.7% | Draw 15.0%
+
+MATCHWEEK 22
+----------------------------------------
+
+Sat 2026-01-17 15:00
+Leeds United vs Fulham
+PREDICTION: Fulham WIN or DRAW [Low]
+Probabilities: Leeds United 44.5% | Fulham 40.5% | Draw 15.0%
+
+Sat 2026-01-17 15:00
+Liverpool vs Burnley
+PREDICTION: Liverpool WIN [Medium]
+Probabilities: Liverpool 63.7% | Burnley 21.3% | Draw 15.0%
+
+Sat 2026-01-17 15:00
+Manchester Utd vs Manchester City
+PREDICTION: Manchester City WIN or DRAW [Low]
+Probabilities: Manchester Utd 41.3% | Manchester City 43.7% | Draw 15.0%
+
+Sat 2026-01-17 15:00
+Tottenham vs West Ham
+PREDICTION: Tottenham WIN [Medium]
+Probabilities: Tottenham 55.3% | West Ham 29.7% | Draw 15.0%
+
+Sat 2026-01-17 15:00
+Aston Villa vs Everton
+PREDICTION: Aston Villa WIN [Medium]
+Probabilities: Aston Villa 62.1% | Everton 22.9% | Draw 15.0%
+
+Sat 2026-01-17 15:00
+Nott'ham Forest vs Arsenal
+PREDICTION: Arsenal WIN or DRAW [Low]
+Probabilities: Nott'ham Forest 45.0% | Arsenal 40.0% | Draw 15.0%
+
+Sat 2026-01-17 15:00
+Chelsea vs Brentford
+PREDICTION: Chelsea WIN [Medium]
+Probabilities: Chelsea 56.7% | Brentford 28.3% | Draw 15.0%
+
+Sat 2026-01-17 15:00
+Sunderland vs Crystal Palace
+PREDICTION: Sunderland WIN [Medium]
+Probabilities: Sunderland 55.8% | Crystal Palace 29.2% | Draw 15.0%
+
+Sat 2026-01-17 15:00
+Wolves vs Newcastle Utd
+PREDICTION: Wolves WIN [Medium]
+Probabilities: Wolves 55.3% | Newcastle Utd 29.7% | Draw 15.0%
+
+Sat 2026-01-17 15:00
+Brighton vs Bournemouth
+PREDICTION: Brighton WIN [Low]
+Probabilities: Brighton 54.5% | Bournemouth 30.5% | Draw 15.0%
+
+MATCHWEEK 23
+----------------------------------------
+
+Sat 2026-01-24 15:00
+Arsenal vs Manchester Utd
+PREDICTION: Arsenal WIN [Medium]
+Probabilities: Arsenal 60.2% | Manchester Utd 24.8% | Draw 15.0%
+
+Sat 2026-01-24 15:00
+Fulham vs Brighton
+PREDICTION: Fulham WIN [Low]
+Probabilities: Fulham 52.0% | Brighton 33.0% | Draw 15.0%
+
+Sat 2026-01-24 15:00
+Manchester City vs Wolves
+PREDICTION: Manchester City WIN [High]
+Probabilities: Manchester City 69.4% | Wolves 15.6% | Draw 15.0%
+
+Sat 2026-01-24 15:00
+Brentford vs Nott'ham Forest
+PREDICTION: Brentford WIN [Medium]
+Probabilities: Brentford 61.0% | Nott'ham Forest 24.0% | Draw 15.0%
+
+Sat 2026-01-24 15:00
+West Ham vs Sunderland
+PREDICTION: West Ham WIN [Medium]
+Probabilities: West Ham 55.3% | Sunderland 29.7% | Draw 15.0%
+
+Sat 2026-01-24 15:00
+Everton vs Leeds United
+PREDICTION: Everton WIN [Medium]
+Probabilities: Everton 62.1% | Leeds United 22.9% | Draw 15.0%
+
+Sat 2026-01-24 15:00
+Bournemouth vs Liverpool
+PREDICTION: Liverpool WIN or DRAW [Low]
+Probabilities: Bournemouth 40.2% | Liverpool 44.8% | Draw 15.0%
+
+Sat 2026-01-24 15:00
+Crystal Palace vs Chelsea
+PREDICTION: Chelsea WIN or DRAW [Low]
+Probabilities: Crystal Palace 46.5% | Chelsea 38.5% | Draw 15.0%
+
+Sat 2026-01-24 15:00
+Burnley vs Tottenham
+PREDICTION: Tottenham WIN or DRAW [Low]
+Probabilities: Burnley 41.1% | Tottenham 43.9% | Draw 15.0%
+
+Sat 2026-01-24 15:00
+Newcastle Utd vs Aston Villa
+PREDICTION: Aston Villa WIN or DRAW [Low]
+Probabilities: Newcastle Utd 44.2% | Aston Villa 40.8% | Draw 15.0%
+
+MATCHWEEK 24
+----------------------------------------
+
+Sat 2026-01-31 15:00
+Nott'ham Forest vs Crystal Palace
+PREDICTION: Nott'ham Forest WIN [Medium]
+Probabilities: Nott'ham Forest 55.8% | Crystal Palace 29.2% | Draw 15.0%
+
+Sat 2026-01-31 15:00
+Chelsea vs West Ham
+PREDICTION: Chelsea WIN [Medium]
+Probabilities: Chelsea 61.0% | West Ham 24.0% | Draw 15.0%
+
+Sat 2026-01-31 15:00
+Liverpool vs Newcastle Utd
+PREDICTION: Liverpool WIN [Medium]
+Probabilities: Liverpool 58.0% | Newcastle Utd 27.0% | Draw 15.0%
+
+Sat 2026-01-31 15:00
+Tottenham vs Manchester City
+PREDICTION: Manchester City WIN or DRAW [Low]
+Probabilities: Tottenham 41.3% | Manchester City 43.7% | Draw 15.0%
+
+Sat 2026-01-31 15:00
+Aston Villa vs Brentford
+PREDICTION: Aston Villa WIN [Medium]
+Probabilities: Aston Villa 59.5% | Brentford 25.5% | Draw 15.0%
+
+Sat 2026-01-31 15:00
+Brighton vs Everton
+PREDICTION: Brighton WIN [Low]
+Probabilities: Brighton 53.5% | Everton 31.5% | Draw 15.0%
+
+Sat 2026-01-31 15:00
+Leeds United vs Arsenal
+PREDICTION: Arsenal WIN or DRAW [Low]
+Probabilities: Leeds United 36.4% | Arsenal 48.6% | Draw 15.0%
+
+Sat 2026-01-31 15:00
+Sunderland vs Burnley
+PREDICTION: Sunderland WIN [Medium]
+Probabilities: Sunderland 62.3% | Burnley 22.7% | Draw 15.0%
+
+Sat 2026-01-31 15:00
+Wolves vs Bournemouth
+PREDICTION: Wolves WIN [Low]
+Probabilities: Wolves 54.5% | Bournemouth 30.5% | Draw 15.0%
+
+Sat 2026-01-31 15:00
+Manchester Utd vs Fulham
+PREDICTION: Manchester Utd WIN [Low]
+Probabilities: Manchester Utd 53.2% | Fulham 31.8% | Draw 15.0%
+
+MATCHWEEK 25
+----------------------------------------
+
+Sat 2026-02-07 15:00
+Newcastle Utd vs Brentford
+PREDICTION: Newcastle Utd WIN [Low]
+Probabilities: Newcastle Utd 50.7% | Brentford 34.3% | Draw 15.0%
+
+Sat 2026-02-07 15:00
+Bournemouth vs Aston Villa
+PREDICTION: Aston Villa WIN or DRAW [Low]
+Probabilities: Bournemouth 38.9% | Aston Villa 46.1% | Draw 15.0%
+
+Sat 2026-02-07 15:00
+Manchester Utd vs Tottenham
+PREDICTION: Manchester Utd WIN [Medium]
+Probabilities: Manchester Utd 55.3% | Tottenham 29.7% | Draw 15.0%
+
+Sat 2026-02-07 15:00
+Wolves vs Chelsea
+PREDICTION: Chelsea WIN or DRAW [Low]
+Probabilities: Wolves 46.1% | Chelsea 38.9% | Draw 15.0%
+
+Sat 2026-02-07 15:00
+Brighton vs Crystal Palace
+PREDICTION: Brighton WIN [Medium]
+Probabilities: Brighton 55.8% | Crystal Palace 29.2% | Draw 15.0%
+
+Sat 2026-02-07 15:00
+Liverpool vs Manchester City
+PREDICTION: Manchester City WIN or DRAW [Low]
+Probabilities: Liverpool 44.6% | Manchester City 40.4% | Draw 15.0%
+
+Sat 2026-02-07 15:00
+Arsenal vs Sunderland
+PREDICTION: Arsenal WIN [Medium]
+Probabilities: Arsenal 60.2% | Sunderland 24.8% | Draw 15.0%
+
+Sat 2026-02-07 15:00
+Leeds United vs Nott'ham Forest
+PREDICTION: Nott'ham Forest WIN or DRAW [Low]
+Probabilities: Leeds United 46.6% | Nott'ham Forest 38.4% | Draw 15.0%
+
+Sat 2026-02-07 15:00
+Burnley vs West Ham
+PREDICTION: West Ham WIN or DRAW [Low]
+Probabilities: Burnley 41.1% | West Ham 43.9% | Draw 15.0%
+
+Sat 2026-02-07 15:00
+Fulham vs Everton
+PREDICTION: Fulham WIN [Low]
+Probabilities: Fulham 50.3% | Everton 34.7% | Draw 15.0%
+
+MATCHWEEK 26
+----------------------------------------
+
+Wed 2026-02-11 20:00
+Everton vs Bournemouth
+PREDICTION: Everton WIN [Medium]
+Probabilities: Everton 57.5% | Bournemouth 27.5% | Draw 15.0%
+
+Wed 2026-02-11 20:00
+Nott'ham Forest vs Wolves
+PREDICTION: Nott'ham Forest WIN [Low]
+Probabilities: Nott'ham Forest 54.9% | Wolves 30.1% | Draw 15.0%
+
+Wed 2026-02-11 20:00
+Chelsea vs Leeds United
+PREDICTION: Chelsea WIN [High]
+Probabilities: Chelsea 66.1% | Leeds United 18.9% | Draw 15.0%
+
+Wed 2026-02-11 20:00
+Crystal Palace vs Burnley
+PREDICTION: Crystal Palace WIN [Medium]
+Probabilities: Crystal Palace 63.4% | Burnley 21.6% | Draw 15.0%
+
+Wed 2026-02-11 20:00
+Sunderland vs Liverpool
+PREDICTION: Liverpool WIN or DRAW [Low]
+Probabilities: Sunderland 45.1% | Liverpool 39.9% | Draw 15.0%
+
+Wed 2026-02-11 20:00
+West Ham vs Manchester Utd
+PREDICTION: West Ham WIN [Low]
+Probabilities: West Ham 54.9% | Manchester Utd 30.1% | Draw 15.0%
+
+Wed 2026-02-11 20:00
+Manchester City vs Fulham
+PREDICTION: Manchester City WIN [High]
+Probabilities: Manchester City 67.6% | Fulham 17.4% | Draw 15.0%
+
+Wed 2026-02-11 20:00
+Aston Villa vs Brighton
+PREDICTION: Aston Villa WIN [Medium]
+Probabilities: Aston Villa 63.4% | Brighton 21.6% | Draw 15.0%
+
+Wed 2026-02-11 20:00
+Tottenham vs Newcastle Utd
+PREDICTION: Tottenham WIN [Low]
+Probabilities: Tottenham 54.9% | Newcastle Utd 30.1% | Draw 15.0%
+
+Wed 2026-02-11 20:00
+Brentford vs Arsenal
+PREDICTION: Brentford WIN [Low]
+Probabilities: Brentford 50.9% | Arsenal 34.1% | Draw 15.0%
+
+MATCHWEEK 27
+----------------------------------------
+
+Sat 2026-02-21 15:00
+Aston Villa vs Leeds United
+PREDICTION: Aston Villa WIN [High]
+Probabilities: Aston Villa 67.9% | Leeds United 17.1% | Draw 15.0%
+
+Sat 2026-02-21 15:00
+Everton vs Manchester Utd
+PREDICTION: Everton WIN [Medium]
+Probabilities: Everton 57.0% | Manchester Utd 28.0% | Draw 15.0%
+
+Sat 2026-02-21 15:00
+Chelsea vs Burnley
+PREDICTION: Chelsea WIN [High]
+Probabilities: Chelsea 66.9% | Burnley 18.1% | Draw 15.0%
+
+Sat 2026-02-21 15:00
+Tottenham vs Arsenal
+PREDICTION: Arsenal WIN or DRAW [Low]
+Probabilities: Tottenham 45.0% | Arsenal 40.0% | Draw 15.0%
+
+Sat 2026-02-21 15:00
+Nott'ham Forest vs Liverpool
+PREDICTION: Liverpool WIN or DRAW [Low]
+Probabilities: Nott'ham Forest 45.5% | Liverpool 39.5% | Draw 15.0%
+
+Sat 2026-02-21 15:00
+Brentford vs Brighton
+PREDICTION: Brentford WIN [Medium]
+Probabilities: Brentford 61.0% | Brighton 24.0% | Draw 15.0%
+
+Sat 2026-02-21 15:00
+West Ham vs Bournemouth
+PREDICTION: West Ham WIN [Low]
+Probabilities: West Ham 54.5% | Bournemouth 30.5% | Draw 15.0%
+
+Sat 2026-02-21 15:00
+Sunderland vs Fulham
+PREDICTION: Sunderland WIN [Low]
+Probabilities: Sunderland 53.2% | Fulham 31.8% | Draw 15.0%
+
+Sat 2026-02-21 15:00
+Crystal Palace vs Wolves
+PREDICTION: Crystal Palace WIN [Medium]
+Probabilities: Crystal Palace 55.7% | Wolves 29.3% | Draw 15.0%
+
+Sat 2026-02-21 15:00
+Manchester City vs Newcastle Utd
+PREDICTION: Manchester City WIN [High]
+Probabilities: Manchester City 69.4% | Newcastle Utd 15.6% | Draw 15.0%
+
+MATCHWEEK 28
+----------------------------------------
+
+Sat 2026-02-28 15:00
+Newcastle Utd vs Everton
+PREDICTION: Newcastle Utd WIN [Low]
+Probabilities: Newcastle Utd 53.5% | Everton 31.5% | Draw 15.0%
+
+Sat 2026-02-28 15:00
+Burnley vs Brentford
+PREDICTION: Brentford WIN or DRAW [Low]
+Probabilities: Burnley 36.4% | Brentford 48.6% | Draw 15.0%
+
+Sat 2026-02-28 15:00
+Brighton vs Nott'ham Forest
+PREDICTION: Brighton WIN [Medium]
+Probabilities: Brighton 55.3% | Nott'ham Forest 29.7% | Draw 15.0%
+
+Sat 2026-02-28 15:00
+Bournemouth vs Sunderland
+PREDICTION: Bournemouth WIN [Low]
+Probabilities: Bournemouth 50.0% | Sunderland 35.0% | Draw 15.0%
+
+Sat 2026-02-28 15:00
+Liverpool vs West Ham
+PREDICTION: Liverpool WIN [Medium]
+Probabilities: Liverpool 58.0% | West Ham 27.0% | Draw 15.0%
+
+Sat 2026-02-28 15:00
+Manchester Utd vs Crystal Palace
+PREDICTION: Manchester Utd WIN [Medium]
+Probabilities: Manchester Utd 55.8% | Crystal Palace 29.2% | Draw 15.0%
+
+Sat 2026-02-28 15:00
+Fulham vs Tottenham
+PREDICTION: Fulham WIN [Low]
+Probabilities: Fulham 52.0% | Tottenham 33.0% | Draw 15.0%
+
+Sat 2026-02-28 15:00
+Leeds United vs Manchester City
+PREDICTION: Manchester City WIN or DRAW [Low]
+Probabilities: Leeds United 33.0% | Manchester City 52.0% | Draw 15.0%
+
+Sat 2026-02-28 15:00
+Wolves vs Aston Villa
+PREDICTION: Aston Villa WIN or DRAW [Low]
+Probabilities: Wolves 44.2% | Aston Villa 40.8% | Draw 15.0%
+
+Sat 2026-02-28 15:00
+Arsenal vs Chelsea
+PREDICTION: Arsenal WIN [Low]
+Probabilities: Arsenal 51.6% | Chelsea 33.4% | Draw 15.0%
+
+MATCHWEEK 29
+----------------------------------------
+
+Wed 2026-03-04 20:00
+Brighton vs Arsenal
+PREDICTION: Arsenal WIN or DRAW [Low]
+Probabilities: Brighton 44.6% | Arsenal 40.4% | Draw 15.0%
+
+Wed 2026-03-04 20:00
+Wolves vs Liverpool
+PREDICTION: Liverpool WIN or DRAW [Low]
+Probabilities: Wolves 45.1% | Liverpool 39.9% | Draw 15.0%
+
+Wed 2026-03-04 20:00
+Everton vs Burnley
+PREDICTION: Everton WIN [Medium]
+Probabilities: Everton 65.0% | Burnley 20.0% | Draw 15.0%
+
+Wed 2026-03-04 20:00
+Aston Villa vs Chelsea
+PREDICTION: Aston Villa WIN [Low]
+Probabilities: Aston Villa 54.9% | Chelsea 30.1% | Draw 15.0%
+
+Wed 2026-03-04 20:00
+Tottenham vs Crystal Palace
+PREDICTION: Tottenham WIN [Medium]
+Probabilities: Tottenham 55.3% | Crystal Palace 29.7% | Draw 15.0%
+
+Wed 2026-03-04 20:00
+Fulham vs West Ham
+PREDICTION: Fulham WIN [Low]
+Probabilities: Fulham 51.5% | West Ham 33.5% | Draw 15.0%
+
+Wed 2026-03-04 20:00
+Newcastle Utd vs Manchester Utd
+PREDICTION: Newcastle Utd WIN [Low]
+Probabilities: Newcastle Utd 54.9% | Manchester Utd 30.1% | Draw 15.0%
+
+Wed 2026-03-04 20:00
+Bournemouth vs Brentford
+PREDICTION: Brentford WIN or DRAW [Low]
+Probabilities: Bournemouth 45.4% | Brentford 39.6% | Draw 15.0%
+
+Wed 2026-03-04 20:00
+Manchester City vs Nott'ham Forest
+PREDICTION: Manchester City WIN [High]
+Probabilities: Manchester City 69.3% | Nott'ham Forest 15.7% | Draw 15.0%
+
+Wed 2026-03-04 20:00
+Leeds United vs Sunderland
+PREDICTION: Sunderland WIN or DRAW [Low]
+Probabilities: Leeds United 46.4% | Sunderland 38.6% | Draw 15.0%
+
+MATCHWEEK 30
+----------------------------------------
+
+Sat 2026-03-14 15:00
+Brentford vs Wolves
+PREDICTION: Brentford WIN [Medium]
+Probabilities: Brentford 61.0% | Wolves 24.0% | Draw 15.0%
+
+Sat 2026-03-14 15:00
+Burnley vs Bournemouth
+PREDICTION: Bournemouth WIN or DRAW [Low]
+Probabilities: Burnley 40.3% | Bournemouth 44.7% | Draw 15.0%
+
+Sat 2026-03-14 15:00
+West Ham vs Manchester City
+PREDICTION: Manchester City WIN or DRAW [Low]
+Probabilities: West Ham 41.3% | Manchester City 43.7% | Draw 15.0%
+
+Sat 2026-03-14 15:00
+Liverpool vs Tottenham
+PREDICTION: Liverpool WIN [Medium]
+Probabilities: Liverpool 58.0% | Tottenham 27.0% | Draw 15.0%
+
+Sat 2026-03-14 15:00
+Sunderland vs Brighton
+PREDICTION: Sunderland WIN [Medium]
+Probabilities: Sunderland 55.3% | Brighton 29.7% | Draw 15.0%
+
+Sat 2026-03-14 15:00
+Manchester Utd vs Aston Villa
+PREDICTION: Aston Villa WIN or DRAW [Low]
+Probabilities: Manchester Utd 44.2% | Aston Villa 40.8% | Draw 15.0%
+
+Sat 2026-03-14 15:00
+Chelsea vs Newcastle Utd
+PREDICTION: Chelsea WIN [Medium]
+Probabilities: Chelsea 61.0% | Newcastle Utd 24.0% | Draw 15.0%
+
+Sat 2026-03-14 15:00
+Crystal Palace vs Leeds United
+PREDICTION: Crystal Palace WIN [Medium]
+Probabilities: Crystal Palace 60.9% | Leeds United 24.1% | Draw 15.0%
+
+Sat 2026-03-14 15:00
+Arsenal vs Everton
+PREDICTION: Arsenal WIN [Medium]
+Probabilities: Arsenal 58.6% | Everton 26.4% | Draw 15.0%
+
+Sat 2026-03-14 15:00
+Nott'ham Forest vs Fulham
+PREDICTION: Nott'ham Forest WIN [Low]
+Probabilities: Nott'ham Forest 53.2% | Fulham 31.8% | Draw 15.0%
+
+MATCHWEEK 31
+----------------------------------------
+
+Sat 2026-03-21 15:00
+Leeds United vs Brentford
+PREDICTION: Brentford WIN or DRAW [Low]
+Probabilities: Leeds United 41.9% | Brentford 43.1% | Draw 15.0%
+
+Sat 2026-03-21 15:00
+Manchester City vs Crystal Palace
+PREDICTION: Manchester City WIN [High]
+Probabilities: Manchester City 69.7% | Crystal Palace 15.3% | Draw 15.0%
+
+Sat 2026-03-21 15:00
+Tottenham vs Nott'ham Forest
+PREDICTION: Tottenham WIN [Medium]
+Probabilities: Tottenham 55.3% | Nott'ham Forest 29.7% | Draw 15.0%
+
+Sat 2026-03-21 15:00
+Wolves vs Arsenal
+PREDICTION: Arsenal WIN or DRAW [Low]
+Probabilities: Wolves 45.0% | Arsenal 40.0% | Draw 15.0%
+
+Sat 2026-03-21 15:00
+Bournemouth vs Manchester Utd
+PREDICTION: Bournemouth WIN [Low]
+Probabilities: Bournemouth 50.0% | Manchester Utd 35.0% | Draw 15.0%
+
+Sat 2026-03-21 15:00
+Newcastle Utd vs Sunderland
+PREDICTION: Newcastle Utd WIN [Medium]
+Probabilities: Newcastle Utd 55.3% | Sunderland 29.7% | Draw 15.0%
+
+Sat 2026-03-21 15:00
+Everton vs Chelsea
+PREDICTION: Chelsea WIN or DRAW [Low]
+Probabilities: Everton 47.9% | Chelsea 37.1% | Draw 15.0%
+
+Sat 2026-03-21 15:00
+Brighton vs Liverpool
+PREDICTION: Liverpool WIN or DRAW [Low]
+Probabilities: Brighton 45.5% | Liverpool 39.5% | Draw 15.0%
+
+Sat 2026-03-21 15:00
+Aston Villa vs West Ham
+PREDICTION: Aston Villa WIN [Medium]
+Probabilities: Aston Villa 63.6% | West Ham 21.4% | Draw 15.0%
+
+Sat 2026-03-21 15:00
+Fulham vs Burnley
+PREDICTION: Fulham WIN [Medium]
+Probabilities: Fulham 58.8% | Burnley 26.2% | Draw 15.0%
+
+MATCHWEEK 32
+----------------------------------------
+
+Sat 2026-04-11 15:00
+Nott'ham Forest vs Aston Villa
+PREDICTION: Aston Villa WIN or DRAW [Low]
+Probabilities: Nott'ham Forest 44.2% | Aston Villa 40.8% | Draw 15.0%
+
+Sat 2026-04-11 15:00
+Chelsea vs Manchester City
+PREDICTION: Manchester City WIN or DRAW [Low]
+Probabilities: Chelsea 47.3% | Manchester City 37.7% | Draw 15.0%
+
+Sat 2026-04-11 15:00
+Crystal Palace vs Newcastle Utd
+PREDICTION: Crystal Palace WIN [Medium]
+Probabilities: Crystal Palace 55.7% | Newcastle Utd 29.3% | Draw 15.0%
+
+Sat 2026-04-11 15:00
+Sunderland vs Tottenham
+PREDICTION: Sunderland WIN [Medium]
+Probabilities: Sunderland 55.3% | Tottenham 29.7% | Draw 15.0%
+
+Sat 2026-04-11 15:00
+Arsenal vs Bournemouth
+PREDICTION: Arsenal WIN [Medium]
+Probabilities: Arsenal 59.5% | Bournemouth 25.5% | Draw 15.0%
+
+Sat 2026-04-11 15:00
+West Ham vs Wolves
+PREDICTION: West Ham WIN [Medium]
+Probabilities: West Ham 55.3% | Wolves 29.7% | Draw 15.0%
+
+Sat 2026-04-11 15:00
+Burnley vs Brighton
+PREDICTION: Brighton WIN or DRAW [Low]
+Probabilities: Burnley 41.1% | Brighton 43.9% | Draw 15.0%
+
+Sat 2026-04-11 15:00
+Manchester Utd vs Leeds United
+PREDICTION: Manchester Utd WIN [Medium]
+Probabilities: Manchester Utd 60.6% | Leeds United 24.4% | Draw 15.0%
+
+Sat 2026-04-11 15:00
+Liverpool vs Fulham
+PREDICTION: Liverpool WIN [Medium]
+Probabilities: Liverpool 56.1% | Fulham 28.9% | Draw 15.0%
+
+Sat 2026-04-11 15:00
+Brentford vs Everton
+PREDICTION: Brentford WIN [Medium]
+Probabilities: Brentford 59.3% | Everton 25.7% | Draw 15.0%
+
+MATCHWEEK 33
+----------------------------------------
+
+Sat 2026-04-18 15:00
+Tottenham vs Brighton
+PREDICTION: Tottenham WIN [Medium]
+Probabilities: Tottenham 55.3% | Brighton 29.7% | Draw 15.0%
+
+Sat 2026-04-18 15:00
+Manchester City vs Arsenal
+PREDICTION: Manchester City WIN [Medium]
+Probabilities: Manchester City 60.3% | Arsenal 24.7% | Draw 15.0%
+
+Sat 2026-04-18 15:00
+Nott'ham Forest vs Burnley
+PREDICTION: Nott'ham Forest WIN [Medium]
+Probabilities: Nott'ham Forest 62.3% | Burnley 22.7% | Draw 15.0%
+
+Sat 2026-04-18 15:00
+Leeds United vs Wolves
+PREDICTION: Wolves WIN or DRAW [Low]
+Probabilities: Leeds United 46.6% | Wolves 38.4% | Draw 15.0%
+
+Sat 2026-04-18 15:00
+Everton vs Liverpool
+PREDICTION: Liverpool WIN or DRAW [Low]
+Probabilities: Everton 47.3% | Liverpool 37.7% | Draw 15.0%
+
+Sat 2026-04-18 15:00
+Chelsea vs Manchester Utd
+PREDICTION: Chelsea WIN [Medium]
+Probabilities: Chelsea 61.0% | Manchester Utd 24.0% | Draw 15.0%
+
+Sat 2026-04-18 15:00
+Newcastle Utd vs Bournemouth
+PREDICTION: Newcastle Utd WIN [Low]
+Probabilities: Newcastle Utd 54.5% | Bournemouth 30.5% | Draw 15.0%
+
+Sat 2026-04-18 15:00
+Crystal Palace vs West Ham
+PREDICTION: Crystal Palace WIN [Medium]
+Probabilities: Crystal Palace 55.7% | West Ham 29.3% | Draw 15.0%
+
+Sat 2026-04-18 15:00
+Brentford vs Fulham
+PREDICTION: Brentford WIN [Medium]
+Probabilities: Brentford 59.0% | Fulham 26.0% | Draw 15.0%
+
+Sat 2026-04-18 15:00
+Aston Villa vs Sunderland
+PREDICTION: Aston Villa WIN [Medium]
+Probabilities: Aston Villa 63.6% | Sunderland 21.4% | Draw 15.0%
+
+MATCHWEEK 34
+----------------------------------------
+
+Sat 2026-04-25 15:00
+Bournemouth vs Leeds United
+PREDICTION: Bournemouth WIN [Medium]
+Probabilities: Bournemouth 55.2% | Leeds United 29.8% | Draw 15.0%
+
+Sat 2026-04-25 15:00
+Sunderland vs Nott'ham Forest
+PREDICTION: Sunderland WIN [Medium]
+Probabilities: Sunderland 55.3% | Nott'ham Forest 29.7% | Draw 15.0%
+
+Sat 2026-04-25 15:00
+Manchester Utd vs Brentford
+PREDICTION: Manchester Utd WIN [Low]
+Probabilities: Manchester Utd 50.7% | Brentford 34.3% | Draw 15.0%
+
+Sat 2026-04-25 15:00
+Burnley vs Manchester City
+PREDICTION: Manchester City WIN or DRAW [Low]
+Probabilities: Burnley 27.6% | Manchester City 57.4% | Draw 15.0%
+
+Sat 2026-04-25 15:00
+Arsenal vs Newcastle Utd
+PREDICTION: Arsenal WIN [Medium]
+Probabilities: Arsenal 60.2% | Newcastle Utd 24.8% | Draw 15.0%
+
+Sat 2026-04-25 15:00
+Wolves vs Tottenham
+PREDICTION: Wolves WIN [Medium]
+Probabilities: Wolves 55.3% | Tottenham 29.7% | Draw 15.0%
+
+Sat 2026-04-25 15:00
+Fulham vs Aston Villa
+PREDICTION: Aston Villa WIN or DRAW [Low]
+Probabilities: Fulham 40.9% | Aston Villa 44.1% | Draw 15.0%
+
+Sat 2026-04-25 15:00
+Brighton vs Chelsea
+PREDICTION: Chelsea WIN or DRAW [Low]
+Probabilities: Brighton 46.1% | Chelsea 38.9% | Draw 15.0%
+
+Sat 2026-04-25 15:00
+Liverpool vs Crystal Palace
+PREDICTION: Liverpool WIN [Medium]
+Probabilities: Liverpool 58.3% | Crystal Palace 26.7% | Draw 15.0%
+
+Sat 2026-04-25 15:00
+West Ham vs Everton
+PREDICTION: West Ham WIN [Low]
+Probabilities: West Ham 53.5% | Everton 31.5% | Draw 15.0%
+
+MATCHWEEK 35
+----------------------------------------
+
+Sat 2026-05-02 15:00
+Arsenal vs Fulham
+PREDICTION: Arsenal WIN [Medium]
+Probabilities: Arsenal 58.3% | Fulham 26.7% | Draw 15.0%
+
+Sat 2026-05-02 15:00
+Wolves vs Sunderland
+PREDICTION: Wolves WIN [Medium]
+Probabilities: Wolves 55.3% | Sunderland 29.7% | Draw 15.0%
+
+Sat 2026-05-02 15:00
+Bournemouth vs Crystal Palace
+PREDICTION: Bournemouth WIN [Low]
+Probabilities: Bournemouth 50.5% | Crystal Palace 34.5% | Draw 15.0%
+
+Sat 2026-05-02 15:00
+Newcastle Utd vs Brighton
+PREDICTION: Newcastle Utd WIN [Medium]
+Probabilities: Newcastle Utd 55.3% | Brighton 29.7% | Draw 15.0%
+
+Sat 2026-05-02 15:00
+Aston Villa vs Tottenham
+PREDICTION: Aston Villa WIN [Medium]
+Probabilities: Aston Villa 63.6% | Tottenham 21.4% | Draw 15.0%
+
+Sat 2026-05-02 15:00
+Manchester Utd vs Liverpool
+PREDICTION: Liverpool WIN or DRAW [Low]
+Probabilities: Manchester Utd 45.5% | Liverpool 39.5% | Draw 15.0%
+
+Sat 2026-05-02 15:00
+Leeds United vs Burnley
+PREDICTION: Leeds United WIN [Low]
+Probabilities: Leeds United 53.9% | Burnley 31.1% | Draw 15.0%
+
+Sat 2026-05-02 15:00
+Everton vs Manchester City
+PREDICTION: Manchester City WIN or DRAW [Low]
+Probabilities: Everton 43.0% | Manchester City 42.0% | Draw 15.0%
+
+Sat 2026-05-02 15:00
+Brentford vs West Ham
+PREDICTION: Brentford WIN [Medium]
+Probabilities: Brentford 61.0% | West Ham 24.0% | Draw 15.0%
+
+Sat 2026-05-02 15:00
+Chelsea vs Nott'ham Forest
+PREDICTION: Chelsea WIN [Medium]
+Probabilities: Chelsea 61.0% | Nott'ham Forest 24.0% | Draw 15.0%
+
+MATCHWEEK 36
+----------------------------------------
+
+Sat 2026-05-09 15:00
+West Ham vs Arsenal
+PREDICTION: Arsenal WIN or DRAW [Low]
+Probabilities: West Ham 45.0% | Arsenal 40.0% | Draw 15.0%
+
+Sat 2026-05-09 15:00
+Brighton vs Wolves
+PREDICTION: Brighton WIN [Medium]
+Probabilities: Brighton 55.3% | Wolves 29.7% | Draw 15.0%
+
+Sat 2026-05-09 15:00
+Tottenham vs Leeds United
+PREDICTION: Tottenham WIN [Medium]
+Probabilities: Tottenham 60.6% | Leeds United 24.4% | Draw 15.0%
+
+Sat 2026-05-09 15:00
+Crystal Palace vs Everton
+PREDICTION: Crystal Palace WIN [Low]
+Probabilities: Crystal Palace 54.0% | Everton 31.0% | Draw 15.0%
+
+Sat 2026-05-09 15:00
+Manchester City vs Brentford
+PREDICTION: Manchester City WIN [High]
+Probabilities: Manchester City 65.5% | Brentford 19.5% | Draw 15.0%
+
+Sat 2026-05-09 15:00
+Nott'ham Forest vs Newcastle Utd
+PREDICTION: Nott'ham Forest WIN [Medium]
+Probabilities: Nott'ham Forest 55.3% | Newcastle Utd 29.7% | Draw 15.0%
+
+Sat 2026-05-09 15:00
+Burnley vs Aston Villa
+PREDICTION: Aston Villa WIN or DRAW [Low]
+Probabilities: Burnley 30.2% | Aston Villa 54.8% | Draw 15.0%
+
+Sat 2026-05-09 15:00
+Fulham vs Bournemouth
+PREDICTION: Fulham WIN [Low]
+Probabilities: Fulham 51.2% | Bournemouth 33.8% | Draw 15.0%
+
+Sat 2026-05-09 15:00
+Liverpool vs Chelsea
+PREDICTION: Chelsea WIN or DRAW [Low]
+Probabilities: Liverpool 49.5% | Chelsea 35.5% | Draw 15.0%
+
+Sat 2026-05-09 15:00
+Sunderland vs Manchester Utd
+PREDICTION: Sunderland WIN [Medium]
+Probabilities: Sunderland 55.3% | Manchester Utd 29.7% | Draw 15.0%
+
+MATCHWEEK 37
+----------------------------------------
+
+Sun 2026-05-17 15:00
+Everton vs Sunderland
+PREDICTION: Everton WIN [Medium]
+Probabilities: Everton 57.0% | Sunderland 28.0% | Draw 15.0%
+
+Sun 2026-05-17 15:00
+Leeds United vs Brighton
+PREDICTION: Brighton WIN or DRAW [Low]
+Probabilities: Leeds United 46.6% | Brighton 38.4% | Draw 15.0%
+
+Sun 2026-05-17 15:00
+Chelsea vs Tottenham
+PREDICTION: Chelsea WIN [Medium]
+Probabilities: Chelsea 61.0% | Tottenham 24.0% | Draw 15.0%
+
+Sun 2026-05-17 15:00
+Manchester Utd vs Nott'ham Forest
+PREDICTION: Manchester Utd WIN [Medium]
+Probabilities: Manchester Utd 55.3% | Nott'ham Forest 29.7% | Draw 15.0%
+
+Sun 2026-05-17 15:00
+Newcastle Utd vs West Ham
+PREDICTION: Newcastle Utd WIN [Medium]
+Probabilities: Newcastle Utd 55.3% | West Ham 29.7% | Draw 15.0%
+
+Sun 2026-05-17 15:00
+Wolves vs Fulham
+PREDICTION: Wolves WIN [Low]
+Probabilities: Wolves 53.2% | Fulham 31.8% | Draw 15.0%
+
+Sun 2026-05-17 15:00
+Aston Villa vs Liverpool
+PREDICTION: Aston Villa WIN [Low]
+Probabilities: Aston Villa 54.6% | Liverpool 30.4% | Draw 15.0%
+
+Sun 2026-05-17 15:00
+Brentford vs Crystal Palace
+PREDICTION: Brentford WIN [Medium]
+Probabilities: Brentford 61.4% | Crystal Palace 23.6% | Draw 15.0%
+
+Sun 2026-05-17 15:00
+Arsenal vs Burnley
+PREDICTION: Arsenal WIN [High]
+Probabilities: Arsenal 66.0% | Burnley 19.0% | Draw 15.0%
+
+Sun 2026-05-17 15:00
+Bournemouth vs Manchester City
+PREDICTION: Manchester City WIN or DRAW [Low]
+Probabilities: Bournemouth 36.0% | Manchester City 49.0% | Draw 15.0%
+
+MATCHWEEK 38
+----------------------------------------
+
+Sun 2026-05-24 16:00
+Crystal Palace vs Arsenal
+PREDICTION: Arsenal WIN or DRAW [Low]
+Probabilities: Crystal Palace 45.6% | Arsenal 39.4% | Draw 15.0%
+
+Sun 2026-05-24 16:00
+Manchester City vs Aston Villa
+PREDICTION: Manchester City WIN [Medium]
+Probabilities: Manchester City 59.5% | Aston Villa 25.5% | Draw 15.0%
+
+Sun 2026-05-24 16:00
+West Ham vs Leeds United
+PREDICTION: West Ham WIN [Medium]
+Probabilities: West Ham 60.3% | Leeds United 24.7% | Draw 15.0%
+
+Sun 2026-05-24 16:00
+Tottenham vs Everton
+PREDICTION: Tottenham WIN [Low]
+Probabilities: Tottenham 53.3% | Everton 31.7% | Draw 15.0%
+
+Sun 2026-05-24 16:00
+Brighton vs Manchester Utd
+PREDICTION: Brighton WIN [Medium]
+Probabilities: Brighton 55.1% | Manchester Utd 29.9% | Draw 15.0%
+
+Sun 2026-05-24 16:00
+Liverpool vs Brentford
+PREDICTION: Liverpool WIN [Low]
+Probabilities: Liverpool 53.3% | Brentford 31.7% | Draw 15.0%
+
+Sun 2026-05-24 16:00
+Fulham vs Newcastle Utd
+PREDICTION: Fulham WIN [Low]
+Probabilities: Fulham 51.4% | Newcastle Utd 33.6% | Draw 15.0%
+
+Sun 2026-05-24 16:00
+Nott'ham Forest vs Bournemouth
+PREDICTION: Nott'ham Forest WIN [Low]
+Probabilities: Nott'ham Forest 54.3% | Bournemouth 30.7% | Draw 15.0%
+
+Sun 2026-05-24 16:00
+Sunderland vs Chelsea
+PREDICTION: Chelsea WIN or DRAW [Low]
+Probabilities: Sunderland 45.9% | Chelsea 39.1% | Draw 15.0%
+
+Sun 2026-05-24 16:00
+Burnley vs Wolves
+PREDICTION: Wolves WIN or DRAW [Low]
+Probabilities: Burnley 40.9% | Wolves 44.1% | Draw 15.0%
+
+================================================================================
+SUMMARY STATISTICS
+================================================================================
+
+Total Matches: 380
+Predicted Wins: 271 (71.3%)
+Predicted Losses/Draws: 109 (28.7%)
+
+High Confidence Predictions: 22
+Medium Confidence Predictions: 166
+Low Confidence Predictions: 192
+
+Average Win Probability: 53.4%
+
+KEY HIGHLIGHTS:
+--------------------
+
+HIGH CONFIDENCE PREDICTIONS:
+• Manchester City vs Tottenham: Manchester City WIN (69.0%)
+• Manchester City vs Manchester Utd: Manchester City WIN (69.4%)
+• Manchester City vs Burnley: Manchester City WIN (74.6%)
+• Aston Villa vs Burnley: Aston Villa WIN (69.3%)
+• Manchester City vs Everton: Manchester City WIN (67.9%)
+• Manchester City vs Bournemouth: Manchester City WIN (68.7%)
+• Brentford vs Burnley: Brentford WIN (67.4%)
+• Manchester City vs Leeds United: Manchester City WIN (73.4%)
+• Manchester City vs Sunderland: Manchester City WIN (69.4%)
+• Brentford vs Leeds United: Brentford WIN (65.8%)
+• Manchester City vs West Ham: Manchester City WIN (69.4%)
+• Manchester City vs Brighton: Manchester City WIN (69.3%)
+• Manchester City vs Wolves: Manchester City WIN (69.4%)
+• Chelsea vs Leeds United: Chelsea WIN (66.1%)
+• Manchester City vs Fulham: Manchester City WIN (67.6%)
+• Aston Villa vs Leeds United: Aston Villa WIN (67.9%)
+• Chelsea vs Burnley: Chelsea WIN (66.9%)
+• Manchester City vs Newcastle Utd: Manchester City WIN (69.4%)
+• Manchester City vs Nott'ham Forest: Manchester City WIN (69.3%)
+• Manchester City vs Crystal Palace: Manchester City WIN (69.7%)
+• Manchester City vs Brentford: Manchester City WIN (65.5%)
+• Arsenal vs Burnley: Arsenal WIN (66.0%)
+
+NOTABLE MATCHES:
+• Manchester City vs Tottenham: Man City WIN (69.0%) [High]
+• Manchester City vs Manchester Utd: Man City WIN (69.4%) [High]
+• Manchester City vs Burnley: Man City WIN (74.6%) [High]
+• Wolves vs Manchester City: Man City WIN (44.0%) [Low]
+• Liverpool vs Arsenal: Arsenal WIN (37.1%) [Low]
+
+================================================================================
+END OF PREDICTIONS
+================================================================================
