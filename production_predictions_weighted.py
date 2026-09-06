@@ -4,6 +4,7 @@ EPL Tracker - Weighted Production Predictions
 Uses Random Forest with weighted training data (2025/2026 season matches weighted more heavily)
 """
 
+import os
 import pandas as pd
 import numpy as np
 import warnings
@@ -16,7 +17,7 @@ from datetime import datetime
 warnings.filterwarnings('ignore')
 
 # ScraperAPI configuration
-api_key = "ddfd01475e78ecc08703ba3677251cec"
+api_key = os.environ.get("SCRAPERAPI_KEY", "")  # see .env / .env.example
 
 def scrape_with_scraperapi(url):
     """Scrape using ScraperAPI to handle anti-bot protection"""

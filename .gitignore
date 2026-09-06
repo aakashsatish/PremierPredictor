@@ -61,4 +61,13 @@ Thumbs.db
 .env.local
 .env.development.local
 .env.test.local
-.env.production.local 
+.env.production.local
+
+# Project data artifacts
+matches_backup_*.csv
+scraper_output.log
+data/raw_cache/
+
+# Generated predictions and reports (regenerable from the pipeline)
+predictions_*.csv
+predictions_*.txt
