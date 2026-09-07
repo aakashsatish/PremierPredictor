@@ -1,0 +1,70 @@
+#!/usr/bin/env bash
+# Blocks commits that look like they carry a credential.
+#
+# Written after a live ScraperAPI key spent months in this repo's history
+# across nine commits. The key is now rotated, but the cheapest way to avoid
+# a repeat is to make it hard to do accidentally.
+#
+# Enable with:   git config core.hooksPath .githooks
+# Bypass once:   git commit --no-verify
+
+set -uo pipefail
+
+fail=0
+red=$(tput setaf 1 2>/dev/null || echo "")
+off=$(tput sgr0 2>/dev/null || echo "")
+
+note() { echo "${red}BLOCKED${off}: $*"; fail=1; }
+
+# --- 1. never commit a real environment file -----------------------------
+while IFS= read -r f; do
+    [ -z "$f" ] && continue
+    base=$(basename "$f")
+    case "$base" in
+        .env.example|.env.sample|.env.template) ;;
+        .env|.env.*)
+            note "$f is an environment file and probably holds real secrets."
+            ;;
+    esac
+done < <(git diff --cached --name-only)
+
+# --- 2. scan added lines for credential-shaped strings -------------------
+added=$(git diff --cached -U0 --diff-filter=ACM | grep '^+' | grep -v '^+++' || true)
+
+if [ -n "$added" ]; then
+    # 32-char hex: the shape of a ScraperAPI key and many others.
+    if hit=$(printf '%s' "$added" | grep -oE '\b[a-f0-9]{32}\b' | head -3); then
+        if [ -n "$hit" ]; then
+            note "a 32-character hex string that looks like an API key:"
+            printf '%s\n' "$hit" | sed 's/^\(....\).*\(....\)$/         \1...\2/'
+        fi
+    fi
+
+    # key = "value" assignments with a long literal on the right.
+    if printf '%s' "$added" \
+        | grep -qiE '(api[_-]?key|apikey|access[_-]?token|auth[_-]?token|secret|password)["'"'"' ]*[:=]["'"'"' ]*[A-Za-z0-9_\-]{16,}'; then
+        note "an assignment that looks like a hardcoded credential."
+        printf '%s' "$added" \
+            | grep -inE '(api[_-]?key|apikey|access[_-]?token|auth[_-]?token|secret|password)["'"'"' ]*[:=]["'"'"' ]*[A-Za-z0-9_\-]{16,}' \
+            | head -3 | cut -c1-100 | sed 's/^/         /'
+    fi
+
+    # Well-known provider token formats.
+    if printf '%s' "$added" | grep -qE '(ghp_[A-Za-z0-9]{36}|github_pat_[A-Za-z0-9_]{60,}|AKIA[0-9A-Z]{16}|sk-[A-Za-z0-9]{32,})'; then
+        note "a recognisable provider token (GitHub, AWS or OpenAI format)."
+    fi
+fi
+
+if [ "$fail" -ne 0 ]; then
+    cat <<'MSG'
+
+  Secrets belong in .env (gitignored) or in repository secrets, and are
+  read via os.environ -- see config.py and .env.example.
+
+  If this is a false positive, commit again with --no-verify.
+
+MSG
+    exit 1
+fi
+
+exit 0
