@@ -1,16 +1,23 @@
 """fbref scrapers, parameterised by season.
 
-Two levels of data:
+Two sources, one request each per season:
 
-  scrape_schedule(season)  -- one request, every match in the season with
-                              score, matchweek, kickoff, referee, attendance.
-                              Also the source of forward fixtures.
+  scrape_schedule(season)      -- fbref. Every match with score, matchweek,
+                                  kickoff, referee, attendance. The only
+                                  source of fixtures not yet played.
 
-  scrape_team_logs(season) -- twenty requests, per-match xG/xGA/possession.
+  fetch_football_data(season)  -- football-data.co.uk. Shots, shots on
+                                  target, corners, fouls, cards, half-time
+                                  scores and bookmaker odds.
 
-The schedule table is the backbone because it is the only view where home and
-away come from the same column source, which removes the whole class of
-name-mismatch bug that silently disabled seven clubs in the previous version.
+fbref used to carry xG, and the previous version of this project depended on
+it. It no longer appears anywhere in fbref's free views, so nothing here uses
+it. football-data began publishing xG in 2026/27, which is too little history
+to train on but worth revisiting in a season or two.
+
+The fbref schedule table is the backbone because it is the only view where
+home and away come from the same column source, which removes the whole class
+of name-mismatch bug that silently disabled seven clubs previously.
 """
 
 from __future__ import annotations
@@ -98,6 +105,48 @@ def scrape_all_schedules(seasons, force: bool = False) -> pd.DataFrame:
         frames.append(df)
         time.sleep(1)
     return pd.concat(frames, ignore_index=True)
+
+
+def football_data_url(season: str) -> str:
+    """football-data.co.uk uses a two-digit season code, e.g. 2026-2027 -> 2627."""
+    start, end = season.split("-")
+    return f"https://www.football-data.co.uk/mmz4281/{start[2:]}{end[2:]}/E0.csv"
+
+
+def fetch_football_data(season: str, force: bool = False) -> str:
+    """Season CSV of match stats and bookmaker odds.
+
+    Goes through the same proxy as fbref: direct requests from this network
+    are answered with a site-wide 503, which is an IP block rather than an
+    outage.
+    """
+    path = config.CACHE / f"fd_{season}.csv"
+    if path.exists() and not force:
+        return path.read_text()
+
+    import requests
+    r = requests.get(
+        "http://api.scraperapi.com/",
+        params={"api_key": config._api_key(), "url": football_data_url(season)},
+        timeout=120,
+    )
+    if r.status_code != 200 or len(r.text) < 1000:
+        raise RuntimeError(
+            f"football-data fetch failed for {season}: "
+            f"status={r.status_code} len={len(r.text)}"
+        )
+    path.write_text(r.text)
+    print(f"    fetched fd_{season} ({len(r.text):,} bytes)")
+    return r.text
+
+
+def fetch_all_football_data(seasons, force: bool = False) -> None:
+    for season in seasons:
+        try:
+            fetch_football_data(season, force=force)
+        except RuntimeError as e:
+            print(f"    {e}")
+        time.sleep(1)
 
 
 if __name__ == "__main__":
