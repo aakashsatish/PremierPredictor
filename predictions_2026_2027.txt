@@ -1,7 +1,7 @@
 ==============================================================================
 PREMIER LEAGUE PREDICTIONS - 2026/2027
 ==============================================================================
-Generated: 2026-09-06 21:10
+Generated: 2026-09-06 21:20
 Model: calibrated Random Forest blended with a Dixon-Coles Poisson
        goals model (65% / 35%), three-way outcome (home / draw / away)
 Trained on 3,800 matches from earlier seasons

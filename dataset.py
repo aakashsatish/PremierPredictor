@@ -15,6 +15,7 @@ from __future__ import annotations
 import glob
 import warnings
 
+import numpy as np
 import pandas as pd
 
 import config
@@ -112,8 +113,62 @@ def build() -> tuple[pd.DataFrame, pd.DataFrame]:
     return matches, fixtures
 
 
+def build_current_season() -> tuple[pd.DataFrame, pd.DataFrame]:
+    """Refresh only the current season, reusing committed history.
+
+    Completed seasons never change, so re-deriving them from the HTML cache
+    every run is wasted effort -- and impossible in CI, where the gitignored
+    cache does not exist. This keeps the existing rows for earlier seasons
+    and rebuilds just the current one, which costs two requests instead of
+    twenty-two.
+    """
+    season = config.CURRENT_SEASON
+    prior_matches = pd.read_csv(config.MATCHES_CSV, parse_dates=["date"])
+    prior_matches = prior_matches[prior_matches["season"] != season]
+    print(f"Keeping {len(prior_matches):,} matches from completed seasons")
+
+    fb = scraper.scrape_schedule(season, force=False)
+    fb["home"] = fb["home_raw"].map(config.normalise_team)
+    fb["away"] = fb["away_raw"].map(config.normalise_team)
+    fb = fb[["season", "matchweek", "date", "time", "day", "home", "away",
+             "home_goals", "away_goals", "attendance", "venue"]]
+
+    try:
+        scraper.fetch_football_data(season)
+        fd = load_football_data()
+        fd = fd[fd["season"] == season].drop(columns=["date"])
+        cur = fb.merge(fd, on=["season", "home", "away"], how="left",
+                       suffixes=("", "_fd"), validate="one_to_one")
+        cur = cur.drop(columns=[c for c in ("home_goals_fd", "away_goals_fd")
+                                if c in cur.columns])
+    except (RuntimeError, KeyError, ValueError) as e:
+        # football-data publishes on a lag; fbref results alone are still
+        # enough to keep fixtures and outcomes current.
+        print(f"  football-data unavailable ({e}); using fbref results only.")
+        cur = fb
+    for col in prior_matches.columns:
+        if col not in cur.columns:
+            cur[col] = np.nan
+    cur = cur[prior_matches.columns]
+
+    cur["result"] = None
+    m = cur["home_goals"].notna()
+    cur.loc[m & (cur.home_goals > cur.away_goals), "result"] = "H"
+    cur.loc[m & (cur.home_goals == cur.away_goals), "result"] = "D"
+    cur.loc[m & (cur.home_goals < cur.away_goals), "result"] = "A"
+    print(f"  {season}: {m.sum()} played, {(~m).sum()} upcoming")
+
+    allm = pd.concat([prior_matches, cur], ignore_index=True)
+    allm = allm.sort_values(["date", "time"]).reset_index(drop=True)
+    return allm[allm["result"].notna()].copy(), allm[allm["result"].isna()].copy()
+
+
 if __name__ == "__main__":
-    matches, fixtures = build()
+    import sys
+    if "--full" in sys.argv:
+        matches, fixtures = build()
+    else:
+        matches, fixtures = build_current_season()
 
     matches.to_csv(config.MATCHES_CSV, index=False)
     fixtures.to_csv(config.FIXTURES_CSV, index=False)
