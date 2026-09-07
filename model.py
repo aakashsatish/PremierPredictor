@@ -67,7 +67,11 @@ def make_models() -> dict:
         "LogisticRegression": make_pipeline(
             SimpleImputer(strategy="median"),
             StandardScaler(),
-            LogisticRegression(max_iter=3000, C=0.3, multi_class="multinomial"),
+            # No multi_class argument: it was removed from scikit-learn in
+            # recent versions, and multinomial is already the default for
+            # multiclass problems with the lbfgs solver. Verified identical
+            # probabilities with and without it on 1.3.
+            LogisticRegression(max_iter=3000, C=0.3),
         ),
         "HistGradientBoosting": HistGradientBoostingClassifier(
             max_iter=600, learning_rate=0.04, min_samples_leaf=40,
