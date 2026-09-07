@@ -1,6 +1,12 @@
 """Generate predictions for the current season and write the report.
 
-Two separate models are used on purpose:
+Outcome probabilities come from a blend of two models that disagree in useful
+ways: a calibrated Random Forest over form and Elo features, and a Dixon-Coles
+Poisson model over goals. The forest is stronger alone, so it carries most of
+the weight. Predicted scorelines come from the Poisson grid, which the
+classifier cannot produce at all.
+
+Two training regimes are used on purpose:
 
   * Completed matches of the current season are scored by a model trained
     only on earlier seasons, so the accuracy quoted in the report is genuinely
@@ -25,8 +31,18 @@ import pandas as pd
 import config
 import features
 import model as M
+from poisson_model import PoissonGoals
 
 warnings.filterwarnings("ignore")
+
+# Outcome probabilities blend the classifier with the goals model. The forest
+# is the stronger of the two on its own (0.990 vs 1.004 log loss walk-forward),
+# so it carries most of the weight; the blend measured 0.987, an improvement
+# too small to call significant on six seasons but consistently in the right
+# direction, which is the usual behaviour of combining decorrelated models.
+POISSON_WEIGHT = 0.35
+POISSON_XI = 0.002    # ~9 month half-life
+POISSON_RIDGE = 1.0
 
 OUT_CSV = config.DATA / f"predictions_{config.CURRENT_SEASON.replace('-', '_')}.csv"
 OUT_TXT = config.ROOT / f"predictions_{config.CURRENT_SEASON.replace('-', '_')}.txt"
@@ -40,6 +56,31 @@ def confidence(p: float) -> str:
     if p >= 0.45:
         return "Medium"
     return "Low"
+
+
+def _blend(classifier, poisson, target: pd.DataFrame, cols: list[str]) -> pd.DataFrame:
+    """Combine the two models' outcome probabilities."""
+    rf = pd.DataFrame(
+        classifier.predict_proba(target[cols]),
+        columns=classifier.classes_, index=target.index,
+    )[M.CLASSES]
+    po = poisson.predict_proba(target)
+    return POISSON_WEIGHT * po + (1 - POISSON_WEIGHT) * rf
+
+
+def _likely_scores(poisson, target: pd.DataFrame, n: int = 3) -> pd.Series:
+    """Most probable scorelines, e.g. '2-1 (11%), 1-1 (10%), 2-0 (9%)'.
+
+    This is the one thing the classifier cannot do at all: it predicts a label,
+    while the goals model carries a distribution over every scoreline.
+    """
+    out = {}
+    for idx, m in target.iterrows():
+        g = poisson.score_grid(m["home"], m["away"])
+        flat = [(g[i, j], i, j) for i in range(6) for j in range(6)]
+        flat.sort(reverse=True)
+        out[idx] = ", ".join(f"{i}-{j} ({p:.0%})" for p, i, j in flat[:n])
+    return pd.Series(out)
 
 
 def build_predictions() -> tuple[pd.DataFrame, pd.DataFrame, dict]:
@@ -57,11 +98,11 @@ def build_predictions() -> tuple[pd.DataFrame, pd.DataFrame, dict]:
 
     honest = M.make_models()[M.DEFAULT_MODEL]
     honest.fit(prior[cols], prior["result"])
+    honest_po = PoissonGoals(xi=POISSON_XI, ridge=POISSON_RIDGE).fit(
+        prior, ref_date=current_played["date"].min() if len(current_played) else None
+    )
     if len(current_played):
-        proba = pd.DataFrame(
-            honest.predict_proba(current_played[cols]),
-            columns=honest.classes_, index=current_played.index,
-        )[M.CLASSES]
+        proba = _blend(honest, honest_po, current_played, cols)
         for c in M.CLASSES:
             current_played[f"p_{c}"] = proba[c]
         current_played["prediction"] = proba.idxmax(axis=1)
@@ -69,13 +110,12 @@ def build_predictions() -> tuple[pd.DataFrame, pd.DataFrame, dict]:
 
     # --- forward predictions, trained on everything available
     final = M.fit_final(df, cols)
+    final_po = PoissonGoals(xi=POISSON_XI, ridge=POISSON_RIDGE).fit(played)
     upcoming = df[df["is_fixture"] == 1].copy()
-    proba = pd.DataFrame(
-        final.predict_proba(upcoming[cols]),
-        columns=final.classes_, index=upcoming.index,
-    )[M.CLASSES]
+    proba = _blend(final, final_po, upcoming, cols)
     for c in M.CLASSES:
         upcoming[f"p_{c}"] = proba[c]
+    upcoming["likely_scores"] = _likely_scores(final_po, upcoming)
     upcoming["prediction"] = proba.idxmax(axis=1)
     # Consistent by construction: the label IS the argmax of these numbers.
     upcoming["top_prob"] = proba.max(axis=1)
@@ -111,11 +151,14 @@ def write_report(current_played, upcoming, stats) -> None:
     add(f"PREMIER LEAGUE PREDICTIONS - {season_txt}")
     add("=" * 78)
     add(f"Generated: {datetime.now():%Y-%m-%d %H:%M}")
-    add(f"Model: calibrated Random Forest, three-way outcome (home / draw / away)")
+    add("Model: calibrated Random Forest blended with a Dixon-Coles Poisson")
+    add(f"       goals model ({1-POISSON_WEIGHT:.0%} / {POISSON_WEIGHT:.0%}), "
+        f"three-way outcome (home / draw / away)")
     add(f"Trained on {stats['n_prior']:,} matches from earlier seasons")
     add("")
     add("Probabilities are model outputs and sum to 1. Bookmaker odds are used")
     add("only as a benchmark and are never an input to the model.")
+    add("Scorelines come from the Poisson model's grid over every possible score.")
     add("")
 
     if len(current_played):
@@ -160,6 +203,7 @@ def write_report(current_played, upcoming, stats) -> None:
             add(f"    {m['date']:%a %d %b} {t}  {m['home']} vs {m['away']}")
             add(f"        {LABEL[m['prediction']]:9s} [{m['confidence']}]"
                 f"   H {m['p_H']:.0%} / D {m['p_D']:.0%} / A {m['p_A']:.0%}")
+            add(f"        likely scores: {m['likely_scores']}")
         add("")
 
     add("=" * 78)
@@ -190,7 +234,7 @@ if __name__ == "__main__":
     current_played, upcoming, stats = build_predictions()
 
     keep = ["season", "matchweek", "date", "time", "home", "away",
-            "p_H", "p_D", "p_A", "prediction", "confidence",
+            "p_H", "p_D", "p_A", "prediction", "confidence", "likely_scores",
             "home_elo", "away_elo", "elo_diff"]
     upcoming[keep].to_csv(OUT_CSV, index=False)
     write_report(current_played, upcoming, stats)
