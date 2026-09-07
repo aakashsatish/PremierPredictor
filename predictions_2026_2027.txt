@@ -1,0 +1,1236 @@
+==============================================================================
+PREMIER LEAGUE PREDICTIONS - 2026/2027
+==============================================================================
+Generated: 2026-09-06 21:26
+Model: calibrated Random Forest blended with a Dixon-Coles Poisson
+       goals model (65% / 35%), three-way outcome (home / draw / away)
+Trained on 3,800 matches from earlier seasons
+
+Probabilities are model outputs and sum to 1. Bookmaker odds are used
+only as a benchmark and are never an input to the model.
+Scorelines come from the Poisson model's grid over every possible score.
+
+------------------------------------------------------------------------------
+RESULTS SO FAR THIS SEASON
+------------------------------------------------------------------------------
+Scored out-of-sample: these matches were predicted by a model
+trained only on earlier seasons.
+
+  Matchweek 1
+    [OK  ] 21 Aug  Arsenal 3-0 Coventry City
+           predicted HOME WIN  (H 70% / D 18% / A 12%)   actual HOME WIN
+    [MISS] 22 Aug  Hull City 2-0 Manchester United
+           predicted AWAY WIN  (H 28% / D 25% / A 47%)   actual HOME WIN
+    [MISS] 22 Aug  Ipswich Town 2-1 Sunderland
+           predicted AWAY WIN  (H 23% / D 26% / A 51%)   actual HOME WIN
+    [MISS] 22 Aug  Nottingham Forest 0-1 Leeds United
+           predicted HOME WIN  (H 42% / D 29% / A 29%)   actual AWAY WIN
+    [OK  ] 22 Aug  Everton 2-0 Crystal Palace
+           predicted HOME WIN  (H 43% / D 28% / A 28%)   actual HOME WIN
+    [OK  ] 22 Aug  Brentford 3-0 Tottenham
+           predicted HOME WIN  (H 41% / D 28% / A 31%)   actual HOME WIN
+    [OK  ] 23 Aug  Manchester City 2-1 Bournemouth
+           predicted HOME WIN  (H 65% / D 20% / A 15%)   actual HOME WIN
+    [OK  ] 23 Aug  Brighton 4-0 Aston Villa
+           predicted HOME WIN  (H 47% / D 24% / A 29%)   actual HOME WIN
+    [MISS] 23 Aug  Newcastle United 2-2 Liverpool
+           predicted AWAY WIN  (H 33% / D 25% / A 42%)   actual DRAW
+    [MISS] 24 Aug  Fulham 2-3 Chelsea
+           predicted HOME WIN  (H 42% / D 26% / A 32%)   actual AWAY WIN
+
+  Matchweek 2
+    [OK  ] 28 Aug  Crystal Palace 1-4 Manchester City
+           predicted AWAY WIN  (H 17% / D 22% / A 62%)   actual AWAY WIN
+    [MISS] 29 Aug  Liverpool 2-2 Nottingham Forest
+           predicted HOME WIN  (H 58% / D 22% / A 20%)   actual DRAW
+    [MISS] 29 Aug  Coventry City 0-1 Hull City
+           predicted HOME WIN  (H 37% / D 27% / A 36%)   actual AWAY WIN
+    [MISS] 29 Aug  Bournemouth 1-1 Everton
+           predicted HOME WIN  (H 53% / D 24% / A 23%)   actual DRAW
+    [MISS] 29 Aug  Tottenham 0-2 Newcastle United
+           predicted HOME WIN  (H 39% / D 25% / A 36%)   actual AWAY WIN
+    [OK  ] 30 Aug  Manchester United 5-2 Ipswich Town
+           predicted HOME WIN  (H 71% / D 18% / A 12%)   actual HOME WIN
+    [MISS] 30 Aug  Leeds United 1-1 Brentford
+           predicted HOME WIN  (H 40% / D 25% / A 35%)   actual DRAW
+    [OK  ] 30 Aug  Sunderland 1-0 Fulham
+           predicted HOME WIN  (H 36% / D 29% / A 35%)   actual HOME WIN
+    [OK  ] 30 Aug  Chelsea 4-3 Brighton
+           predicted HOME WIN  (H 39% / D 26% / A 35%)   actual HOME WIN
+    [OK  ] 31 Aug  Aston Villa 0-1 Arsenal
+           predicted AWAY WIN  (H 20% / D 25% / A 55%)   actual AWAY WIN
+
+  Matchweek 3
+    [OK  ] 04 Sep  Ipswich Town 0-2 Liverpool
+           predicted AWAY WIN  (H 15% / D 19% / A 66%)   actual AWAY WIN
+    [MISS] 05 Sep  Newcastle United 2-2 Bournemouth
+           predicted HOME WIN  (H 37% / D 26% / A 37%)   actual DRAW
+    [MISS] 05 Sep  Nottingham Forest 0-0 Tottenham
+           predicted HOME WIN  (H 45% / D 27% / A 28%)   actual DRAW
+    [MISS] 05 Sep  Fulham 2-3 Crystal Palace
+           predicted HOME WIN  (H 50% / D 26% / A 24%)   actual AWAY WIN
+    [MISS] 05 Sep  Brentford 1-1 Sunderland
+           predicted HOME WIN  (H 50% / D 26% / A 24%)   actual DRAW
+    [OK  ] 05 Sep  Manchester City 1-0 Coventry City
+           predicted HOME WIN  (H 73% / D 16% / A 11%)   actual HOME WIN
+    [MISS] 05 Sep  Brighton 1-1 Leeds United
+           predicted HOME WIN  (H 57% / D 23% / A 20%)   actual DRAW
+    [MISS] 05 Sep  Hull City 0-0 Aston Villa
+           predicted AWAY WIN  (H 36% / D 25% / A 39%)   actual DRAW
+
+  Accuracy: 42.9% (12/28)
+  Log loss: 1.0175
+  For reference, always predicting a home win would score 39.3%
+  Bet365 favourite over the same 20 matches: 55.0%
+
+  Note: a few dozen matches is far too small a sample to judge a
+  model on. The walk-forward backtest in model.py is the real test.
+
+------------------------------------------------------------------------------
+UPCOMING FIXTURES (352)
+------------------------------------------------------------------------------
+
+  Matchweek 3
+    Sun 06 Sep 14:00  Everton vs Manchester United
+        AWAY WIN  [Low]   H 31% / D 26% / A 43%
+        likely scores: 1-1 (14%), 0-1 (9%), 0-0 (9%)
+    Sun 06 Sep 16:30  Arsenal vs Chelsea
+        HOME WIN  [High]   H 66% / D 20% / A 14%
+        likely scores: 2-0 (11%), 1-1 (11%), 1-0 (11%)
+
+  Matchweek 4
+    Sat 12 Sep 20:00  Sunderland vs Arsenal
+        AWAY WIN  [Medium]   H 18% / D 25% / A 57%
+        likely scores: 0-1 (16%), 1-1 (13%), 0-2 (12%)
+    Sat 12 Sep 17:30  Tottenham vs Everton
+        HOME WIN  [Low]   H 38% / D 27% / A 35%
+        likely scores: 1-1 (14%), 1-0 (10%), 0-0 (9%)
+    Sat 12 Sep 15:00  Bournemouth vs Brentford
+        HOME WIN  [Medium]   H 46% / D 26% / A 28%
+        likely scores: 1-1 (12%), 2-1 (9%), 1-2 (8%)
+    Sat 12 Sep 15:00  Liverpool vs Fulham
+        HOME WIN  [High]   H 61% / D 22% / A 17%
+        likely scores: 1-1 (10%), 2-1 (10%), 2-0 (9%)
+    Sat 12 Sep 15:00  Aston Villa vs Nottingham Forest
+        HOME WIN  [Low]   H 44% / D 28% / A 28%
+        likely scores: 1-1 (13%), 1-0 (10%), 2-1 (9%)
+    Sat 12 Sep 15:00  Crystal Palace vs Ipswich Town
+        HOME WIN  [High]   H 60% / D 23% / A 17%
+        likely scores: 1-1 (10%), 2-0 (10%), 2-1 (10%)
+    Sat 12 Sep 15:00  Chelsea vs Hull City
+        HOME WIN  [Medium]   H 46% / D 28% / A 26%
+        likely scores: 0-0 (17%), 0-1 (15%), 1-1 (15%)
+    Sun 13 Sep 14:00  Coventry City vs Brighton
+        AWAY WIN  [Medium]   H 21% / D 25% / A 54%
+        likely scores: 0-1 (16%), 0-0 (14%), 1-1 (13%)
+    Sun 13 Sep 16:30  Manchester United vs Manchester City
+        AWAY WIN  [Low]   H 33% / D 26% / A 41%
+        likely scores: 1-1 (12%), 1-2 (10%), 0-2 (8%)
+    Mon 14 Sep 20:00  Leeds United vs Newcastle United
+        HOME WIN  [Low]   H 39% / D 26% / A 34%
+        likely scores: 1-1 (13%), 1-2 (9%), 2-1 (8%)
+
+  Matchweek 5
+    Fri 18 Sep 20:00  Brentford vs Chelsea
+        HOME WIN  [Low]   H 43% / D 26% / A 30%
+        likely scores: 1-1 (12%), 2-1 (9%), 1-2 (8%)
+    Sat 19 Sep 12:30  Tottenham vs Aston Villa
+        AWAY WIN  [Low]   H 36% / D 25% / A 38%
+        likely scores: 1-1 (13%), 1-2 (9%), 2-1 (8%)
+    Sat 19 Sep 15:00  Brighton vs Arsenal
+        AWAY WIN  [Medium]   H 25% / D 27% / A 48%
+        likely scores: 1-1 (13%), 0-1 (11%), 0-2 (10%)
+    Sat 19 Sep 15:00  Newcastle United vs Hull City
+        HOME WIN  [Low]   H 41% / D 30% / A 29%
+        likely scores: 0-0 (17%), 0-1 (15%), 1-1 (15%)
+    Sat 19 Sep 15:00  Everton vs Ipswich Town
+        HOME WIN  [High]   H 63% / D 22% / A 15%
+        likely scores: 2-0 (12%), 1-0 (11%), 1-1 (11%)
+    Sat 19 Sep 17:30  Nottingham Forest vs Coventry City
+        HOME WIN  [Medium]   H 55% / D 27% / A 18%
+        likely scores: 1-0 (18%), 0-0 (15%), 2-0 (13%)
+    Sun 20 Sep 16:30  Fulham vs Manchester United
+        AWAY WIN  [Low]   H 31% / D 26% / A 43%
+        likely scores: 1-1 (13%), 1-2 (9%), 2-1 (8%)
+    Sun 20 Sep 14:00  Manchester City vs Sunderland
+        HOME WIN  [High]   H 70% / D 18% / A 12%
+        likely scores: 2-0 (13%), 1-0 (13%), 1-1 (10%)
+    Sun 20 Sep 14:00  Leeds United vs Crystal Palace
+        HOME WIN  [Low]   H 45% / D 29% / A 27%
+        likely scores: 1-1 (14%), 1-0 (10%), 2-1 (9%)
+    Sun 20 Sep 14:00  Bournemouth vs Liverpool
+        AWAY WIN  [Low]   H 34% / D 26% / A 39%
+        likely scores: 1-1 (11%), 1-2 (9%), 2-1 (8%)
+
+  Matchweek 6
+    Sat 10 Oct 12:30  Arsenal vs Leeds United
+        HOME WIN  [High]   H 69% / D 19% / A 12%
+        likely scores: 2-0 (14%), 1-0 (13%), 1-1 (10%)
+    Sat 10 Oct 15:00  Ipswich Town vs Fulham
+        AWAY WIN  [Medium]   H 24% / D 25% / A 51%
+        likely scores: 1-1 (12%), 1-2 (10%), 0-2 (8%)
+    Sat 10 Oct 15:00  Chelsea vs Bournemouth
+        HOME WIN  [Low]   H 42% / D 28% / A 30%
+        likely scores: 1-1 (12%), 2-1 (9%), 1-0 (7%)
+    Sat 10 Oct 15:00  Aston Villa vs Brentford
+        HOME WIN  [Low]   H 37% / D 28% / A 34%
+        likely scores: 1-1 (13%), 2-1 (9%), 1-0 (8%)
+    Sat 10 Oct 15:00  Sunderland vs Brighton
+        AWAY WIN  [Low]   H 33% / D 28% / A 39%
+        likely scores: 1-1 (14%), 0-0 (10%), 0-1 (10%)
+    Sat 10 Oct 17:30  Manchester United vs Tottenham
+        HOME WIN  [Medium]   H 60% / D 22% / A 18%
+        likely scores: 1-1 (11%), 2-1 (10%), 2-0 (8%)
+    Sun 11 Oct 14:00  Crystal Palace vs Nottingham Forest
+        HOME WIN  [Low]   H 36% / D 29% / A 35%
+        likely scores: 1-1 (14%), 0-0 (9%), 1-0 (9%)
+    Sun 11 Oct 14:00  Hull City vs Everton
+        HOME WIN  [Low]   H 40% / D 30% / A 30%
+        likely scores: 0-0 (22%), 1-0 (21%), 1-1 (12%)
+    Sun 11 Oct 16:30  Liverpool vs Manchester City
+        AWAY WIN  [Low]   H 29% / D 26% / A 45%
+        likely scores: 1-1 (12%), 1-2 (9%), 2-1 (8%)
+    Mon 12 Oct 20:00  Coventry City vs Newcastle United
+        AWAY WIN  [Medium]   H 27% / D 25% / A 48%
+        likely scores: 0-1 (15%), 1-1 (13%), 0-0 (12%)
+
+  Matchweek 7
+    Sat 17 Oct 17:30  Newcastle United vs Aston Villa
+        HOME WIN  [Low]   H 41% / D 28% / A 32%
+        likely scores: 1-1 (12%), 2-1 (9%), 1-0 (7%)
+    Sat 17 Oct 15:00  Brentford vs Liverpool
+        AWAY WIN  [Low]   H 37% / D 25% / A 38%
+        likely scores: 1-1 (11%), 1-2 (9%), 2-1 (8%)
+    Sat 17 Oct 15:00  Fulham vs Hull City
+        HOME WIN  [Low]   H 42% / D 27% / A 31%
+        likely scores: 0-0 (20%), 0-1 (18%), 1-1 (14%)
+    Sat 17 Oct 15:00  Manchester City vs Ipswich Town
+        HOME WIN  [High]   H 80% / D 12% / A 8%
+        likely scores: 3-0 (11%), 2-0 (10%), 4-0 (10%)
+    Sat 17 Oct 12:30  Everton vs Chelsea
+        HOME WIN  [Low]   H 38% / D 27% / A 35%
+        likely scores: 1-1 (14%), 0-1 (9%), 0-0 (9%)
+    Sun 18 Oct 14:00  Bournemouth vs Sunderland
+        HOME WIN  [Medium]   H 47% / D 28% / A 25%
+        likely scores: 1-1 (14%), 1-0 (11%), 0-0 (10%)
+    Sun 18 Oct 14:00  Leeds United vs Manchester United
+        AWAY WIN  [Medium]   H 28% / D 25% / A 46%
+        likely scores: 1-1 (13%), 1-2 (9%), 2-1 (8%)
+    Sun 18 Oct 14:00  Brighton vs Crystal Palace
+        HOME WIN  [Medium]   H 56% / D 25% / A 19%
+        likely scores: 1-1 (12%), 2-1 (10%), 1-0 (9%)
+    Sun 18 Oct 16:30  Nottingham Forest vs Arsenal
+        AWAY WIN  [Medium]   H 17% / D 23% / A 60%
+        likely scores: 0-1 (13%), 1-1 (13%), 0-2 (11%)
+    Mon 19 Oct 20:00  Tottenham vs Coventry City
+        HOME WIN  [Medium]   H 55% / D 26% / A 19%
+        likely scores: 1-0 (16%), 1-1 (13%), 0-0 (13%)
+
+  Matchweek 8
+    Fri 23 Oct 20:00  Ipswich Town vs Nottingham Forest
+        AWAY WIN  [Medium]   H 22% / D 24% / A 54%
+        likely scores: 1-1 (12%), 1-2 (10%), 0-2 (9%)
+    Sat 24 Oct 12:30  Aston Villa vs Manchester City
+        AWAY WIN  [Medium]   H 19% / D 23% / A 58%
+        likely scores: 1-1 (12%), 1-2 (10%), 0-1 (9%)
+    Sat 24 Oct 15:00  Coventry City vs Fulham
+        AWAY WIN  [Low]   H 28% / D 29% / A 44%
+        likely scores: 0-0 (16%), 0-1 (16%), 1-1 (14%)
+    Sat 24 Oct 15:00  Arsenal vs Everton
+        HOME WIN  [High]   H 68% / D 19% / A 13%
+        likely scores: 1-0 (15%), 2-0 (14%), 1-1 (11%)
+    Sat 24 Oct 17:30  Chelsea vs Tottenham
+        HOME WIN  [Medium]   H 51% / D 26% / A 22%
+        likely scores: 1-1 (11%), 2-1 (10%), 2-0 (8%)
+    Sun 25 Oct 14:00  Manchester United vs Bournemouth
+        HOME WIN  [Medium]   H 55% / D 24% / A 22%
+        likely scores: 1-1 (12%), 2-1 (9%), 1-0 (7%)
+    Sun 25 Oct 14:00  Liverpool vs Brighton
+        HOME WIN  [Medium]   H 52% / D 25% / A 23%
+        likely scores: 1-1 (11%), 2-1 (10%), 2-0 (8%)
+    Sun 25 Oct 16:30  Sunderland vs Leeds United
+        HOME WIN  [Low]   H 45% / D 27% / A 28%
+        likely scores: 1-1 (14%), 0-0 (12%), 1-0 (12%)
+    Sun 25 Oct 14:00  Crystal Palace vs Newcastle United
+        AWAY WIN  [Low]   H 36% / D 28% / A 37%
+        likely scores: 1-1 (13%), 1-2 (9%), 2-1 (8%)
+    Sun 25 Oct 14:00  Hull City vs Brentford
+        HOME WIN  [Low]   H 37% / D 29% / A 34%
+        likely scores: 1-0 (18%), 0-0 (17%), 1-1 (13%)
+
+  Matchweek 9
+    Sat 31 Oct 20:00  Aston Villa vs Fulham
+        HOME WIN  [Low]   H 43% / D 29% / A 29%
+        likely scores: 1-1 (13%), 2-1 (9%), 1-0 (9%)
+    Sat 31 Oct 15:00  Hull City vs Ipswich Town
+        HOME WIN  [High]   H 63% / D 24% / A 14%
+        likely scores: 1-0 (18%), 2-0 (17%), 0-0 (11%)
+    Sat 31 Oct 15:00  Manchester City vs Brighton
+        HOME WIN  [High]   H 66% / D 20% / A 15%
+        likely scores: 2-0 (10%), 1-1 (10%), 2-1 (10%)
+    Sat 31 Oct 17:30  Tottenham vs Crystal Palace
+        HOME WIN  [Medium]   H 47% / D 24% / A 29%
+        likely scores: 1-1 (13%), 2-1 (9%), 1-0 (8%)
+    Sat 31 Oct 15:00  Bournemouth vs Leeds United
+        HOME WIN  [Medium]   H 53% / D 25% / A 22%
+        likely scores: 1-1 (13%), 2-1 (9%), 1-0 (9%)
+    Sat 31 Oct 15:00  Coventry City vs Sunderland
+        AWAY WIN  [Low]   H 26% / D 29% / A 45%
+        likely scores: 0-0 (20%), 0-1 (18%), 1-1 (14%)
+    Sat 31 Oct 12:30  Chelsea vs Manchester United
+        HOME WIN  [Low]   H 40% / D 26% / A 35%
+        likely scores: 1-1 (11%), 2-1 (9%), 1-2 (8%)
+    Sat 31 Oct 15:00  Brentford vs Nottingham Forest
+        HOME WIN  [Medium]   H 49% / D 26% / A 25%
+        likely scores: 1-1 (13%), 2-1 (9%), 1-0 (9%)
+    Sun 01 Nov 16:30  Liverpool vs Arsenal
+        AWAY WIN  [Low]   H 29% / D 28% / A 43%
+        likely scores: 1-1 (13%), 1-2 (9%), 0-1 (9%)
+    Mon 02 Nov 20:00  Newcastle United vs Everton
+        HOME WIN  [Low]   H 43% / D 28% / A 29%
+        likely scores: 1-1 (13%), 1-0 (10%), 2-1 (9%)
+
+  Matchweek 10
+    Sat 07 Nov 15:00  Crystal Palace vs Liverpool
+        AWAY WIN  [Medium]   H 25% / D 24% / A 50%
+        likely scores: 1-1 (12%), 1-2 (10%), 0-1 (8%)
+    Sat 07 Nov 15:00  Nottingham Forest vs Manchester City
+        AWAY WIN  [High]   H 17% / D 22% / A 60%
+        likely scores: 1-1 (12%), 0-1 (10%), 0-2 (10%)
+    Sat 07 Nov 15:00  Ipswich Town vs Bournemouth
+        AWAY WIN  [Medium]   H 19% / D 22% / A 59%
+        likely scores: 1-1 (10%), 1-2 (10%), 0-2 (9%)
+    Sat 07 Nov 15:00  Leeds United vs Tottenham
+        HOME WIN  [Low]   H 41% / D 30% / A 29%
+        likely scores: 1-1 (13%), 2-1 (9%), 1-0 (8%)
+    Sat 07 Nov 15:00  Manchester United vs Aston Villa
+        HOME WIN  [Medium]   H 59% / D 22% / A 20%
+        likely scores: 1-1 (12%), 2-1 (9%), 1-0 (7%)
+    Sat 07 Nov 15:00  Fulham vs Newcastle United
+        HOME WIN  [Low]   H 44% / D 24% / A 32%
+        likely scores: 1-1 (13%), 1-2 (9%), 2-1 (8%)
+    Sat 07 Nov 15:00  Sunderland vs Chelsea
+        HOME WIN  [Low]   H 38% / D 27% / A 35%
+        likely scores: 1-1 (14%), 0-1 (10%), 0-0 (9%)
+    Sat 07 Nov 15:00  Everton vs Coventry City
+        HOME WIN  [Medium]   H 56% / D 27% / A 18%
+        likely scores: 1-0 (20%), 0-0 (18%), 2-0 (13%)
+    Sat 07 Nov 15:00  Brighton vs Brentford
+        HOME WIN  [Medium]   H 49% / D 26% / A 26%
+        likely scores: 1-1 (12%), 2-1 (9%), 1-2 (8%)
+    Sat 07 Nov 15:00  Arsenal vs Hull City
+        HOME WIN  [High]   H 61% / D 24% / A 15%
+        likely scores: 0-0 (23%), 1-0 (20%), 1-1 (13%)
+
+  Matchweek 11
+    Sat 21 Nov 15:00  Aston Villa vs Sunderland
+        HOME WIN  [Medium]   H 46% / D 28% / A 26%
+        likely scores: 1-1 (14%), 1-0 (12%), 0-0 (10%)
+    Sat 21 Nov 15:00  Liverpool vs Manchester United
+        HOME WIN  [Medium]   H 50% / D 24% / A 26%
+        likely scores: 1-1 (10%), 2-1 (10%), 2-0 (7%)
+    Sat 21 Nov 15:00  Coventry City vs Crystal Palace
+        AWAY WIN  [Low]   H 33% / D 28% / A 39%
+        likely scores: 0-0 (17%), 0-1 (16%), 1-1 (14%)
+    Sat 21 Nov 15:00  Manchester City vs Fulham
+        HOME WIN  [High]   H 70% / D 17% / A 12%
+        likely scores: 2-0 (12%), 1-0 (10%), 2-1 (10%)
+    Sat 21 Nov 15:00  Bournemouth vs Nottingham Forest
+        HOME WIN  [Medium]   H 50% / D 26% / A 25%
+        likely scores: 1-1 (13%), 1-0 (9%), 2-1 (9%)
+    Sat 21 Nov 15:00  Hull City vs Brighton
+        AWAY WIN  [Low]   H 34% / D 28% / A 38%
+        likely scores: 1-0 (18%), 0-0 (17%), 1-1 (13%)
+    Sat 21 Nov 15:00  Chelsea vs Leeds United
+        HOME WIN  [Medium]   H 52% / D 25% / A 23%
+        likely scores: 1-1 (12%), 2-1 (10%), 1-0 (8%)
+    Sat 21 Nov 15:00  Brentford vs Everton
+        HOME WIN  [Medium]   H 49% / D 26% / A 24%
+        likely scores: 1-1 (14%), 1-0 (11%), 0-0 (9%)
+    Sat 21 Nov 15:00  Tottenham vs Ipswich Town
+        HOME WIN  [Medium]   H 60% / D 22% / A 18%
+        likely scores: 2-1 (10%), 2-0 (9%), 1-1 (9%)
+    Sat 21 Nov 15:00  Newcastle United vs Arsenal
+        AWAY WIN  [Medium]   H 18% / D 22% / A 59%
+        likely scores: 1-1 (13%), 0-1 (10%), 1-2 (10%)
+
+  Matchweek 12
+    Sat 28 Nov 15:00  Brighton vs Newcastle United
+        HOME WIN  [Medium]   H 52% / D 24% / A 24%
+        likely scores: 1-1 (12%), 2-1 (9%), 1-2 (8%)
+    Sat 28 Nov 15:00  Leeds United vs Coventry City
+        HOME WIN  [Medium]   H 52% / D 29% / A 19%
+        likely scores: 1-0 (18%), 0-0 (15%), 1-1 (13%)
+    Sat 28 Nov 15:00  Sunderland vs Tottenham
+        HOME WIN  [Low]   H 42% / D 29% / A 28%
+        likely scores: 1-1 (14%), 1-0 (10%), 0-0 (10%)
+    Sat 28 Nov 15:00  Nottingham Forest vs Chelsea
+        HOME WIN  [Low]   H 38% / D 26% / A 37%
+        likely scores: 1-1 (13%), 1-2 (8%), 2-1 (8%)
+    Sat 28 Nov 15:00  Fulham vs Bournemouth
+        AWAY WIN  [Low]   H 36% / D 27% / A 36%
+        likely scores: 1-1 (13%), 2-1 (8%), 1-2 (8%)
+    Sat 28 Nov 15:00  Manchester United vs Brentford
+        HOME WIN  [Medium]   H 57% / D 22% / A 21%
+        likely scores: 1-1 (12%), 2-1 (9%), 1-2 (7%)
+    Sat 28 Nov 15:00  Ipswich Town vs Aston Villa
+        AWAY WIN  [Medium]   H 20% / D 24% / A 56%
+        likely scores: 1-1 (10%), 1-2 (10%), 0-2 (9%)
+    Sat 28 Nov 15:00  Crystal Palace vs Hull City
+        HOME WIN  [Low]   H 38% / D 29% / A 32%
+        likely scores: 0-0 (20%), 0-1 (18%), 1-1 (14%)
+    Sat 28 Nov 15:00  Everton vs Liverpool
+        AWAY WIN  [Low]   H 30% / D 26% / A 44%
+        likely scores: 1-1 (13%), 0-1 (9%), 1-2 (9%)
+    Sat 28 Nov 15:00  Arsenal vs Manchester City
+        HOME WIN  [Medium]   H 47% / D 26% / A 27%
+        likely scores: 1-1 (14%), 1-0 (11%), 0-0 (10%)
+
+  Matchweek 13
+    Wed 02 Dec 20:00  Newcastle United vs Manchester United
+        AWAY WIN  [Low]   H 34% / D 25% / A 41%
+        likely scores: 1-1 (11%), 2-1 (9%), 1-2 (8%)
+    Wed 02 Dec 20:00  Liverpool vs Sunderland
+        HOME WIN  [Medium]   H 58% / D 24% / A 18%
+        likely scores: 1-1 (12%), 1-0 (11%), 2-0 (11%)
+    Wed 02 Dec 20:00  Bournemouth vs Brighton
+        HOME WIN  [Low]   H 41% / D 27% / A 33%
+        likely scores: 1-1 (12%), 2-1 (9%), 1-2 (8%)
+    Wed 02 Dec 20:00  Chelsea vs Crystal Palace
+        HOME WIN  [Medium]   H 52% / D 25% / A 23%
+        likely scores: 1-1 (12%), 2-1 (10%), 2-0 (9%)
+    Wed 02 Dec 20:00  Brentford vs Arsenal
+        AWAY WIN  [Medium]   H 20% / D 25% / A 55%
+        likely scores: 1-1 (13%), 0-1 (11%), 0-2 (10%)
+    Wed 02 Dec 20:00  Hull City vs Nottingham Forest
+        HOME WIN  [Low]   H 41% / D 30% / A 29%
+        likely scores: 1-0 (20%), 0-0 (19%), 1-1 (13%)
+    Wed 02 Dec 20:00  Tottenham vs Fulham
+        HOME WIN  [Low]   H 42% / D 26% / A 32%
+        likely scores: 1-1 (13%), 2-1 (9%), 1-0 (8%)
+    Wed 02 Dec 20:00  Manchester City vs Leeds United
+        HOME WIN  [High]   H 70% / D 18% / A 11%
+        likely scores: 2-0 (12%), 1-0 (10%), 2-1 (10%)
+    Wed 02 Dec 20:00  Coventry City vs Ipswich Town
+        HOME WIN  [Medium]   H 47% / D 27% / A 26%
+        likely scores: 1-1 (15%), 0-0 (14%), 1-0 (13%)
+    Wed 02 Dec 20:00  Aston Villa vs Everton
+        HOME WIN  [Low]   H 44% / D 28% / A 28%
+        likely scores: 1-1 (14%), 1-0 (11%), 0-0 (10%)
+
+  Matchweek 14
+    Sat 05 Dec 15:00  Tottenham vs Arsenal
+        AWAY WIN  [Medium]   H 17% / D 24% / A 59%
+        likely scores: 1-1 (11%), 0-2 (11%), 0-1 (11%)
+    Sat 05 Dec 15:00  Leeds United vs Ipswich Town
+        HOME WIN  [Medium]   H 59% / D 25% / A 16%
+        likely scores: 2-0 (10%), 2-1 (10%), 1-1 (10%)
+    Sat 05 Dec 15:00  Manchester United vs Coventry City
+        HOME WIN  [High]   H 66% / D 21% / A 13%
+        likely scores: 1-0 (16%), 2-0 (14%), 1-1 (11%)
+    Sat 05 Dec 15:00  Newcastle United vs Sunderland
+        HOME WIN  [Low]   H 44% / D 28% / A 27%
+        likely scores: 1-1 (13%), 1-0 (11%), 2-1 (9%)
+    Sat 05 Dec 15:00  Bournemouth vs Hull City
+        HOME WIN  [Medium]   H 46% / D 28% / A 25%
+        likely scores: 0-0 (19%), 0-1 (16%), 1-1 (14%)
+    Sat 05 Dec 15:00  Everton vs Fulham
+        HOME WIN  [Low]   H 41% / D 29% / A 30%
+        likely scores: 1-1 (14%), 1-0 (11%), 0-0 (11%)
+    Sat 05 Dec 15:00  Nottingham Forest vs Brighton
+        AWAY WIN  [Low]   H 34% / D 26% / A 39%
+        likely scores: 1-1 (13%), 2-1 (8%), 1-0 (8%)
+    Sat 05 Dec 15:00  Aston Villa vs Crystal Palace
+        HOME WIN  [Medium]   H 48% / D 28% / A 24%
+        likely scores: 1-1 (13%), 1-0 (10%), 2-1 (10%)
+    Sat 05 Dec 15:00  Brentford vs Manchester City
+        AWAY WIN  [Medium]   H 20% / D 24% / A 56%
+        likely scores: 1-1 (12%), 1-2 (10%), 0-2 (9%)
+    Sat 05 Dec 15:00  Chelsea vs Liverpool
+        AWAY WIN  [Low]   H 37% / D 26% / A 37%
+        likely scores: 1-1 (11%), 1-2 (8%), 2-1 (8%)
+
+  Matchweek 15
+    Sat 12 Dec 15:00  Ipswich Town vs Newcastle United
+        AWAY WIN  [Medium]   H 20% / D 23% / A 58%
+        likely scores: 1-2 (10%), 1-1 (9%), 0-2 (9%)
+    Sat 12 Dec 15:00  Arsenal vs Bournemouth
+        HOME WIN  [High]   H 66% / D 20% / A 14%
+        likely scores: 2-0 (12%), 1-0 (12%), 1-1 (11%)
+    Sat 12 Dec 15:00  Crystal Palace vs Manchester United
+        AWAY WIN  [Medium]   H 26% / D 25% / A 49%
+        likely scores: 1-1 (13%), 1-2 (9%), 0-1 (8%)
+    Sat 12 Dec 15:00  Coventry City vs Aston Villa
+        AWAY WIN  [Medium]   H 26% / D 27% / A 47%
+        likely scores: 0-1 (16%), 0-0 (14%), 1-1 (13%)
+    Sat 12 Dec 15:00  Sunderland vs Nottingham Forest
+        HOME WIN  [Low]   H 43% / D 27% / A 30%
+        likely scores: 1-1 (15%), 0-0 (12%), 1-0 (12%)
+    Sat 12 Dec 15:00  Manchester City vs Chelsea
+        HOME WIN  [High]   H 68% / D 18% / A 14%
+        likely scores: 2-1 (10%), 1-1 (10%), 2-0 (10%)
+    Sat 12 Dec 15:00  Fulham vs Brentford
+        HOME WIN  [Low]   H 40% / D 27% / A 33%
+        likely scores: 1-1 (13%), 1-2 (8%), 2-1 (8%)
+    Sat 12 Dec 15:00  Liverpool vs Leeds United
+        HOME WIN  [Medium]   H 60% / D 23% / A 17%
+        likely scores: 1-1 (11%), 2-1 (10%), 2-0 (9%)
+    Sat 12 Dec 15:00  Hull City vs Tottenham
+        HOME WIN  [Low]   H 43% / D 30% / A 26%
+        likely scores: 1-0 (18%), 0-0 (16%), 2-0 (13%)
+    Sat 12 Dec 15:00  Brighton vs Everton
+        HOME WIN  [Medium]   H 53% / D 25% / A 22%
+        likely scores: 1-1 (13%), 1-0 (11%), 2-1 (9%)
+
+  Matchweek 16
+    Sat 19 Dec 15:00  Brentford vs Newcastle United
+        HOME WIN  [Medium]   H 49% / D 24% / A 27%
+        likely scores: 1-1 (12%), 2-1 (9%), 1-2 (8%)
+    Sat 19 Dec 15:00  Brighton vs Ipswich Town
+        HOME WIN  [High]   H 69% / D 19% / A 12%
+        likely scores: 2-0 (10%), 2-1 (9%), 3-0 (9%)
+    Sat 19 Dec 15:00  Bournemouth vs Coventry City
+        HOME WIN  [Medium]   H 60% / D 25% / A 16%
+        likely scores: 1-0 (17%), 2-0 (14%), 0-0 (12%)
+    Sat 19 Dec 15:00  Nottingham Forest vs Everton
+        HOME WIN  [Low]   H 42% / D 27% / A 31%
+        likely scores: 1-1 (14%), 1-0 (12%), 0-0 (11%)
+    Sat 19 Dec 15:00  Chelsea vs Aston Villa
+        HOME WIN  [Medium]   H 47% / D 25% / A 27%
+        likely scores: 1-1 (12%), 2-1 (9%), 1-0 (7%)
+    Sat 19 Dec 15:00  Arsenal vs Manchester United
+        HOME WIN  [High]   H 63% / D 21% / A 16%
+        likely scores: 2-0 (12%), 1-1 (11%), 1-0 (11%)
+    Sat 19 Dec 15:00  Leeds United vs Fulham
+        HOME WIN  [Low]   H 39% / D 29% / A 32%
+        likely scores: 1-1 (14%), 1-0 (9%), 2-1 (9%)
+    Sat 19 Dec 15:00  Sunderland vs Crystal Palace
+        HOME WIN  [Medium]   H 47% / D 27% / A 26%
+        likely scores: 1-1 (14%), 1-0 (12%), 0-0 (12%)
+    Sat 19 Dec 15:00  Manchester City vs Hull City
+        HOME WIN  [High]   H 62% / D 23% / A 15%
+        likely scores: 0-0 (19%), 1-0 (17%), 1-1 (14%)
+    Sat 19 Dec 15:00  Liverpool vs Tottenham
+        HOME WIN  [High]   H 60% / D 22% / A 17%
+        likely scores: 2-1 (10%), 1-1 (9%), 2-0 (9%)
+
+  Matchweek 17
+    Sat 26 Dec 15:00  Newcastle United vs Manchester City
+        AWAY WIN  [Medium]   H 18% / D 22% / A 59%
+        likely scores: 1-1 (11%), 1-2 (10%), 0-2 (8%)
+    Sat 26 Dec 15:00  Hull City vs Liverpool
+        AWAY WIN  [Low]   H 31% / D 27% / A 41%
+        likely scores: 0-0 (16%), 1-0 (15%), 1-1 (14%)
+    Sat 26 Dec 15:00  Crystal Palace vs Arsenal
+        AWAY WIN  [High]   H 15% / D 21% / A 64%
+        likely scores: 0-1 (13%), 0-2 (12%), 1-1 (12%)
+    Sat 26 Dec 15:00  Manchester United vs Nottingham Forest
+        HOME WIN  [Medium]   H 57% / D 23% / A 20%
+        likely scores: 1-1 (13%), 2-1 (10%), 1-0 (9%)
+    Sat 26 Dec 15:00  Everton vs Sunderland
+        HOME WIN  [Low]   H 43% / D 29% / A 28%
+        likely scores: 1-1 (15%), 0-0 (14%), 1-0 (14%)
+    Sat 26 Dec 15:00  Fulham vs Brighton
+        AWAY WIN  [Low]   H 36% / D 26% / A 37%
+        likely scores: 1-1 (13%), 1-2 (8%), 2-1 (8%)
+    Sat 26 Dec 15:00  Aston Villa vs Leeds United
+        HOME WIN  [Medium]   H 49% / D 26% / A 25%
+        likely scores: 1-1 (13%), 2-1 (9%), 1-0 (9%)
+    Sat 26 Dec 15:00  Ipswich Town vs Brentford
+        AWAY WIN  [High]   H 19% / D 21% / A 60%
+        likely scores: 1-1 (10%), 1-2 (10%), 0-2 (9%)
+    Sat 26 Dec 15:00  Tottenham vs Bournemouth
+        AWAY WIN  [Low]   H 33% / D 27% / A 40%
+        likely scores: 1-1 (12%), 1-2 (8%), 2-1 (8%)
+    Sat 26 Dec 15:00  Coventry City vs Chelsea
+        AWAY WIN  [Medium]   H 24% / D 26% / A 50%
+        likely scores: 0-1 (15%), 1-1 (13%), 0-0 (12%)
+
+  Matchweek 18
+    Wed 30 Dec 20:00  Hull City vs Leeds United
+        HOME WIN  [Medium]   H 46% / D 28% / A 26%
+        likely scores: 1-0 (20%), 0-0 (18%), 1-1 (13%)
+    Wed 30 Dec 20:00  Fulham vs Arsenal
+        AWAY WIN  [High]   H 16% / D 23% / A 61%
+        likely scores: 0-1 (13%), 1-1 (12%), 0-2 (12%)
+    Wed 30 Dec 20:00  Newcastle United vs Nottingham Forest
+        HOME WIN  [Low]   H 43% / D 27% / A 29%
+        likely scores: 1-1 (12%), 2-1 (10%), 1-0 (9%)
+    Wed 30 Dec 20:00  Ipswich Town vs Chelsea
+        AWAY WIN  [Medium]   H 19% / D 22% / A 59%
+        likely scores: 1-2 (10%), 1-1 (9%), 0-2 (9%)
+    Wed 30 Dec 20:00  Aston Villa vs Liverpool
+        AWAY WIN  [Low]   H 33% / D 26% / A 42%
+        likely scores: 1-1 (12%), 1-2 (9%), 2-1 (8%)
+    Wed 30 Dec 20:00  Crystal Palace vs Bournemouth
+        AWAY WIN  [Low]   H 31% / D 27% / A 42%
+        likely scores: 1-1 (13%), 1-2 (8%), 2-1 (8%)
+    Wed 30 Dec 20:00  Coventry City vs Brentford
+        AWAY WIN  [Medium]   H 25% / D 25% / A 50%
+        likely scores: 0-1 (16%), 0-0 (14%), 1-1 (13%)
+    Wed 30 Dec 20:00  Everton vs Manchester City
+        AWAY WIN  [High]   H 17% / D 23% / A 60%
+        likely scores: 1-1 (13%), 0-1 (12%), 0-2 (11%)
+    Wed 30 Dec 20:00  Tottenham vs Brighton
+        AWAY WIN  [Low]   H 30% / D 25% / A 44%
+        likely scores: 1-1 (12%), 1-2 (9%), 2-1 (8%)
+    Wed 30 Dec 20:00  Manchester United vs Sunderland
+        HOME WIN  [Medium]   H 60% / D 23% / A 18%
+        likely scores: 1-1 (13%), 1-0 (11%), 2-0 (9%)
+
+  Matchweek 19
+    Sat 02 Jan 15:00  Leeds United vs Everton
+        HOME WIN  [Low]   H 39% / D 29% / A 33%
+        likely scores: 1-1 (14%), 1-0 (11%), 0-0 (11%)
+    Sat 02 Jan 15:00  Nottingham Forest vs Fulham
+        HOME WIN  [Low]   H 42% / D 28% / A 30%
+        likely scores: 1-1 (14%), 1-0 (10%), 2-1 (9%)
+    Sat 02 Jan 15:00  Manchester City vs Tottenham
+        HOME WIN  [High]   H 69% / D 19% / A 12%
+        likely scores: 2-0 (11%), 2-1 (9%), 3-0 (9%)
+    Sat 02 Jan 15:00  Chelsea vs Newcastle United
+        HOME WIN  [Medium]   H 48% / D 25% / A 28%
+        likely scores: 1-1 (11%), 2-1 (9%), 1-2 (7%)
+    Sat 02 Jan 15:00  Bournemouth vs Aston Villa
+        HOME WIN  [Medium]   H 48% / D 25% / A 27%
+        likely scores: 1-1 (13%), 2-1 (9%), 1-0 (8%)
+    Sat 02 Jan 15:00  Sunderland vs Hull City
+        HOME WIN  [Low]   H 42% / D 28% / A 30%
+        likely scores: 0-0 (24%), 0-1 (20%), 1-1 (13%)
+    Sat 02 Jan 15:00  Liverpool vs Coventry City
+        HOME WIN  [High]   H 67% / D 21% / A 12%
+        likely scores: 2-0 (15%), 1-0 (15%), 3-0 (10%)
+    Sat 02 Jan 15:00  Brentford vs Crystal Palace
+        HOME WIN  [Medium]   H 53% / D 25% / A 21%
+        likely scores: 1-1 (12%), 2-1 (10%), 1-0 (9%)
+    Sat 02 Jan 15:00  Brighton vs Manchester United
+        HOME WIN  [Low]   H 45% / D 25% / A 30%
+        likely scores: 1-1 (12%), 2-1 (9%), 1-2 (8%)
+    Sat 02 Jan 15:00  Arsenal vs Ipswich Town
+        HOME WIN  [High]   H 79% / D 13% / A 8%
+        likely scores: 3-0 (13%), 2-0 (12%), 4-0 (10%)
+
+  Matchweek 20
+    Wed 06 Jan 20:00  Leeds United vs Manchester City
+        AWAY WIN  [Medium]   H 17% / D 23% / A 60%
+        likely scores: 1-1 (12%), 0-2 (10%), 0-1 (10%)
+    Wed 06 Jan 20:00  Manchester United vs Newcastle United
+        HOME WIN  [Medium]   H 58% / D 22% / A 21%
+        likely scores: 1-1 (11%), 2-1 (9%), 1-2 (8%)
+    Wed 06 Jan 20:00  Brighton vs Bournemouth
+        HOME WIN  [Medium]   H 48% / D 26% / A 27%
+        likely scores: 1-1 (12%), 2-1 (9%), 1-0 (8%)
+    Wed 06 Jan 20:00  Ipswich Town vs Coventry City
+        HOME WIN  [Low]   H 42% / D 29% / A 29%
+        likely scores: 1-1 (15%), 0-0 (14%), 1-0 (13%)
+    Wed 06 Jan 20:00  Sunderland vs Liverpool
+        AWAY WIN  [Low]   H 31% / D 26% / A 43%
+        likely scores: 1-1 (13%), 0-1 (10%), 1-2 (9%)
+    Wed 06 Jan 20:00  Nottingham Forest vs Hull City
+        HOME WIN  [Low]   H 41% / D 29% / A 30%
+        likely scores: 0-0 (21%), 0-1 (18%), 1-1 (14%)
+    Wed 06 Jan 20:00  Crystal Palace vs Chelsea
+        AWAY WIN  [Low]   H 33% / D 27% / A 40%
+        likely scores: 1-1 (13%), 1-2 (9%), 2-1 (8%)
+    Wed 06 Jan 20:00  Arsenal vs Brentford
+        HOME WIN  [High]   H 66% / D 20% / A 14%
+        likely scores: 2-0 (12%), 1-0 (11%), 1-1 (11%)
+    Wed 06 Jan 20:00  Fulham vs Tottenham
+        HOME WIN  [Medium]   H 48% / D 26% / A 26%
+        likely scores: 1-1 (13%), 2-1 (9%), 1-0 (8%)
+    Wed 06 Jan 20:00  Everton vs Aston Villa
+        HOME WIN  [Low]   H 43% / D 27% / A 31%
+        likely scores: 1-1 (14%), 0-0 (10%), 1-0 (10%)
+
+  Matchweek 21
+    Sat 16 Jan 15:00  Newcastle United vs Fulham
+        HOME WIN  [Low]   H 42% / D 29% / A 29%
+        likely scores: 1-1 (12%), 2-1 (10%), 2-0 (8%)
+    Sat 16 Jan 15:00  Hull City vs Arsenal
+        AWAY WIN  [Medium]   H 20% / D 27% / A 53%
+        likely scores: 0-0 (24%), 0-1 (17%), 1-0 (14%)
+    Sat 16 Jan 15:00  Tottenham vs Leeds United
+        HOME WIN  [Low]   H 41% / D 26% / A 33%
+        likely scores: 1-1 (13%), 2-1 (9%), 1-0 (8%)
+    Sat 16 Jan 15:00  Brentford vs Brighton
+        HOME WIN  [Low]   H 39% / D 26% / A 35%
+        likely scores: 1-1 (12%), 2-1 (9%), 1-2 (8%)
+    Sat 16 Jan 15:00  Coventry City vs Everton
+        AWAY WIN  [Low]   H 27% / D 28% / A 45%
+        likely scores: 0-0 (19%), 0-1 (18%), 1-1 (14%)
+    Sat 16 Jan 15:00  Bournemouth vs Ipswich Town
+        HOME WIN  [High]   H 66% / D 21% / A 14%
+        likely scores: 2-0 (10%), 2-1 (9%), 3-0 (8%)
+    Sat 16 Jan 15:00  Manchester City vs Nottingham Forest
+        HOME WIN  [High]   H 68% / D 19% / A 13%
+        likely scores: 2-0 (12%), 1-0 (11%), 1-1 (10%)
+    Sat 16 Jan 15:00  Chelsea vs Sunderland
+        HOME WIN  [Medium]   H 49% / D 27% / A 23%
+        likely scores: 1-1 (13%), 1-0 (11%), 2-0 (9%)
+    Sat 16 Jan 15:00  Liverpool vs Crystal Palace
+        HOME WIN  [High]   H 62% / D 22% / A 16%
+        likely scores: 1-1 (10%), 2-1 (10%), 2-0 (10%)
+    Sat 16 Jan 15:00  Aston Villa vs Manchester United
+        AWAY WIN  [Low]   H 33% / D 26% / A 41%
+        likely scores: 1-1 (12%), 2-1 (9%), 1-2 (8%)
+
+  Matchweek 22
+    Sat 23 Jan 15:00  Everton vs Brentford
+        HOME WIN  [Low]   H 37% / D 28% / A 35%
+        likely scores: 1-1 (14%), 0-0 (9%), 1-0 (9%)
+    Sat 23 Jan 15:00  Sunderland vs Coventry City
+        HOME WIN  [Medium]   H 54% / D 28% / A 18%
+        likely scores: 1-0 (20%), 0-0 (19%), 1-1 (13%)
+    Sat 23 Jan 15:00  Fulham vs Aston Villa
+        HOME WIN  [Low]   H 43% / D 25% / A 32%
+        likely scores: 1-1 (13%), 1-2 (8%), 2-1 (8%)
+    Sat 23 Jan 15:00  Crystal Palace vs Tottenham
+        HOME WIN  [Low]   H 39% / D 28% / A 33%
+        likely scores: 1-1 (13%), 2-1 (9%), 1-0 (8%)
+    Sat 23 Jan 15:00  Ipswich Town vs Hull City
+        AWAY WIN  [Medium]   H 25% / D 28% / A 47%
+        likely scores: 0-1 (18%), 0-2 (15%), 0-0 (13%)
+    Sat 23 Jan 15:00  Arsenal vs Newcastle United
+        HOME WIN  [High]   H 67% / D 19% / A 14%
+        likely scores: 2-0 (11%), 1-1 (11%), 1-0 (11%)
+    Sat 23 Jan 15:00  Leeds United vs Chelsea
+        AWAY WIN  [Low]   H 35% / D 27% / A 38%
+        likely scores: 1-1 (13%), 1-2 (9%), 2-1 (8%)
+    Sat 23 Jan 15:00  Nottingham Forest vs Bournemouth
+        AWAY WIN  [Low]   H 36% / D 28% / A 36%
+        likely scores: 1-1 (13%), 1-0 (9%), 2-1 (9%)
+    Sat 23 Jan 15:00  Brighton vs Manchester City
+        AWAY WIN  [Medium]   H 28% / D 25% / A 46%
+        likely scores: 1-1 (12%), 1-2 (10%), 0-2 (9%)
+    Sat 23 Jan 15:00  Manchester United vs Liverpool
+        HOME WIN  [Medium]   H 48% / D 23% / A 29%
+        likely scores: 1-1 (11%), 1-2 (9%), 2-1 (8%)
+
+  Matchweek 23
+    Sat 30 Jan 15:00  Tottenham vs Sunderland
+        HOME WIN  [Low]   H 38% / D 28% / A 34%
+        likely scores: 1-1 (14%), 1-0 (10%), 0-0 (10%)
+    Sat 30 Jan 15:00  Brentford vs Manchester United
+        HOME WIN  [Low]   H 37% / D 26% / A 37%
+        likely scores: 1-1 (12%), 2-1 (9%), 1-2 (8%)
+    Sat 30 Jan 15:00  Coventry City vs Leeds United
+        AWAY WIN  [Low]   H 30% / D 27% / A 43%
+        likely scores: 0-0 (16%), 0-1 (16%), 1-1 (14%)
+    Sat 30 Jan 15:00  Manchester City vs Arsenal
+        HOME WIN  [Medium]   H 46% / D 28% / A 27%
+        likely scores: 1-1 (14%), 1-0 (10%), 0-0 (10%)
+    Sat 30 Jan 15:00  Bournemouth vs Fulham
+        HOME WIN  [Medium]   H 51% / D 26% / A 24%
+        likely scores: 1-1 (13%), 2-1 (9%), 1-0 (9%)
+    Sat 30 Jan 15:00  Newcastle United vs Brighton
+        AWAY WIN  [Low]   H 35% / D 26% / A 38%
+        likely scores: 1-1 (12%), 2-1 (9%), 1-2 (7%)
+    Sat 30 Jan 15:00  Hull City vs Crystal Palace
+        HOME WIN  [Medium]   H 47% / D 30% / A 23%
+        likely scores: 1-0 (20%), 0-0 (18%), 2-0 (13%)
+    Sat 30 Jan 15:00  Aston Villa vs Ipswich Town
+        HOME WIN  [High]   H 63% / D 22% / A 15%
+        likely scores: 2-0 (10%), 2-1 (9%), 3-0 (9%)
+    Sat 30 Jan 15:00  Liverpool vs Everton
+        HOME WIN  [Medium]   H 58% / D 23% / A 19%
+        likely scores: 1-1 (12%), 1-0 (10%), 2-0 (10%)
+    Sat 30 Jan 15:00  Chelsea vs Nottingham Forest
+        HOME WIN  [Medium]   H 49% / D 26% / A 25%
+        likely scores: 1-1 (12%), 2-1 (10%), 1-0 (9%)
+
+  Matchweek 24
+    Sat 06 Feb 15:00  Everton vs Newcastle United
+        HOME WIN  [Low]   H 43% / D 26% / A 31%
+        likely scores: 1-1 (14%), 0-1 (9%), 0-0 (9%)
+    Sat 06 Feb 15:00  Leeds United vs Bournemouth
+        AWAY WIN  [Low]   H 36% / D 27% / A 37%
+        likely scores: 1-1 (13%), 2-1 (8%), 1-2 (8%)
+    Sat 06 Feb 15:00  Nottingham Forest vs Brentford
+        AWAY WIN  [Low]   H 36% / D 27% / A 36%
+        likely scores: 1-1 (13%), 2-1 (9%), 1-0 (8%)
+    Sat 06 Feb 15:00  Ipswich Town vs Tottenham
+        AWAY WIN  [Medium]   H 28% / D 25% / A 47%
+        likely scores: 1-1 (11%), 1-2 (10%), 0-2 (8%)
+    Sat 06 Feb 15:00  Brighton vs Hull City
+        HOME WIN  [Medium]   H 50% / D 27% / A 24%
+        likely scores: 0-0 (18%), 0-1 (16%), 1-1 (14%)
+    Sat 06 Feb 15:00  Manchester United vs Chelsea
+        HOME WIN  [Medium]   H 57% / D 22% / A 21%
+        likely scores: 1-1 (11%), 2-1 (9%), 1-2 (8%)
+    Sat 06 Feb 15:00  Crystal Palace vs Coventry City
+        HOME WIN  [Medium]   H 50% / D 28% / A 21%
+        likely scores: 1-0 (18%), 0-0 (15%), 1-1 (13%)
+    Sat 06 Feb 15:00  Sunderland vs Aston Villa
+        HOME WIN  [Low]   H 43% / D 25% / A 32%
+        likely scores: 1-1 (14%), 0-0 (11%), 0-1 (10%)
+    Sat 06 Feb 15:00  Fulham vs Manchester City
+        AWAY WIN  [High]   H 17% / D 22% / A 61%
+        likely scores: 1-1 (11%), 0-2 (10%), 1-2 (10%)
+    Sat 06 Feb 15:00  Arsenal vs Liverpool
+        HOME WIN  [High]   H 60% / D 21% / A 18%
+        likely scores: 1-1 (12%), 2-0 (10%), 1-0 (10%)
+
+  Matchweek 25
+    Wed 10 Feb 20:00  Aston Villa vs Bournemouth
+        HOME WIN  [Low]   H 38% / D 27% / A 35%
+        likely scores: 1-1 (13%), 2-1 (9%), 1-0 (8%)
+    Wed 10 Feb 20:00  Manchester United vs Brighton
+        HOME WIN  [Medium]   H 53% / D 24% / A 22%
+        likely scores: 1-1 (12%), 2-1 (9%), 1-2 (7%)
+    Wed 10 Feb 20:00  Ipswich Town vs Arsenal
+        AWAY WIN  [High]   H 11% / D 16% / A 73%
+        likely scores: 0-2 (13%), 0-3 (11%), 0-1 (9%)
+    Wed 10 Feb 20:00  Tottenham vs Manchester City
+        AWAY WIN  [Medium]   H 18% / D 22% / A 60%
+        likely scores: 1-1 (10%), 1-2 (10%), 0-2 (10%)
+    Wed 10 Feb 20:00  Coventry City vs Liverpool
+        AWAY WIN  [Medium]   H 20% / D 23% / A 56%
+        likely scores: 0-1 (15%), 0-2 (13%), 1-1 (12%)
+    Wed 10 Feb 20:00  Newcastle United vs Chelsea
+        HOME WIN  [Low]   H 39% / D 26% / A 35%
+        likely scores: 1-1 (11%), 2-1 (9%), 1-2 (8%)
+    Wed 10 Feb 20:00  Everton vs Leeds United
+        HOME WIN  [Low]   H 44% / D 27% / A 29%
+        likely scores: 1-1 (14%), 1-0 (11%), 0-0 (11%)
+    Wed 10 Feb 20:00  Fulham vs Nottingham Forest
+        HOME WIN  [Low]   H 44% / D 25% / A 30%
+        likely scores: 1-1 (14%), 1-0 (9%), 0-0 (9%)
+    Wed 10 Feb 20:00  Hull City vs Sunderland
+        HOME WIN  [Low]   H 44% / D 30% / A 26%
+        likely scores: 0-0 (22%), 1-0 (22%), 2-0 (12%)
+    Wed 10 Feb 20:00  Crystal Palace vs Brentford
+        AWAY WIN  [Low]   H 33% / D 26% / A 41%
+        likely scores: 1-1 (13%), 1-2 (9%), 2-1 (8%)
+
+  Matchweek 26
+    Sat 20 Feb 15:00  Chelsea vs Ipswich Town
+        HOME WIN  [High]   H 65% / D 21% / A 14%
+        likely scores: 2-0 (9%), 2-1 (9%), 3-0 (9%)
+    Sat 20 Feb 15:00  Brighton vs Tottenham
+        HOME WIN  [Medium]   H 56% / D 23% / A 21%
+        likely scores: 1-1 (11%), 2-1 (10%), 2-0 (8%)
+    Sat 20 Feb 15:00  Nottingham Forest vs Manchester United
+        AWAY WIN  [Low]   H 31% / D 26% / A 43%
+        likely scores: 1-1 (13%), 2-1 (8%), 1-2 (8%)
+    Sat 20 Feb 15:00  Bournemouth vs Crystal Palace
+        HOME WIN  [Medium]   H 54% / D 25% / A 21%
+        likely scores: 1-1 (13%), 2-1 (10%), 1-0 (9%)
+    Sat 20 Feb 15:00  Manchester City vs Newcastle United
+        HOME WIN  [High]   H 69% / D 18% / A 13%
+        likely scores: 2-1 (10%), 1-1 (10%), 2-0 (10%)
+    Sat 20 Feb 15:00  Leeds United vs Aston Villa
+        HOME WIN  [Low]   H 38% / D 27% / A 35%
+        likely scores: 1-1 (13%), 2-1 (8%), 1-2 (8%)
+    Sat 20 Feb 15:00  Liverpool vs Hull City
+        HOME WIN  [Medium]   H 53% / D 25% / A 21%
+        likely scores: 0-0 (16%), 1-1 (15%), 1-0 (14%)
+    Sat 20 Feb 15:00  Sunderland vs Everton
+        HOME WIN  [Low]   H 42% / D 27% / A 31%
+        likely scores: 1-1 (15%), 0-0 (14%), 1-0 (13%)
+    Sat 20 Feb 15:00  Arsenal vs Fulham
+        HOME WIN  [High]   H 69% / D 19% / A 13%
+        likely scores: 2-0 (14%), 1-0 (13%), 1-1 (10%)
+    Sat 20 Feb 15:00  Brentford vs Coventry City
+        HOME WIN  [Medium]   H 59% / D 25% / A 16%
+        likely scores: 1-0 (17%), 2-0 (14%), 0-0 (12%)
+
+  Matchweek 27
+    Sat 27 Feb 15:00  Everton vs Nottingham Forest
+        HOME WIN  [Low]   H 41% / D 28% / A 30%
+        likely scores: 1-1 (14%), 0-0 (12%), 1-0 (11%)
+    Sat 27 Feb 15:00  Hull City vs Manchester City
+        AWAY WIN  [Medium]   H 20% / D 26% / A 54%
+        likely scores: 0-0 (19%), 0-1 (15%), 1-1 (14%)
+    Sat 27 Feb 15:00  Aston Villa vs Chelsea
+        HOME WIN  [Low]   H 39% / D 27% / A 34%
+        likely scores: 1-1 (12%), 2-1 (9%), 1-2 (8%)
+    Sat 27 Feb 15:00  Ipswich Town vs Brighton
+        AWAY WIN  [High]   H 17% / D 20% / A 63%
+        likely scores: 1-1 (10%), 1-2 (10%), 0-2 (9%)
+    Sat 27 Feb 15:00  Coventry City vs Bournemouth
+        AWAY WIN  [Medium]   H 23% / D 26% / A 51%
+        likely scores: 0-1 (16%), 0-0 (14%), 1-1 (14%)
+    Sat 27 Feb 15:00  Tottenham vs Liverpool
+        AWAY WIN  [Medium]   H 27% / D 23% / A 50%
+        likely scores: 1-1 (11%), 1-2 (9%), 0-2 (7%)
+    Sat 27 Feb 15:00  Newcastle United vs Brentford
+        HOME WIN  [Low]   H 37% / D 27% / A 36%
+        likely scores: 1-1 (12%), 2-1 (9%), 1-2 (7%)
+    Sat 27 Feb 15:00  Manchester United vs Arsenal
+        AWAY WIN  [Low]   H 32% / D 28% / A 40%
+        likely scores: 1-1 (13%), 0-1 (10%), 1-2 (10%)
+    Sat 27 Feb 15:00  Crystal Palace vs Sunderland
+        HOME WIN  [Low]   H 36% / D 28% / A 35%
+        likely scores: 1-1 (14%), 0-0 (12%), 1-0 (12%)
+    Sat 27 Feb 15:00  Fulham vs Leeds United
+        HOME WIN  [Medium]   H 47% / D 25% / A 28%
+        likely scores: 1-1 (14%), 1-0 (9%), 2-1 (9%)
+
+  Matchweek 28
+    Wed 03 Mar 20:00  Brentford vs Ipswich Town
+        HOME WIN  [High]   H 66% / D 21% / A 13%
+        likely scores: 2-0 (10%), 2-1 (9%), 3-0 (8%)
+    Wed 03 Mar 20:00  Chelsea vs Coventry City
+        HOME WIN  [High]   H 61% / D 24% / A 15%
+        likely scores: 1-0 (16%), 2-0 (14%), 1-1 (11%)
+    Wed 03 Mar 20:00  Liverpool vs Aston Villa
+        HOME WIN  [Medium]   H 58% / D 23% / A 19%
+        likely scores: 1-1 (11%), 2-1 (10%), 2-0 (8%)
+    Wed 03 Mar 20:00  Arsenal vs Crystal Palace
+        HOME WIN  [High]   H 70% / D 18% / A 11%
+        likely scores: 2-0 (14%), 1-0 (13%), 1-1 (10%)
+    Wed 03 Mar 20:00  Bournemouth vs Tottenham
+        HOME WIN  [Medium]   H 52% / D 25% / A 23%
+        likely scores: 1-1 (12%), 2-1 (10%), 1-0 (8%)
+    Wed 03 Mar 20:00  Leeds United vs Hull City
+        HOME WIN  [Low]   H 39% / D 29% / A 32%
+        likely scores: 0-0 (20%), 0-1 (18%), 1-1 (14%)
+    Wed 03 Mar 20:00  Sunderland vs Manchester United
+        AWAY WIN  [Low]   H 33% / D 26% / A 41%
+        likely scores: 1-1 (14%), 0-1 (10%), 0-0 (9%)
+    Wed 03 Mar 20:00  Nottingham Forest vs Newcastle United
+        HOME WIN  [Low]   H 40% / D 26% / A 34%
+        likely scores: 1-1 (13%), 2-1 (8%), 1-2 (8%)
+    Wed 03 Mar 20:00  Brighton vs Fulham
+        HOME WIN  [Medium]   H 54% / D 26% / A 21%
+        likely scores: 1-1 (12%), 2-1 (10%), 1-0 (9%)
+    Wed 03 Mar 20:00  Manchester City vs Everton
+        HOME WIN  [High]   H 68% / D 19% / A 13%
+        likely scores: 2-0 (13%), 1-0 (12%), 1-1 (10%)
+
+  Matchweek 29
+    Sat 13 Mar 15:00  Chelsea vs Arsenal
+        AWAY WIN  [Medium]   H 20% / D 25% / A 55%
+        likely scores: 1-1 (13%), 0-1 (10%), 1-2 (10%)
+    Sat 13 Mar 15:00  Coventry City vs Manchester City
+        AWAY WIN  [High]   H 14% / D 20% / A 66%
+        likely scores: 0-1 (17%), 0-2 (16%), 0-0 (11%)
+    Sat 13 Mar 15:00  Aston Villa vs Hull City
+        HOME WIN  [Low]   H 40% / D 29% / A 30%
+        likely scores: 0-0 (19%), 0-1 (16%), 1-1 (14%)
+    Sat 13 Mar 15:00  Liverpool vs Ipswich Town
+        HOME WIN  [High]   H 72% / D 18% / A 11%
+        likely scores: 3-0 (9%), 2-0 (9%), 3-1 (8%)
+    Sat 13 Mar 15:00  Manchester United vs Everton
+        HOME WIN  [Medium]   H 59% / D 22% / A 19%
+        likely scores: 1-1 (13%), 1-0 (10%), 2-1 (9%)
+    Sat 13 Mar 15:00  Tottenham vs Nottingham Forest
+        HOME WIN  [Low]   H 39% / D 26% / A 35%
+        likely scores: 1-1 (13%), 2-1 (9%), 1-0 (8%)
+    Sat 13 Mar 15:00  Crystal Palace vs Fulham
+        AWAY WIN  [Low]   H 35% / D 28% / A 37%
+        likely scores: 1-1 (14%), 1-0 (9%), 0-0 (9%)
+    Sat 13 Mar 15:00  Leeds United vs Brighton
+        AWAY WIN  [Low]   H 31% / D 27% / A 43%
+        likely scores: 1-1 (13%), 1-2 (8%), 2-1 (8%)
+    Sat 13 Mar 15:00  Sunderland vs Brentford
+        HOME WIN  [Low]   H 39% / D 27% / A 34%
+        likely scores: 1-1 (14%), 0-0 (10%), 0-1 (10%)
+    Sat 13 Mar 15:00  Bournemouth vs Newcastle United
+        HOME WIN  [Medium]   H 51% / D 24% / A 25%
+        likely scores: 1-1 (12%), 2-1 (9%), 1-2 (8%)
+
+  Matchweek 30
+    Sat 20 Mar 15:00  Arsenal vs Sunderland
+        HOME WIN  [High]   H 69% / D 19% / A 12%
+        likely scores: 1-0 (16%), 2-0 (15%), 1-1 (11%)
+    Sat 20 Mar 15:00  Fulham vs Liverpool
+        AWAY WIN  [Low]   H 30% / D 26% / A 45%
+        likely scores: 1-1 (12%), 1-2 (9%), 0-1 (8%)
+    Sat 20 Mar 15:00  Manchester City vs Manchester United
+        HOME WIN  [High]   H 65% / D 20% / A 15%
+        likely scores: 1-1 (10%), 2-1 (10%), 2-0 (10%)
+    Sat 20 Mar 15:00  Brighton vs Coventry City
+        HOME WIN  [High]   H 64% / D 22% / A 14%
+        likely scores: 1-0 (17%), 2-0 (14%), 0-0 (12%)
+    Sat 20 Mar 15:00  Brentford vs Bournemouth
+        HOME WIN  [Low]   H 43% / D 27% / A 30%
+        likely scores: 1-1 (12%), 2-1 (9%), 1-0 (8%)
+    Sat 20 Mar 15:00  Newcastle United vs Leeds United
+        HOME WIN  [Medium]   H 49% / D 25% / A 26%
+        likely scores: 1-1 (12%), 2-1 (10%), 1-0 (8%)
+    Sat 20 Mar 15:00  Everton vs Tottenham
+        HOME WIN  [Medium]   H 45% / D 28% / A 26%
+        likely scores: 1-1 (14%), 1-0 (10%), 0-0 (9%)
+    Sat 20 Mar 15:00  Nottingham Forest vs Aston Villa
+        HOME WIN  [Low]   H 42% / D 26% / A 33%
+        likely scores: 1-1 (14%), 1-0 (9%), 2-1 (8%)
+    Sat 20 Mar 15:00  Hull City vs Chelsea
+        HOME WIN  [Low]   H 38% / D 28% / A 33%
+        likely scores: 1-0 (17%), 0-0 (16%), 1-1 (14%)
+    Sat 20 Mar 15:00  Ipswich Town vs Crystal Palace
+        AWAY WIN  [Medium]   H 27% / D 25% / A 48%
+        likely scores: 1-1 (12%), 1-2 (10%), 0-1 (8%)
+
+  Matchweek 31
+    Sat 10 Apr 15:00  Liverpool vs Newcastle United
+        HOME WIN  [Medium]   H 59% / D 22% / A 19%
+        likely scores: 1-1 (10%), 2-1 (9%), 2-0 (7%)
+    Sat 10 Apr 15:00  Bournemouth vs Manchester City
+        AWAY WIN  [Medium]   H 22% / D 24% / A 54%
+        likely scores: 1-1 (12%), 1-2 (10%), 0-2 (9%)
+    Sat 10 Apr 15:00  Crystal Palace vs Everton
+        HOME WIN  [Low]   H 36% / D 29% / A 35%
+        likely scores: 1-1 (14%), 0-0 (11%), 1-0 (11%)
+    Sat 10 Apr 15:00  Leeds United vs Nottingham Forest
+        HOME WIN  [Low]   H 39% / D 28% / A 32%
+        likely scores: 1-1 (14%), 1-0 (10%), 0-0 (9%)
+    Sat 10 Apr 15:00  Tottenham vs Brentford
+        AWAY WIN  [Low]   H 35% / D 26% / A 39%
+        likely scores: 1-1 (12%), 1-2 (9%), 2-1 (8%)
+    Sat 10 Apr 15:00  Sunderland vs Ipswich Town
+        HOME WIN  [Medium]   H 59% / D 24% / A 17%
+        likely scores: 2-0 (12%), 1-0 (11%), 1-1 (11%)
+    Sat 10 Apr 15:00  Manchester United vs Hull City
+        HOME WIN  [Medium]   H 54% / D 24% / A 22%
+        likely scores: 0-0 (18%), 0-1 (15%), 1-1 (14%)
+    Sat 10 Apr 15:00  Coventry City vs Arsenal
+        AWAY WIN  [High]   H 13% / D 21% / A 66%
+        likely scores: 0-1 (20%), 0-2 (17%), 0-0 (13%)
+    Sat 10 Apr 15:00  Aston Villa vs Brighton
+        AWAY WIN  [Low]   H 35% / D 27% / A 38%
+        likely scores: 1-1 (13%), 2-1 (9%), 1-2 (8%)
+    Sat 10 Apr 15:00  Chelsea vs Fulham
+        HOME WIN  [Medium]   H 48% / D 26% / A 25%
+        likely scores: 1-1 (12%), 2-1 (10%), 2-0 (8%)
+
+  Matchweek 32
+    Sat 17 Apr 15:00  Fulham vs Sunderland
+        HOME WIN  [Low]   H 43% / D 27% / A 30%
+        likely scores: 1-1 (14%), 1-0 (12%), 0-0 (11%)
+    Sat 17 Apr 15:00  Ipswich Town vs Manchester United
+        AWAY WIN  [High]   H 16% / D 20% / A 64%
+        likely scores: 1-2 (10%), 1-1 (9%), 0-2 (9%)
+    Sat 17 Apr 15:00  Newcastle United vs Tottenham
+        HOME WIN  [Medium]   H 46% / D 27% / A 27%
+        likely scores: 1-1 (11%), 2-1 (10%), 2-0 (8%)
+    Sat 17 Apr 15:00  Brentford vs Leeds United
+        HOME WIN  [Medium]   H 51% / D 25% / A 24%
+        likely scores: 1-1 (13%), 2-1 (10%), 1-0 (9%)
+    Sat 17 Apr 15:00  Everton vs Bournemouth
+        HOME WIN  [Low]   H 37% / D 29% / A 34%
+        likely scores: 1-1 (14%), 0-0 (10%), 1-0 (10%)
+    Sat 17 Apr 15:00  Arsenal vs Aston Villa
+        HOME WIN  [High]   H 68% / D 19% / A 13%
+        likely scores: 2-0 (12%), 1-0 (12%), 1-1 (11%)
+    Sat 17 Apr 15:00  Brighton vs Chelsea
+        HOME WIN  [Medium]   H 50% / D 24% / A 26%
+        likely scores: 1-1 (12%), 2-1 (9%), 1-2 (8%)
+    Sat 17 Apr 15:00  Nottingham Forest vs Liverpool
+        AWAY WIN  [Low]   H 31% / D 26% / A 43%
+        likely scores: 1-1 (12%), 1-2 (9%), 0-1 (8%)
+    Sat 17 Apr 15:00  Manchester City vs Crystal Palace
+        HOME WIN  [High]   H 71% / D 17% / A 11%
+        likely scores: 2-0 (12%), 1-0 (10%), 2-1 (10%)
+    Sat 17 Apr 15:00  Hull City vs Coventry City
+        HOME WIN  [Medium]   H 52% / D 30% / A 18%
+        likely scores: 1-0 (26%), 0-0 (24%), 2-0 (16%)
+
+  Matchweek 33
+    Sat 24 Apr 15:00  Nottingham Forest vs Sunderland
+        HOME WIN  [Low]   H 42% / D 28% / A 29%
+        likely scores: 1-1 (14%), 1-0 (13%), 0-0 (12%)
+    Sat 24 Apr 15:00  Tottenham vs Hull City
+        HOME WIN  [Low]   H 38% / D 27% / A 34%
+        likely scores: 0-0 (17%), 0-1 (17%), 1-1 (14%)
+    Sat 24 Apr 15:00  Newcastle United vs Ipswich Town
+        HOME WIN  [High]   H 63% / D 22% / A 15%
+        likely scores: 2-0 (9%), 2-1 (9%), 3-0 (9%)
+    Sat 24 Apr 15:00  Leeds United vs Liverpool
+        AWAY WIN  [Medium]   H 28% / D 26% / A 46%
+        likely scores: 1-1 (12%), 1-2 (9%), 0-1 (8%)
+    Sat 24 Apr 15:00  Everton vs Brighton
+        AWAY WIN  [Low]   H 34% / D 28% / A 38%
+        likely scores: 1-1 (14%), 0-0 (9%), 1-0 (9%)
+    Sat 24 Apr 15:00  Brentford vs Fulham
+        HOME WIN  [Medium]   H 48% / D 28% / A 24%
+        likely scores: 1-1 (12%), 2-1 (10%), 1-0 (9%)
+    Sat 24 Apr 15:00  Aston Villa vs Coventry City
+        HOME WIN  [Medium]   H 56% / D 27% / A 17%
+        likely scores: 1-0 (17%), 2-0 (14%), 0-0 (13%)
+    Sat 24 Apr 15:00  Chelsea vs Manchester City
+        AWAY WIN  [Medium]   H 21% / D 24% / A 55%
+        likely scores: 1-1 (11%), 1-2 (10%), 0-2 (8%)
+    Sat 24 Apr 15:00  Bournemouth vs Arsenal
+        AWAY WIN  [Medium]   H 22% / D 26% / A 53%
+        likely scores: 1-1 (13%), 0-1 (11%), 0-2 (10%)
+    Sat 24 Apr 15:00  Manchester United vs Crystal Palace
+        HOME WIN  [High]   H 63% / D 20% / A 17%
+        likely scores: 1-1 (12%), 2-1 (10%), 1-0 (9%)
+
+  Matchweek 34
+    Sat 01 May 15:00  Brighton vs Nottingham Forest
+        HOME WIN  [Medium]   H 53% / D 25% / A 22%
+        likely scores: 1-1 (13%), 2-1 (9%), 1-0 (9%)
+    Sat 01 May 15:00  Manchester City vs Brentford
+        HOME WIN  [High]   H 68% / D 19% / A 14%
+        likely scores: 2-0 (10%), 2-1 (10%), 1-1 (10%)
+    Sat 01 May 15:00  Fulham vs Everton
+        HOME WIN  [Low]   H 44% / D 26% / A 30%
+        likely scores: 1-1 (14%), 1-0 (11%), 0-0 (11%)
+    Sat 01 May 15:00  Coventry City vs Manchester United
+        AWAY WIN  [Medium]   H 22% / D 25% / A 53%
+        likely scores: 0-1 (15%), 1-1 (13%), 0-0 (13%)
+    Sat 01 May 15:00  Liverpool vs Chelsea
+        HOME WIN  [Medium]   H 55% / D 24% / A 21%
+        likely scores: 1-1 (10%), 2-1 (9%), 2-0 (7%)
+    Sat 01 May 15:00  Arsenal vs Tottenham
+        HOME WIN  [High]   H 68% / D 19% / A 13%
+        likely scores: 2-0 (13%), 1-0 (11%), 3-0 (10%)
+    Sat 01 May 15:00  Ipswich Town vs Leeds United
+        AWAY WIN  [Medium]   H 25% / D 27% / A 48%
+        likely scores: 1-1 (12%), 1-2 (10%), 0-2 (9%)
+    Sat 01 May 15:00  Crystal Palace vs Aston Villa
+        HOME WIN  [Low]   H 36% / D 29% / A 35%
+        likely scores: 1-1 (13%), 1-2 (8%), 0-1 (8%)
+    Sat 01 May 15:00  Hull City vs Bournemouth
+        HOME WIN  [Low]   H 39% / D 29% / A 33%
+        likely scores: 1-0 (18%), 0-0 (17%), 1-1 (13%)
+    Sat 01 May 15:00  Sunderland vs Newcastle United
+        HOME WIN  [Low]   H 44% / D 25% / A 31%
+        likely scores: 1-1 (14%), 0-1 (10%), 0-0 (9%)
+
+  Matchweek 35
+    Sat 08 May 15:00  Tottenham vs Chelsea
+        AWAY WIN  [Low]   H 34% / D 26% / A 41%
+        likely scores: 1-1 (12%), 1-2 (9%), 2-1 (8%)
+    Sat 08 May 15:00  Leeds United vs Arsenal
+        AWAY WIN  [Medium]   H 17% / D 24% / A 59%
+        likely scores: 0-1 (13%), 1-1 (12%), 0-2 (12%)
+    Sat 08 May 15:00  Manchester City vs Liverpool
+        HOME WIN  [High]   H 63% / D 20% / A 17%
+        likely scores: 1-1 (11%), 2-1 (10%), 2-0 (8%)
+    Sat 08 May 15:00  Bournemouth vs Manchester United
+        HOME WIN  [Low]   H 38% / D 26% / A 36%
+        likely scores: 1-1 (12%), 2-1 (9%), 1-2 (8%)
+    Sat 08 May 15:00  Fulham vs Ipswich Town
+        HOME WIN  [High]   H 61% / D 23% / A 16%
+        likely scores: 2-0 (10%), 2-1 (10%), 1-1 (10%)
+    Sat 08 May 15:00  Brighton vs Sunderland
+        HOME WIN  [Medium]   H 53% / D 26% / A 22%
+        likely scores: 1-1 (14%), 1-0 (11%), 0-0 (10%)
+    Sat 08 May 15:00  Brentford vs Aston Villa
+        HOME WIN  [Medium]   H 48% / D 26% / A 26%
+        likely scores: 1-1 (13%), 2-1 (9%), 1-0 (8%)
+    Sat 08 May 15:00  Everton vs Hull City
+        HOME WIN  [Low]   H 42% / D 28% / A 30%
+        likely scores: 0-0 (23%), 0-1 (19%), 1-1 (13%)
+    Sat 08 May 15:00  Nottingham Forest vs Crystal Palace
+        HOME WIN  [Medium]   H 48% / D 26% / A 26%
+        likely scores: 1-1 (14%), 1-0 (11%), 0-0 (9%)
+    Sat 08 May 15:00  Newcastle United vs Coventry City
+        HOME WIN  [Medium]   H 56% / D 26% / A 18%
+        likely scores: 1-0 (16%), 2-0 (14%), 1-1 (11%)
+
+  Matchweek 36
+    Sat 15 May 15:00  Crystal Palace vs Brighton
+        AWAY WIN  [Medium]   H 28% / D 26% / A 46%
+        likely scores: 1-1 (13%), 1-2 (9%), 0-1 (8%)
+    Sat 15 May 15:00  Hull City vs Fulham
+        HOME WIN  [Low]   H 40% / D 31% / A 29%
+        likely scores: 1-0 (20%), 0-0 (18%), 2-0 (13%)
+    Sat 15 May 15:00  Liverpool vs Brentford
+        HOME WIN  [Medium]   H 56% / D 23% / A 21%
+        likely scores: 1-1 (10%), 2-1 (10%), 2-0 (8%)
+    Sat 15 May 15:00  Sunderland vs Bournemouth
+        HOME WIN  [Low]   H 36% / D 28% / A 36%
+        likely scores: 1-1 (14%), 0-0 (10%), 1-0 (10%)
+    Sat 15 May 15:00  Aston Villa vs Newcastle United
+        HOME WIN  [Low]   H 43% / D 25% / A 32%
+        likely scores: 1-1 (12%), 2-1 (9%), 1-2 (8%)
+    Sat 15 May 15:00  Coventry City vs Tottenham
+        AWAY WIN  [Low]   H 30% / D 28% / A 42%
+        likely scores: 0-1 (15%), 1-1 (14%), 0-0 (14%)
+    Sat 15 May 15:00  Ipswich Town vs Manchester City
+        AWAY WIN  [High]   H 11% / D 16% / A 74%
+        likely scores: 0-2 (11%), 0-3 (10%), 1-2 (8%)
+    Sat 15 May 15:00  Arsenal vs Nottingham Forest
+        HOME WIN  [High]   H 67% / D 20% / A 13%
+        likely scores: 2-0 (14%), 1-0 (13%), 1-1 (11%)
+    Sat 15 May 15:00  Manchester United vs Leeds United
+        HOME WIN  [High]   H 60% / D 21% / A 18%
+        likely scores: 1-1 (12%), 2-1 (10%), 1-0 (9%)
+    Sat 15 May 15:00  Chelsea vs Everton
+        HOME WIN  [Medium]   H 48% / D 27% / A 26%
+        likely scores: 1-1 (13%), 1-0 (10%), 2-1 (9%)
+
+  Matchweek 37
+    Sun 23 May 15:00  Newcastle United vs Crystal Palace
+        HOME WIN  [Medium]   H 50% / D 26% / A 24%
+        likely scores: 1-1 (12%), 2-1 (10%), 2-0 (9%)
+    Sun 23 May 15:00  Tottenham vs Manchester United
+        AWAY WIN  [Low]   H 30% / D 26% / A 44%
+        likely scores: 1-1 (12%), 1-2 (9%), 2-1 (8%)
+    Sun 23 May 15:00  Brentford vs Hull City
+        HOME WIN  [Medium]   H 46% / D 28% / A 27%
+        likely scores: 0-0 (18%), 0-1 (16%), 1-1 (14%)
+    Sun 23 May 15:00  Manchester City vs Aston Villa
+        HOME WIN  [High]   H 68% / D 18% / A 13%
+        likely scores: 2-0 (11%), 1-1 (10%), 2-1 (10%)
+    Sun 23 May 15:00  Fulham vs Coventry City
+        HOME WIN  [Medium]   H 56% / D 26% / A 18%
+        likely scores: 1-0 (17%), 0-0 (15%), 1-1 (13%)
+    Sun 23 May 15:00  Bournemouth vs Chelsea
+        HOME WIN  [Low]   H 45% / D 26% / A 29%
+        likely scores: 1-1 (12%), 2-1 (9%), 1-2 (8%)
+    Sun 23 May 15:00  Brighton vs Liverpool
+        HOME WIN  [Low]   H 40% / D 25% / A 35%
+        likely scores: 1-1 (11%), 1-2 (9%), 2-1 (8%)
+    Sun 23 May 15:00  Everton vs Arsenal
+        AWAY WIN  [Medium]   H 17% / D 24% / A 60%
+        likely scores: 0-1 (15%), 1-1 (13%), 0-2 (12%)
+    Sun 23 May 15:00  Nottingham Forest vs Ipswich Town
+        HOME WIN  [High]   H 62% / D 22% / A 16%
+        likely scores: 2-0 (11%), 2-1 (10%), 1-1 (10%)
+    Sun 23 May 15:00  Leeds United vs Sunderland
+        HOME WIN  [Low]   H 40% / D 30% / A 31%
+        likely scores: 1-1 (14%), 1-0 (12%), 0-0 (12%)
+
+  Matchweek 38
+    Sun 30 May 16:00  Sunderland vs Manchester City
+        AWAY WIN  [Medium]   H 21% / D 25% / A 54%
+        likely scores: 0-1 (13%), 1-1 (12%), 0-2 (11%)
+    Sun 30 May 16:00  Ipswich Town vs Everton
+        AWAY WIN  [Medium]   H 22% / D 24% / A 54%
+        likely scores: 1-1 (13%), 0-1 (10%), 1-2 (10%)
+    Sun 30 May 16:00  Hull City vs Newcastle United
+        HOME WIN  [Low]   H 44% / D 28% / A 29%
+        likely scores: 1-0 (17%), 0-0 (16%), 1-1 (14%)
+    Sun 30 May 16:00  Coventry City vs Nottingham Forest
+        AWAY WIN  [Low]   H 28% / D 28% / A 44%
+        likely scores: 0-1 (17%), 0-0 (17%), 1-1 (14%)
+    Sun 30 May 16:00  Chelsea vs Brentford
+        HOME WIN  [Low]   H 45% / D 26% / A 29%
+        likely scores: 1-1 (12%), 2-1 (9%), 1-2 (7%)
+    Sun 30 May 16:00  Aston Villa vs Tottenham
+        HOME WIN  [Medium]   H 45% / D 28% / A 26%
+        likely scores: 1-1 (12%), 2-1 (10%), 1-0 (8%)
+    Sun 30 May 16:00  Arsenal vs Brighton
+        HOME WIN  [High]   H 64% / D 20% / A 16%
+        likely scores: 2-0 (12%), 1-0 (11%), 1-1 (11%)
+    Sun 30 May 16:00  Crystal Palace vs Leeds United
+        HOME WIN  [Low]   H 40% / D 27% / A 33%
+        likely scores: 1-1 (14%), 1-0 (9%), 0-0 (9%)
+    Sun 30 May 16:00  Manchester United vs Fulham
+        HOME WIN  [High]   H 61% / D 21% / A 18%
+        likely scores: 1-1 (12%), 2-1 (10%), 1-0 (9%)
+    Sun 30 May 16:00  Liverpool vs Bournemouth
+        HOME WIN  [Medium]   H 55% / D 24% / A 21%
+        likely scores: 1-1 (10%), 2-1 (10%), 2-0 (8%)
+
+==============================================================================
+SUMMARY
+==============================================================================
+  HOME WIN  predicted in 244 of 352 fixtures
+  DRAW      predicted in   0 of 352 fixtures
+  AWAY WIN  predicted in 108 of 352 fixtures
+  Confidence: Low 144, Medium 141, High 67
+
+
+  No fixture lists DRAW as its single most likely outcome. That is
+  expected rather than a fault: draw probability peaks around a third,
+  so a draw is rarely the modal result even when it is well priced.
+  The probabilities, not the label, are the useful output.
+
+  Mean probabilities across upcoming fixtures: H 43.3% / D 25.0% / A 31.7%
+==============================================================================

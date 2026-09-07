@@ -1,210 +1,121 @@
-# Premier League Tracker 🏆
-**Production-Ready EPL Prediction System with 64.5% Accuracy**
+# PremierPredictor
 
-A machine learning system that predicts Premier League match outcomes using historical data. The system uses a Random Forest model trained on 3,716 historical matches and achieves competitive accuracy with industry experts.
+Predicts Premier League match outcomes as three-way probabilities — home win,
+draw, away win — for every remaining fixture of the season.
 
-## 🎯 **Key Features**
+## Results
 
-- **64.5% Accuracy** - Tested on 2024-2025 season data
-- **Production-Ready** - Complete prediction system for 2025-2026 season
-- **Advanced Analytics** - Expected Goals (xG), possession stats, rolling averages
-- **Realistic Confidence Levels** - High/Medium/Low confidence predictions
-- **Comprehensive Output** - Win/draw/loss probabilities for each match
+Walk-forward backtest: for each season, the model is trained only on seasons
+before it, then predicts that season cold. 2,280 matches across 2020/21–2025/26.
 
-## 🏗️ **Tech Stack**
+| | Accuracy | Log loss |
+|---|---|---|
+| Bet365 closing odds *(benchmark)* | 54.6% | 0.968 |
+| **Ensemble (shipped)** | **53.0%** | **0.987** |
+| Random Forest alone | 53.2% | 0.990 |
+| Poisson goals model alone | 50.7% | 1.004 |
+| Always predict a home win | 43.1% | 1.070 |
 
-### Core Technologies
-- **Python 3.7+** - Primary development language
-- **scikit-learn** - Random Forest classifier for predictions
-- **pandas** - Data manipulation and analysis
-- **numpy** - Numerical operations
+The ensemble's edge over the forest alone is real in direction but small — it
+wins 4 of 6 seasons, which is not distinguishable from chance. It is shipped
+because combining decorrelated models reliably helps on average, and because
+the Poisson half supplies scorelines regardless.
 
-### Web Scraping
-- **ScraperAPI** - Anti-bot protection handling
-- **Beautiful Soup 4** - HTML parsing
-- **requests** - HTTP requests
+Log loss is the number that matters; accuracy is a poor guide when one class
+wins 45% of the time. The model closes roughly three quarters of the distance
+between knowing nothing and the bookmaker's price, without ever seeing odds.
 
-### Data Sources
-- **fbref.com** - Premier League statistics
-- **CSV files** - Historical match data storage
+Bookmaker odds are a **benchmark only** and are never a model input. Feeding
+them in would raise the score while telling you nothing about whether the
+football features work.
 
-## 📊 **Model Performance**
+## Usage
 
-### Accuracy Results (2024-2025 Test Season)
-- **Random Forest Model**: 64.5% overall accuracy
-- **Enhanced Statistical Approach**: 55.9% overall accuracy
-- **High Confidence Predictions**: 83.3% accuracy (small subset)
-
-### Prediction Distribution (2025-2026 Season)
-- **Total Matches**: 380
-- **Predicted Wins**: 322 (84.7%)
-- **Predicted Losses/Draws**: 58 (15.3%)
-- **Average Win Probability**: 50.9%
-
-## 🚀 **Quick Start**
-
-### 1. Clone and Setup
 ```bash
-git clone <repository-url>
-cd EPL_Tracker
 pip install -r requirements.txt
+cp .env.example .env        # add your ScraperAPI key
+python update.py            # refresh results, rebuild, re-predict
 ```
 
-### 2. Run Production Predictions
-```bash
-python production_predictions.py
-```
+`update.py` re-fetches only the current season (~10 credits). Earlier seasons
+come from the on-disk cache and cost nothing.
 
-### 3. View Results
-- **2025_2026_production_predictions.csv** - Complete season predictions
-- **docs/ACCURACY_ANALYSIS.md** - Detailed accuracy testing results
+Outputs: `data/predictions_<season>.csv` and a readable
+`predictions_<season>.txt` grouped by matchweek.
 
-## 📁 **Project Structure**
+## How it works
 
-```
-EPL_Tracker/
-├── production_predictions.py          # 🎯 Main production system
-├── test_model_accuracy.py            # 📊 Accuracy testing framework
-├── config.py                         # ⚙️ Configuration management
-├── matches.csv                       # 📈 Historical data (3,800+ matches)
-├── 2025_2026_production_predictions.csv  # 🏆 Current season predictions
-├── requirements.txt                   # 📦 Python dependencies
-├── README.md                         # 📚 This file
-├── docs/                             # 📖 Documentation
-│   ├── ACCURACY_ANALYSIS.md          # 📊 Detailed accuracy results
-│   ├── DEPLOYMENT.md                 # 🚀 Deployment guide
-│   └── ENHANCED_IMPLEMENTATION_SUMMARY.md  # 📖 Technical details
-├── archive/                          # 📦 Archived files
-│   ├── experimental/                 # 🔬 Experimental approaches
-│   └── old_versions/                 # 📁 Previous versions
-└── venv/                            # 🐍 Virtual environment
-```
+| File | Role |
+|---|---|
+| `config.py` | Paths, seasons, cached fetch layer, canonical team names |
+| `scraper.py` | fbref schedules and football-data.co.uk season CSVs |
+| `dataset.py` | Joins both sources into one row per match |
+| `features.py` | Elo, rolling form, rest days, head-to-head |
+| `model.py` | Classifier comparison and the walk-forward backtest |
+| `poisson_model.py` | Dixon-Coles goals model; scorelines and team ratings |
+| `predict.py` | Trains the final model and writes the report |
+| `update.py` | Entry point for a weekly refresh |
 
-## 🎯 **How to Use**
+### Data
 
-### Production Predictions
-```python
-# Run the complete production system
-python production_predictions.py
+3,828 played matches, 2016/17 to date, from two independent sources that agree
+on all 3,820 scores they share.
 
-# Output: 2025_2026_production_predictions.csv
-# Contains: team, opponent, prediction, confidence, probabilities
-```
+- **fbref** — schedules, matchweeks, and the forward fixture list. The only
+  source for matches not yet played.
+- **football-data.co.uk** — shots, shots on target, corners, fouls, cards,
+  half-time scores, bookmaker odds.
 
-### Accuracy Testing
-```python
-# Test model accuracy on historical data
-python test_model_accuracy.py
+Both need the ScraperAPI proxy: fbref returns 403 to direct requests and
+football-data returns a site-wide 503.
 
-# Results: Random Forest vs Enhanced approach comparison
-```
+> fbref removed xG from its free tier at some point after January 2026 — the
+> attribute is gone from team pages and match logs alike. Nothing here depends
+> on it. football-data started publishing xG in 2026/27, which is too little
+> history to train on but worth revisiting later.
 
-## 🔬 **Model Features**
+### The two models
 
-### Core Features
-- **Venue** (Home/Away)
-- **Opponent** (team codes)
-- **Match timing** (hour, day of week)
-- **Rolling averages** (3-match form)
+**Random Forest** over the features below. Strong, but opaque, and it can only
+emit a label plus three probabilities.
 
-### Advanced Metrics
-- **Expected Goals** (xG difference)
-- **Shot accuracy** (shots on target ratio)
-- **Goals per xG** (finishing efficiency)
-- **Possession efficiency**
-- **Formation analysis**
+**Dixon-Coles Poisson** models goals instead of outcomes. Each club gets an
+attack and a defence rating; the two expected-goal figures produce a grid over
+every scoreline, and home/draw/away come from summing below, on, and above its
+diagonal. It fits in about a second and is readable — on current data it puts
+home advantage at ×1.19, Arsenal's defence at 0.64 (opponents score 36% below
+their norm) and Ipswich's at 1.33. It also yields correct-score probabilities,
+which the classifier cannot produce.
 
-### Feature Engineering
-- **3-match rolling averages** for all performance stats
-- **Seasonal adjustments** (early/mid/late season)
-- **Team-specific patterns** (home/away performance)
+Its fitted low-score correction (rho = −0.075) confirms that real football
+produces more 0-0 and 1-1 draws than plain Poisson predicts.
 
-## 📈 **Data Sources**
+### Features
 
-- **fbref.com** - Premier League match statistics
-- **Historical Seasons** - 2021-2025 (3,716 matches)
-- **Test Data** - 2024-2025 season for accuracy validation
-- **Future Fixtures** - 2025-2026 season predictions
+All computed strictly from information available before kickoff. Rolling
+windows are shifted by one match; Elo is recorded before the match, then
+updated.
 
-## 🎯 **Why Random Forest?**
+- **Elo ratings** — margin-scaled updates, home advantage, regression to the
+  mean between seasons. Promoted clubs enter below average, which is what lets
+  the model say anything sensible about sides with no recent top-flight record.
+- **Rolling form for both teams** over 5 and 10 matches — goals, shots, shots
+  on target, corners, points, win rate — plus the differential between sides.
+- **Venue-specific form** — the home side's home record, the away side's away record.
+- **Rest days**, **head-to-head**, **matchweek**, **kickoff hour**, **promoted flag**.
 
-- **High Accuracy** - 64.5% on test data
-- **Robust Performance** - Handles missing values well
-- **Feature Importance** - Understandable predictions
-- **Production Ready** - Reliable in real-world scenarios
+## Known limits
 
-## 🔄 **Workflow**
-
-1. **Data Collection** → Scrape from fbref.com
-2. **Feature Engineering** → Calculate rolling averages and advanced metrics
-3. **Model Training** → Random Forest on historical data
-4. **Accuracy Testing** → Validate on 2024-2025 season
-5. **Production Predictions** → Generate 2025-2026 season forecasts
-
-## 📊 **Key Functions**
-
-- `train_production_model()` - Train Random Forest model
-- `create_production_predictions()` - Generate season predictions
-- `load_and_prepare_data()` - Feature engineering pipeline
-- `test_model_accuracy()` - Accuracy validation framework
-
-## 🛠️ **Requirements**
-
-```python
-pandas>=1.3.0
-numpy>=1.21.0
-scikit-learn>=1.0.0
-beautifulsoup4>=4.10.0
-requests>=2.28.0
-```
-
-## 🎯 **Current Status**
-
-✅ **Production Ready** - Complete 2025-2026 predictions  
-✅ **Accuracy Validated** - 64.5% on test data  
-✅ **Documentation Complete** - Comprehensive analysis  
-✅ **Code Cleaned** - Organized repository structure  
-
-## 🚀 **Future Improvements**
-
-### High Priority
-- **Real-time Updates** - Live fixture and result updates
-- **Player Performance** - Individual player form analysis
-- **Injury Tracking** - Suspension and injury impact
-- **Betting Integration** - Compare with bookmaker odds
-
-### Medium Priority
-- **Web Interface** - User-friendly prediction dashboard
-- **API Development** - RESTful API for predictions
-- **Mobile App** - iOS/Android prediction app
-- **Social Features** - Prediction sharing and leaderboards
-
-### Advanced Features
-- **Multi-league Support** - La Liga, Bundesliga, etc.
-- **Advanced Analytics** - Team chemistry, tactical analysis
-- **Machine Learning Improvements** - Neural networks, ensemble methods
-- **Real-time Learning** - Model updates during season
-
-## 📋 **Accuracy Analysis**
-
-The system was rigorously tested on the 2024-2025 season:
-
-| Model | Overall Accuracy | Win Precision | High Confidence |
-|-------|-----------------|---------------|-----------------|
-| **Random Forest** | **64.5%** | **55.2%** | 59.3% |
-| Enhanced Statistical | 55.9% | Lower | **83.3%** |
-
-**Winner**: Random Forest model for production use due to higher overall accuracy.
-
-## 🎯 **Production System**
-
-The current production system (`production_predictions.py`) provides:
-
-- **64.5% accuracy** (competitive with experts)
-- **Realistic confidence levels** (High/Medium/Low)
-- **Complete season predictions** (380 matches)
-- **Production-ready reliability**
-
----
-
-**Ready for the 2025-2026 Premier League season! 🏆**
+- A draw is never the single most likely outcome, so the predicted *label* is
+  never "draw". This was tested, not assumed. Across the 300 most draw-likely
+  matches in the backtest (mean draw probability 28.5%), draws occurred 25.7%
+  of the time while the better of home/away came in at 41.5%. Forcing draw
+  predictions costs accuracy at every threshold — −0.13% at p(draw) ≥ 0.30,
+  −4.5% at ≥ 0.26, −8.7% at ≥ 0.24. The draw probabilities themselves are
+  well calibrated (22.8% predicted vs 23.6% actual), so use them; it is only
+  the collapse to a single label that discards the information.
+- ~54% is close to the ceiling for football outcome prediction. The bookmaker
+  manages 54.6% with vastly more information. Treat anything claiming much
+  more with suspicion.
+- Current-season accuracy in the report covers only a few dozen matches and is
+  mostly noise. The walk-forward backtest is the real measure.
