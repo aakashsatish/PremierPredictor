@@ -193,8 +193,9 @@ footer{margin-top:60px;padding-top:20px;border-top:1px solid var(--line);
 <header>
   <div class="eyebrow">Premier League &middot; 2026/2027</div>
   <h1>Match Predictions
-    <span class="sub">A three-way outcome model over Elo, rolling form and a Dixon&ndash;Coles
-    goals model. Bookmaker odds are used to keep it honest, never as an input.</span>
+    <span class="sub">Predicts home, draw or away for every remaining fixture, using a
+    Random Forest combined with a Dixon-Coles Poisson goals model. Bookmaker odds are only
+    used to check how well it does, never as an input.</span>
   </h1>
   <dl class="status">
     <div><dt>Updated</dt><dd>2026-09-06 22:08</dd></div>
@@ -206,7 +207,7 @@ footer{margin-top:60px;padding-top:20px;border-top:1px solid var(--line);
 
 <section>
   <div class="shead"><h2>Matchweek 3</h2>
-    <div class="note">Bars read home &middot; draw &middot; away</div></div>
+    <div class="note">Bars show home, draw, away</div></div>
   <ul class="fixtures">
       <li class="fixture">
         <div class="when">Sun 06 Sep &middot; 14:00</div>
@@ -254,10 +255,10 @@ footer{margin-top:60px;padding-top:20px;border-top:1px solid var(--line);
 </section>
 
 <section>
-  <div class="shead"><h2>How it is doing</h2>
-    <div class="note">Season figures are out-of-sample</div></div>
-  <p class="lede">Matches already played this season were predicted by a model trained only on
-  earlier seasons, so these are not marks awarded for homework the model had already seen.</p>
+  <div class="shead"><h2>How accurate is it</h2>
+    <div class="note">Season figures are out of sample</div></div>
+  <p class="lede">Matches played this season were predicted by a model that had only seen
+  earlier seasons, so it was not scored on games it trained on.</p>
   <div class="score-grid">
     <div class="tile lead"><div class="k">This season</div><div class="v">43%</div>
       <div class="s">12/28 correct &middot; log loss 1.018</div></div>
@@ -268,11 +269,10 @@ footer{margin-top:60px;padding-top:20px;border-top:1px solid var(--line);
     <div class="tile"><div class="k">Backtest</div><div class="v">53.0%</div>
       <div class="s">2,280 matches, 2020/21-2025/26 &middot; log loss 0.987</div></div>
   </div>
-  <div class="caveat"><b>A few dozen matches settles nothing.</b> The season figure above swings
-  wildly on this little evidence. The backtest is the real measure: across 2,280 matches the
-  model scores 53.0% at 0.987 log loss, against 54.6% / 0.968 for the bookmaker
-  and 43.1% / 1.070 for always picking the home side &mdash; so it closes roughly three
-  quarters of the distance between knowing nothing and the market price.</div>
+  <div class="caveat"><b>28 matches is a small sample.</b> The season figure above will
+  move around a lot, so it is not worth reading much into yet. The backtest is the better
+  measure: over 2,280 matches the model got 53.0% of them right, compared to 54.6%
+  for the bookmaker and 43.1% for always picking the home team.</div>
 </section>
 
 <div class="cols">
@@ -567,8 +567,9 @@ footer{margin-top:60px;padding-top:20px;border-top:1px solid var(--line);
               <span class="eloval">1381</span></div></td>
           <td class="num">0.84</td>
           <td class="num">1.49</td></tr></tbody></table></div>
-    <p class="lede" style="margin-top:12px">Attack is goals scored against an average side;
-    defence is goals conceded, so <em>lower is better</em>. Both come from the Poisson model.</p>
+    <p class="lede" style="margin-top:12px">Attack is how many goals a team scores against an
+    average side. Defence is how many they concede, so <em>lower is better</em>. Both come from
+    the Poisson model.</p>
   </section>
 </div>
 
@@ -580,7 +581,7 @@ footer{margin-top:60px;padding-top:20px;border-top:1px solid var(--line);
         <div class="when">MW3 &middot; 05 Sep</div>
         <div class="teams">
           <span class="side home-side">Hull City</span>
-          <span class="score">0&ndash;0</span>
+          <span class="score">0-0</span>
           <span class="side away-side">Aston Villa</span>
         </div>
         <div class="odds">
@@ -601,7 +602,7 @@ footer{margin-top:60px;padding-top:20px;border-top:1px solid var(--line);
         <div class="when">MW3 &middot; 05 Sep</div>
         <div class="teams">
           <span class="side home-side">Manchester City</span>
-          <span class="score">1&ndash;0</span>
+          <span class="score">1-0</span>
           <span class="side away-side">Coventry City</span>
         </div>
         <div class="odds">
@@ -622,7 +623,7 @@ footer{margin-top:60px;padding-top:20px;border-top:1px solid var(--line);
         <div class="when">MW3 &middot; 05 Sep</div>
         <div class="teams">
           <span class="side home-side">Brentford</span>
-          <span class="score">1&ndash;1</span>
+          <span class="score">1-1</span>
           <span class="side away-side">Sunderland</span>
         </div>
         <div class="odds">
@@ -643,7 +644,7 @@ footer{margin-top:60px;padding-top:20px;border-top:1px solid var(--line);
         <div class="when">MW3 &middot; 05 Sep</div>
         <div class="teams">
           <span class="side home-side">Fulham</span>
-          <span class="score">2&ndash;3</span>
+          <span class="score">2-3</span>
           <span class="side away-side">Crystal Palace</span>
         </div>
         <div class="odds">
@@ -664,7 +665,7 @@ footer{margin-top:60px;padding-top:20px;border-top:1px solid var(--line);
         <div class="when">MW3 &middot; 05 Sep</div>
         <div class="teams">
           <span class="side home-side">Nottingham Forest</span>
-          <span class="score">0&ndash;0</span>
+          <span class="score">0-0</span>
           <span class="side away-side">Tottenham</span>
         </div>
         <div class="odds">
@@ -685,7 +686,7 @@ footer{margin-top:60px;padding-top:20px;border-top:1px solid var(--line);
         <div class="when">MW3 &middot; 05 Sep</div>
         <div class="teams">
           <span class="side home-side">Newcastle United</span>
-          <span class="score">2&ndash;2</span>
+          <span class="score">2-2</span>
           <span class="side away-side">Bournemouth</span>
         </div>
         <div class="odds">
@@ -706,7 +707,7 @@ footer{margin-top:60px;padding-top:20px;border-top:1px solid var(--line);
         <div class="when">MW3 &middot; 05 Sep</div>
         <div class="teams">
           <span class="side home-side">Brighton</span>
-          <span class="score">1&ndash;1</span>
+          <span class="score">1-1</span>
           <span class="side away-side">Leeds United</span>
         </div>
         <div class="odds">
@@ -727,7 +728,7 @@ footer{margin-top:60px;padding-top:20px;border-top:1px solid var(--line);
         <div class="when">MW3 &middot; 04 Sep</div>
         <div class="teams">
           <span class="side home-side">Ipswich Town</span>
-          <span class="score">0&ndash;2</span>
+          <span class="score">0-2</span>
           <span class="side away-side">Liverpool</span>
         </div>
         <div class="odds">
@@ -748,7 +749,7 @@ footer{margin-top:60px;padding-top:20px;border-top:1px solid var(--line);
         <div class="when">MW2 &middot; 31 Aug</div>
         <div class="teams">
           <span class="side home-side">Aston Villa</span>
-          <span class="score">0&ndash;1</span>
+          <span class="score">0-1</span>
           <span class="side away-side">Arsenal</span>
         </div>
         <div class="odds">
@@ -769,7 +770,7 @@ footer{margin-top:60px;padding-top:20px;border-top:1px solid var(--line);
         <div class="when">MW2 &middot; 30 Aug</div>
         <div class="teams">
           <span class="side home-side">Chelsea</span>
-          <span class="score">4&ndash;3</span>
+          <span class="score">4-3</span>
           <span class="side away-side">Brighton</span>
         </div>
         <div class="odds">
@@ -790,7 +791,7 @@ footer{margin-top:60px;padding-top:20px;border-top:1px solid var(--line);
         <div class="when">MW2 &middot; 30 Aug</div>
         <div class="teams">
           <span class="side home-side">Sunderland</span>
-          <span class="score">1&ndash;0</span>
+          <span class="score">1-0</span>
           <span class="side away-side">Fulham</span>
         </div>
         <div class="odds">
@@ -811,7 +812,7 @@ footer{margin-top:60px;padding-top:20px;border-top:1px solid var(--line);
         <div class="when">MW2 &middot; 30 Aug</div>
         <div class="teams">
           <span class="side home-side">Leeds United</span>
-          <span class="score">1&ndash;1</span>
+          <span class="score">1-1</span>
           <span class="side away-side">Brentford</span>
         </div>
         <div class="odds">
@@ -832,7 +833,7 @@ footer{margin-top:60px;padding-top:20px;border-top:1px solid var(--line);
         <div class="when">MW2 &middot; 30 Aug</div>
         <div class="teams">
           <span class="side home-side">Manchester United</span>
-          <span class="score">5&ndash;2</span>
+          <span class="score">5-2</span>
           <span class="side away-side">Ipswich Town</span>
         </div>
         <div class="odds">
@@ -853,7 +854,7 @@ footer{margin-top:60px;padding-top:20px;border-top:1px solid var(--line);
         <div class="when">MW2 &middot; 29 Aug</div>
         <div class="teams">
           <span class="side home-side">Coventry City</span>
-          <span class="score">0&ndash;1</span>
+          <span class="score">0-1</span>
           <span class="side away-side">Hull City</span>
         </div>
         <div class="odds">
@@ -874,7 +875,7 @@ footer{margin-top:60px;padding-top:20px;border-top:1px solid var(--line);
         <div class="when">MW2 &middot; 29 Aug</div>
         <div class="teams">
           <span class="side home-side">Liverpool</span>
-          <span class="score">2&ndash;2</span>
+          <span class="score">2-2</span>
           <span class="side away-side">Nottingham Forest</span>
         </div>
         <div class="odds">
@@ -895,7 +896,7 @@ footer{margin-top:60px;padding-top:20px;border-top:1px solid var(--line);
         <div class="when">MW2 &middot; 29 Aug</div>
         <div class="teams">
           <span class="side home-side">Bournemouth</span>
-          <span class="score">1&ndash;1</span>
+          <span class="score">1-1</span>
           <span class="side away-side">Everton</span>
         </div>
         <div class="odds">
@@ -916,7 +917,7 @@ footer{margin-top:60px;padding-top:20px;border-top:1px solid var(--line);
         <div class="when">MW2 &middot; 29 Aug</div>
         <div class="teams">
           <span class="side home-side">Tottenham</span>
-          <span class="score">0&ndash;2</span>
+          <span class="score">0-2</span>
           <span class="side away-side">Newcastle United</span>
         </div>
         <div class="odds">
@@ -937,7 +938,7 @@ footer{margin-top:60px;padding-top:20px;border-top:1px solid var(--line);
         <div class="when">MW2 &middot; 28 Aug</div>
         <div class="teams">
           <span class="side home-side">Crystal Palace</span>
-          <span class="score">1&ndash;4</span>
+          <span class="score">1-4</span>
           <span class="side away-side">Manchester City</span>
         </div>
         <div class="odds">
@@ -958,7 +959,7 @@ footer{margin-top:60px;padding-top:20px;border-top:1px solid var(--line);
         <div class="when">MW1 &middot; 24 Aug</div>
         <div class="teams">
           <span class="side home-side">Fulham</span>
-          <span class="score">2&ndash;3</span>
+          <span class="score">2-3</span>
           <span class="side away-side">Chelsea</span>
         </div>
         <div class="odds">
@@ -979,7 +980,7 @@ footer{margin-top:60px;padding-top:20px;border-top:1px solid var(--line);
         <div class="when">MW1 &middot; 23 Aug</div>
         <div class="teams">
           <span class="side home-side">Newcastle United</span>
-          <span class="score">2&ndash;2</span>
+          <span class="score">2-2</span>
           <span class="side away-side">Liverpool</span>
         </div>
         <div class="odds">
@@ -1000,7 +1001,7 @@ footer{margin-top:60px;padding-top:20px;border-top:1px solid var(--line);
         <div class="when">MW1 &middot; 23 Aug</div>
         <div class="teams">
           <span class="side home-side">Brighton</span>
-          <span class="score">4&ndash;0</span>
+          <span class="score">4-0</span>
           <span class="side away-side">Aston Villa</span>
         </div>
         <div class="odds">
@@ -1021,7 +1022,7 @@ footer{margin-top:60px;padding-top:20px;border-top:1px solid var(--line);
         <div class="when">MW1 &middot; 23 Aug</div>
         <div class="teams">
           <span class="side home-side">Manchester City</span>
-          <span class="score">2&ndash;1</span>
+          <span class="score">2-1</span>
           <span class="side away-side">Bournemouth</span>
         </div>
         <div class="odds">
@@ -1042,7 +1043,7 @@ footer{margin-top:60px;padding-top:20px;border-top:1px solid var(--line);
         <div class="when">MW1 &middot; 22 Aug</div>
         <div class="teams">
           <span class="side home-side">Brentford</span>
-          <span class="score">3&ndash;0</span>
+          <span class="score">3-0</span>
           <span class="side away-side">Tottenham</span>
         </div>
         <div class="odds">
@@ -1063,7 +1064,7 @@ footer{margin-top:60px;padding-top:20px;border-top:1px solid var(--line);
         <div class="when">MW1 &middot; 22 Aug</div>
         <div class="teams">
           <span class="side home-side">Everton</span>
-          <span class="score">2&ndash;0</span>
+          <span class="score">2-0</span>
           <span class="side away-side">Crystal Palace</span>
         </div>
         <div class="odds">
@@ -1084,7 +1085,7 @@ footer{margin-top:60px;padding-top:20px;border-top:1px solid var(--line);
         <div class="when">MW1 &middot; 22 Aug</div>
         <div class="teams">
           <span class="side home-side">Nottingham Forest</span>
-          <span class="score">0&ndash;1</span>
+          <span class="score">0-1</span>
           <span class="side away-side">Leeds United</span>
         </div>
         <div class="odds">
@@ -1105,7 +1106,7 @@ footer{margin-top:60px;padding-top:20px;border-top:1px solid var(--line);
         <div class="when">MW1 &middot; 22 Aug</div>
         <div class="teams">
           <span class="side home-side">Ipswich Town</span>
-          <span class="score">2&ndash;1</span>
+          <span class="score">2-1</span>
           <span class="side away-side">Sunderland</span>
         </div>
         <div class="odds">
@@ -1126,7 +1127,7 @@ footer{margin-top:60px;padding-top:20px;border-top:1px solid var(--line);
         <div class="when">MW1 &middot; 22 Aug</div>
         <div class="teams">
           <span class="side home-side">Hull City</span>
-          <span class="score">2&ndash;0</span>
+          <span class="score">2-0</span>
           <span class="side away-side">Manchester United</span>
         </div>
         <div class="odds">
@@ -1147,7 +1148,7 @@ footer{margin-top:60px;padding-top:20px;border-top:1px solid var(--line);
         <div class="when">MW1 &middot; 21 Aug</div>
         <div class="teams">
           <span class="side home-side">Arsenal</span>
-          <span class="score">3&ndash;0</span>
+          <span class="score">3-0</span>
           <span class="side away-side">Coventry City</span>
         </div>
         <div class="odds">
@@ -8871,8 +8872,8 @@ footer{margin-top:60px;padding-top:20px;border-top:1px solid var(--line);
 </section>
 
 <footer>
-  <span>Regenerated every Tuesday from fbref and football-data.co.uk.</span>
-  <span>Predictions are model output, not advice.</span>
+  <span>Updated every Tuesday from fbref and football-data.co.uk.</span>
+  <span>These are model outputs, not betting advice.</span>
 </footer>
 </div>
 </body>

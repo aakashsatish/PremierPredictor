@@ -105,7 +105,7 @@ def result_row(r: dict) -> str:
         <div class="when">MW{r['matchweek']} &middot; {datetime.strptime(r['date'],'%Y-%m-%d'):%d %b}</div>
         <div class="teams">
           <span class="side home-side">{esc(r['home'])}</span>
-          <span class="score">{r['hg']}&ndash;{r['ag']}</span>
+          <span class="score">{r['hg']}-{r['ag']}</span>
           <span class="side away-side">{esc(r['away'])}</span>
         </div>
         <div class="odds">
@@ -409,8 +409,9 @@ footer{margin-top:60px;padding-top:20px;border-top:1px solid var(--line);
 <header>
   <div class="eyebrow">Premier League &middot; __SEASON__</div>
   <h1>Match Predictions
-    <span class="sub">A three-way outcome model over Elo, rolling form and a Dixon&ndash;Coles
-    goals model. Bookmaker odds are used to keep it honest, never as an input.</span>
+    <span class="sub">Predicts home, draw or away for every remaining fixture, using a
+    Random Forest combined with a Dixon-Coles Poisson goals model. Bookmaker odds are only
+    used to check how well it does, never as an input.</span>
   </h1>
   <dl class="status">
     <div><dt>Updated</dt><dd>__GENERATED__</dd></div>
@@ -422,15 +423,15 @@ footer{margin-top:60px;padding-top:20px;border-top:1px solid var(--line);
 
 <section>
   <div class="shead"><h2>Matchweek __NEXTMW__</h2>
-    <div class="note">Bars read home &middot; draw &middot; away</div></div>
+    <div class="note">Bars show home, draw, away</div></div>
   <ul class="fixtures">__NEXTFIX__</ul>
 </section>
 
 <section>
-  <div class="shead"><h2>How it is doing</h2>
-    <div class="note">Season figures are out-of-sample</div></div>
-  <p class="lede">Matches already played this season were predicted by a model trained only on
-  earlier seasons, so these are not marks awarded for homework the model had already seen.</p>
+  <div class="shead"><h2>How accurate is it</h2>
+    <div class="note">Season figures are out of sample</div></div>
+  <p class="lede">Matches played this season were predicted by a model that had only seen
+  earlier seasons, so it was not scored on games it trained on.</p>
   <div class="score-grid">
     <div class="tile lead"><div class="k">This season</div><div class="v">__ACC__</div>
       <div class="s">__ACCN__ correct &middot; log loss __SEASONLL__</div></div>
@@ -441,11 +442,10 @@ footer{margin-top:60px;padding-top:20px;border-top:1px solid var(--line);
     <div class="tile"><div class="k">Backtest</div><div class="v">__BTACC__</div>
       <div class="s">__BTN__ matches, __BTSEASONS__ &middot; log loss __BTLL__</div></div>
   </div>
-  <div class="caveat"><b>A few dozen matches settles nothing.</b> The season figure above swings
-  wildly on this little evidence. The backtest is the real measure: across __BTN__ matches the
-  model scores __BTACC__ at __BTLL__ log loss, against __BTMACC__ / __BTMLL__ for the bookmaker
-  and __BTBACC__ / __BTBLL__ for always picking the home side &mdash; so it closes roughly three
-  quarters of the distance between knowing nothing and the market price.</div>
+  <div class="caveat"><b>__PLAYED__ matches is a small sample.</b> The season figure above will
+  move around a lot, so it is not worth reading much into yet. The backtest is the better
+  measure: over __BTN__ matches the model got __BTACC__ of them right, compared to __BTMACC__
+  for the bookmaker and __BTBACC__ for always picking the home team.</div>
 </section>
 
 <div class="cols">
@@ -462,8 +462,9 @@ footer{margin-top:60px;padding-top:20px;border-top:1px solid var(--line);
     <div class="panel tscroll"><table>
       <thead><tr><th>Team</th><th style="text-align:left">Elo</th><th>Att</th><th>Def</th></tr></thead>
       <tbody>__POWERROWS__</tbody></table></div>
-    <p class="lede" style="margin-top:12px">Attack is goals scored against an average side;
-    defence is goals conceded, so <em>lower is better</em>. Both come from the Poisson model.</p>
+    <p class="lede" style="margin-top:12px">Attack is how many goals a team scores against an
+    average side. Defence is how many they concede, so <em>lower is better</em>. Both come from
+    the Poisson model.</p>
   </section>
 </div>
 
@@ -480,8 +481,8 @@ footer{margin-top:60px;padding-top:20px;border-top:1px solid var(--line);
 </section>
 
 <footer>
-  <span>Regenerated every Tuesday from fbref and football-data.co.uk.</span>
-  <span>Predictions are model output, not advice.</span>
+  <span>Updated every Tuesday from fbref and football-data.co.uk.</span>
+  <span>These are model outputs, not betting advice.</span>
 </footer>
 </div>
 """
