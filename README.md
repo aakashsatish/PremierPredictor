@@ -83,8 +83,13 @@ updated.
 ## Known limits
 
 - A draw is never the single most likely outcome, so the predicted *label* is
-  never "draw". That is a property of the sport, not a bug — draw probability
-  peaks around a third. Use the probabilities, not the label.
+  never "draw". This was tested, not assumed. Across the 300 most draw-likely
+  matches in the backtest (mean draw probability 28.5%), draws occurred 25.7%
+  of the time while the better of home/away came in at 41.5%. Forcing draw
+  predictions costs accuracy at every threshold — −0.13% at p(draw) ≥ 0.30,
+  −4.5% at ≥ 0.26, −8.7% at ≥ 0.24. The draw probabilities themselves are
+  well calibrated (22.8% predicted vs 23.6% actual), so use them; it is only
+  the collapse to a single label that discards the information.
 - ~54% is close to the ceiling for football outcome prediction. The bookmaker
   manages 54.6% with vastly more information. Treat anything claiming much
   more with suspicion.
