@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64" role="img" aria-label="Premier League predictor">
+  <title>Premier League Predictor</title>
+  <rect width="64" height="64" rx="14" fill="#0E1613"/>
+  <path d="M14 16h13a6 6 0 0 1 0 12h-7v14h-6z" fill="#F4F2EC"/>
+  <path d="M36 16h6v20h8v6H36z" fill="#F4F2EC"/>
+  <rect x="14" y="47" width="15" height="4" rx="2" fill="#D9922F"/>
+  <rect x="30" y="47" width="7"  height="4" rx="2" fill="#6E7E87"/>
+  <rect x="38" y="47" width="12" height="4" rx="2" fill="#2E8AA1"/>
+</svg>

@@ -277,8 +277,10 @@ a{color:var(--accent)}
 
 /* ---------- masthead ---------- */
 header{padding:44px 0 26px;border-bottom:2px solid var(--ink)}
+.brand{display:flex;align-items:center;gap:13px;margin-bottom:16px}
+.mark{display:block;border-radius:10px;flex:0 0 auto}
 .eyebrow{font-family:"IBM Plex Mono",monospace;font-size:11px;letter-spacing:.16em;
-  text-transform:uppercase;color:var(--muted);margin-bottom:12px}
+  text-transform:uppercase;color:var(--muted)}
 h1{font-size:clamp(30px,5.4vw,50px);font-weight:800;letter-spacing:-.024em;line-height:1.02}
 h1 .sub{display:block;font-weight:500;font-size:clamp(15px,2vw,19px);color:var(--muted);
   letter-spacing:-.005em;margin-top:10px;max-width:56ch;line-height:1.45}
@@ -407,7 +409,10 @@ footer{margin-top:60px;padding-top:20px;border-top:1px solid var(--line);
 
 <div class="wrap">
 <header>
-  <div class="eyebrow">Premier League &middot; __SEASON__</div>
+  <div class="brand">
+    <img class="mark" src="logo.svg" alt="" width="42" height="42">
+    <span class="eyebrow">Premier League &middot; __SEASON__</span>
+  </div>
   <h1>Match Predictions
     <span class="sub">Predicts home, draw or away for every remaining fixture, using a
     Random Forest combined with a Dixon-Coles Poisson goals model. Bookmaker odds are only
@@ -494,6 +499,8 @@ DOC = """<!doctype html>
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="description" content="Three-way Premier League match predictions, refreshed weekly.">
 <meta name="color-scheme" content="light dark">
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
+<link rel="apple-touch-icon" href="logo.svg">
 %s
 </head>
 <body>%s</body>
