@@ -35,7 +35,8 @@ def main() -> int:
         print(f"  {e}\n  Continuing with fbref results only.")
 
     for step, script in [("Rebuilding dataset", "dataset.py"),
-                         ("Generating predictions", "predict.py")]:
+                         ("Generating predictions", "predict.py"),
+                         ("Rendering the dashboard", "site.py")]:
         print(f"\n{step} ...")
         r = subprocess.run([sys.executable, script], cwd=config.ROOT)
         if r.returncode != 0:

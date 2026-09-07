@@ -67,3 +67,4 @@ Thumbs.db
 matches_backup_*.csv
 scraper_output.log
 data/raw_cache/
+docs/fragment.html

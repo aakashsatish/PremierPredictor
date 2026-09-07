@@ -43,6 +43,18 @@ def market_probabilities(df: pd.DataFrame) -> pd.DataFrame:
 
 DEFAULT_MODEL = "RandomForest"
 
+# Measured by walk_forward() over 2020/21-2025/26 (2,280 matches), using the
+# shipped 65/35 forest-Poisson blend. Recorded here so the dashboard can quote
+# them without re-running a six-season backtest on every refresh. Re-measure
+# with `python model.py` after any change to features or models.
+BACKTEST = {
+    "matches": 2280,
+    "seasons": "2020/21-2025/26",
+    "model_accuracy": 0.530, "model_log_loss": 0.987,
+    "market_accuracy": 0.546, "market_log_loss": 0.968,
+    "baseline_accuracy": 0.431, "baseline_log_loss": 1.070,
+}
+
 
 def make_models() -> dict:
     """Candidate models, all compared honestly in the walk-forward backtest.

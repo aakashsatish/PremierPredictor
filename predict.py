@@ -230,6 +230,41 @@ def write_report(current_played, upcoming, stats) -> None:
     OUT_TXT.write_text("\n".join(L))
 
 
+def write_summary(current_played, upcoming, stats) -> None:
+    """Machine-readable summary for the dashboard."""
+    import json
+    scored = []
+    if len(current_played):
+        for _, m in current_played.sort_values("date").iterrows():
+            scored.append({
+                "matchweek": int(m["matchweek"]), "date": m["date"].strftime("%Y-%m-%d"),
+                "home": m["home"], "away": m["away"],
+                "hg": int(m["home_goals"]), "ag": int(m["away_goals"]),
+                "pH": round(float(m["p_H"]), 4), "pD": round(float(m["p_D"]), 4),
+                "pA": round(float(m["p_A"]), 4),
+                "prediction": m["prediction"], "result": m["result"],
+                "correct": bool(m["correct"]),
+            })
+    payload = {
+        "season": config.CURRENT_SEASON,
+        "generated": datetime.now().strftime("%Y-%m-%d %H:%M"),
+        "trained_on": int(stats["n_prior"]),
+        "played": int(stats["n_current"]),
+        "upcoming": int(stats["n_upcoming"]),
+        "poisson_weight": POISSON_WEIGHT,
+        "season_accuracy": round(float(stats.get("accuracy", 0)), 4),
+        "season_log_loss": round(float(stats.get("log_loss", 0)), 4),
+        "season_always_home": round(float(stats.get("always_home", 0)), 4),
+        "season_market_accuracy": round(float(stats["market_accuracy"]), 4)
+            if "market_accuracy" in stats else None,
+        "season_market_n": int(stats.get("market_n", 0)),
+        "backtest": M.BACKTEST,
+        "results": scored,
+    }
+    (config.DATA / "summary.json").write_text(json.dumps(payload, indent=2))
+    print(f"Wrote summary.json")
+
+
 if __name__ == "__main__":
     current_played, upcoming, stats = build_predictions()
 
@@ -244,6 +279,7 @@ if __name__ == "__main__":
         out[c] = out[c].round(4)
     out.to_csv(OUT_CSV, index=False)
     write_report(current_played, upcoming, stats)
+    write_summary(current_played, upcoming, stats)
 
     print(f"Trained on {stats['n_prior']:,} prior matches")
     if stats["n_current"]:
