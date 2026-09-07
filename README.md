@@ -1,5 +1,7 @@
 # PremierPredictor
 
+**Live dashboard: https://aakashsatish.github.io/PremierPredictor/**
+
 Predicts Premier League match outcomes as three-way probabilities — home win,
 draw, away win — for every remaining fixture of the season.
 
