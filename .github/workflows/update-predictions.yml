@@ -6,11 +6,19 @@ name: Update predictions
 on:
   schedule:
     - cron: "0 9 * * 2"   # 09:00 UTC Tuesday
-  workflow_dispatch:       # also runnable by hand from the Actions tab
+  workflow_dispatch:
+    inputs:
+      test_failure:
+        description: "Fail on purpose, to check the alerting still works"
+        type: boolean
+        default: false
 
-# Needed so the job can push the refreshed predictions back.
+# contents: push the refreshed predictions.
+# issues:   raise the alarm when a run fails, since nobody is watching
+#           at 09:00 on a Tuesday.
 permissions:
   contents: write
+  issues: write
 
 jobs:
   refresh:
@@ -29,7 +37,12 @@ jobs:
       - name: Refresh results and regenerate predictions
         env:
           SCRAPERAPI_KEY: ${{ secrets.SCRAPERAPI_KEY }}
+          TEST_FAILURE: ${{ inputs.test_failure }}
         run: |
+          if [ "$TEST_FAILURE" = "true" ]; then
+            echo "test_failure requested; failing before spending any credits."
+            exit 1
+          fi
           if [ -z "$SCRAPERAPI_KEY" ]; then
             echo "SCRAPERAPI_KEY secret is not set."
             echo "Add it under Settings -> Secrets and variables -> Actions."
@@ -48,4 +61,45 @@ jobs:
           else
             git commit -m "Refresh predictions ($(date -u +%Y-%m-%d))"
             git push
+          fi
+
+      # A scheduled job that fails quietly is worse than no scheduled job:
+      # the predictions would just go stale with nobody any the wiser.
+      - name: Raise an issue if the refresh failed
+        if: failure()
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          RUN_URL: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+        run: |
+          gh label create automation-failure --color B60205 \
+            --description "A scheduled run failed" 2>/dev/null || true
+
+          body=$(printf '%s\n' \
+            "The weekly prediction refresh failed on $(date -u +'%Y-%m-%d %H:%M') UTC." \
+            "" \
+            "**Run log:** $RUN_URL" \
+            "" \
+            "The committed predictions are unchanged from the last successful" \
+            "run, so nothing is corrupted -- they are just going stale." \
+            "" \
+            "Most likely causes, roughly in order:" \
+            "" \
+            "- \`SCRAPERAPI_KEY\` is out of credits, expired, or was revoked" \
+            "- fbref or football-data.co.uk changed their page structure" \
+            "- a dependency shipped a breaking change (this is how the very" \
+            "  first run failed: scikit-learn had removed the \`multi_class\`" \
+            "  argument to \`LogisticRegression\`)" \
+            "" \
+            "To reproduce locally: \`python update.py\`")
+
+          # Comment on the open alert rather than opening a fresh issue every
+          # week, so a long-running breakage stays a single thread.
+          existing=$(gh issue list --label automation-failure --state open \
+                       --limit 1 --json number -q '.[0].number // empty')
+          if [ -n "$existing" ]; then
+            gh issue comment "$existing" --body "$body"
+            echo "Commented on existing issue #$existing"
+          else
+            gh issue create --title "Weekly prediction refresh is failing" \
+              --label automation-failure --body "$body"
           fi
