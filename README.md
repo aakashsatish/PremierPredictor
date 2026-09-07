@@ -11,8 +11,15 @@ before it, then predicts that season cold. 2,280 matches across 2020/21–2025/2
 | | Accuracy | Log loss |
 |---|---|---|
 | Bet365 closing odds *(benchmark)* | 54.6% | 0.968 |
-| **This model** | **52.8%** | **0.993** |
+| **Ensemble (shipped)** | **53.0%** | **0.987** |
+| Random Forest alone | 53.2% | 0.990 |
+| Poisson goals model alone | 50.7% | 1.004 |
 | Always predict a home win | 43.1% | 1.070 |
+
+The ensemble's edge over the forest alone is real in direction but small — it
+wins 4 of 6 seasons, which is not distinguishable from chance. It is shipped
+because combining decorrelated models reliably helps on average, and because
+the Poisson half supplies scorelines regardless.
 
 Log loss is the number that matters; accuracy is a poor guide when one class
 wins 45% of the time. The model closes roughly three quarters of the distance
@@ -44,7 +51,8 @@ Outputs: `data/predictions_<season>.csv` and a readable
 | `scraper.py` | fbref schedules and football-data.co.uk season CSVs |
 | `dataset.py` | Joins both sources into one row per match |
 | `features.py` | Elo, rolling form, rest days, head-to-head |
-| `model.py` | Model comparison and the walk-forward backtest |
+| `model.py` | Classifier comparison and the walk-forward backtest |
+| `poisson_model.py` | Dixon-Coles goals model; scorelines and team ratings |
 | `predict.py` | Trains the final model and writes the report |
 | `update.py` | Entry point for a weekly refresh |
 
@@ -65,6 +73,22 @@ football-data returns a site-wide 503.
 > attribute is gone from team pages and match logs alike. Nothing here depends
 > on it. football-data started publishing xG in 2026/27, which is too little
 > history to train on but worth revisiting later.
+
+### The two models
+
+**Random Forest** over the features below. Strong, but opaque, and it can only
+emit a label plus three probabilities.
+
+**Dixon-Coles Poisson** models goals instead of outcomes. Each club gets an
+attack and a defence rating; the two expected-goal figures produce a grid over
+every scoreline, and home/draw/away come from summing below, on, and above its
+diagonal. It fits in about a second and is readable — on current data it puts
+home advantage at ×1.19, Arsenal's defence at 0.64 (opponents score 36% below
+their norm) and Ipswich's at 1.33. It also yields correct-score probabilities,
+which the classifier cannot produce.
+
+Its fitted low-score correction (rho = −0.075) confirms that real football
+produces more 0-0 and 1-1 draws than plain Poisson predicts.
 
 ### Features
 
