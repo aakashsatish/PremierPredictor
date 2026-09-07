@@ -1,0 +1,9 @@
+# Only applies to `vercel deploy` from the CLI; Git-integration builds ignore
+# this file and use vercel.json instead. Kept so a CLI deploy uploads only the
+# generated page rather than the whole pipeline.
+*.py
+requirements.txt
+.env
+.env.example
+data/
+predictions_*.txt
