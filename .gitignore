@@ -67,7 +67,3 @@ Thumbs.db
 matches_backup_*.csv
 scraper_output.log
 data/raw_cache/
-
-# Generated predictions and reports (regenerable from the pipeline)
-predictions_*.csv
-predictions_*.txt
