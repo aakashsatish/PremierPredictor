@@ -33,9 +33,14 @@ football features work.
 
 ```bash
 pip install -r requirements.txt
-cp .env.example .env        # add your ScraperAPI key
-python update.py            # refresh results, rebuild, re-predict
+cp .env.example .env                    # add your ScraperAPI key
+git config core.hooksPath .githooks     # blocks committing credentials
+python update.py                        # refresh results, rebuild, re-predict
 ```
+
+A GitHub Actions workflow runs the same refresh every Tuesday and commits
+the results, so the predictions stay current without anyone running anything.
+It needs a `SCRAPERAPI_KEY` repository secret.
 
 `update.py` re-fetches only the current season (~10 credits). Earlier seasons
 come from the on-disk cache and cost nothing.
