@@ -192,8 +192,9 @@ def build() -> str:
         w = 6 + 94 * (p["elo"] - emin) / max(emax - emin, 1)
         power_rows.append(f"""<tr>
           <td class="tm">{esc(p['team'])}</td>
-          <td class="elowrap"><span class="elobar" style="width:{w:.1f}%"></span>
-              <span class="eloval">{p['elo']:.0f}</span></td>
+          <td class="elowrap"><div class="elorow">
+              <span class="elotrack"><span class="elobar" style="width:{w:.1f}%"></span></span>
+              <span class="eloval">{p['elo']:.0f}</span></div></td>
           <td class="num">{p['atk']:.2f}</td>
           <td class="num">{p['dfn']:.2f}</td></tr>""")
     power_rows = "\n".join(power_rows)
@@ -369,10 +370,12 @@ td.pts{font-weight:600}
 .form i{font-style:normal;font-family:"IBM Plex Mono",monospace;font-size:9px;font-weight:600;
   width:14px;height:14px;line-height:14px;text-align:center;border-radius:2px;color:var(--surface)}
 .fW{background:var(--good)} .fD{background:var(--draw-fill)} .fL{background:var(--bad)}
-.elowrap{position:relative;width:100%;min-width:120px;text-align:left!important}
-.elobar{display:inline-block;height:6px;border-radius:2px;background:var(--accent);opacity:.45;
-  vertical-align:middle}
-.eloval{margin-left:8px;font-size:11.5px;color:var(--muted)}
+.elowrap{width:100%;min-width:150px;text-align:left!important}
+.elorow{display:flex;align-items:center;gap:10px}
+.elotrack{flex:1 1 auto;min-width:40px;height:6px;border-radius:2px;
+  background:var(--line-soft);overflow:hidden}
+.elobar{display:block;height:100%;border-radius:2px;background:var(--accent);opacity:.5}
+.eloval{flex:0 0 34px;text-align:right;font-size:11.5px;color:var(--muted)}
 
 /* ---------- scorecard ---------- */
 .score-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(168px,1fr));gap:1px;

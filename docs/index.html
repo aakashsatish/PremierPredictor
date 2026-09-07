@@ -154,10 +154,12 @@ td.pts{font-weight:600}
 .form i{font-style:normal;font-family:"IBM Plex Mono",monospace;font-size:9px;font-weight:600;
   width:14px;height:14px;line-height:14px;text-align:center;border-radius:2px;color:var(--surface)}
 .fW{background:var(--good)} .fD{background:var(--draw-fill)} .fL{background:var(--bad)}
-.elowrap{position:relative;width:100%;min-width:120px;text-align:left!important}
-.elobar{display:inline-block;height:6px;border-radius:2px;background:var(--accent);opacity:.45;
-  vertical-align:middle}
-.eloval{margin-left:8px;font-size:11.5px;color:var(--muted)}
+.elowrap{width:100%;min-width:150px;text-align:left!important}
+.elorow{display:flex;align-items:center;gap:10px}
+.elotrack{flex:1 1 auto;min-width:40px;height:6px;border-radius:2px;
+  background:var(--line-soft);overflow:hidden}
+.elobar{display:block;height:100%;border-radius:2px;background:var(--accent);opacity:.5}
+.eloval{flex:0 0 34px;text-align:right;font-size:11.5px;color:var(--muted)}
 
 /* ---------- scorecard ---------- */
 .score-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(168px,1fr));gap:1px;
@@ -427,122 +429,142 @@ footer{margin-top:60px;padding-top:20px;border-top:1px solid var(--line);
       <thead><tr><th>Team</th><th style="text-align:left">Elo</th><th>Att</th><th>Def</th></tr></thead>
       <tbody><tr>
           <td class="tm">Arsenal</td>
-          <td class="elowrap"><span class="elobar" style="width:100.0%"></span>
-              <span class="eloval">1699</span></td>
+          <td class="elowrap"><div class="elorow">
+              <span class="elotrack"><span class="elobar" style="width:100.0%"></span></span>
+              <span class="eloval">1699</span></div></td>
           <td class="num">1.48</td>
           <td class="num">0.55</td></tr>
 <tr>
           <td class="tm">Manchester City</td>
-          <td class="elowrap"><span class="elobar" style="width:97.1%"></span>
-              <span class="eloval">1689</span></td>
+          <td class="elowrap"><div class="elorow">
+              <span class="elotrack"><span class="elobar" style="width:97.1%"></span></span>
+              <span class="eloval">1689</span></div></td>
           <td class="num">1.64</td>
           <td class="num">0.66</td></tr>
 <tr>
           <td class="tm">Manchester United</td>
-          <td class="elowrap"><span class="elobar" style="width:68.3%"></span>
-              <span class="eloval">1592</span></td>
+          <td class="elowrap"><div class="elorow">
+              <span class="elotrack"><span class="elobar" style="width:68.3%"></span></span>
+              <span class="eloval">1592</span></div></td>
           <td class="num">1.29</td>
           <td class="num">0.93</td></tr>
 <tr>
           <td class="tm">Liverpool</td>
-          <td class="elowrap"><span class="elobar" style="width:67.4%"></span>
-              <span class="eloval">1589</span></td>
+          <td class="elowrap"><div class="elorow">
+              <span class="elotrack"><span class="elobar" style="width:67.4%"></span></span>
+              <span class="eloval">1589</span></div></td>
           <td class="num">1.51</td>
           <td class="num">0.87</td></tr>
 <tr>
           <td class="tm">Bournemouth</td>
-          <td class="elowrap"><span class="elobar" style="width:59.1%"></span>
-              <span class="eloval">1561</span></td>
+          <td class="elowrap"><div class="elorow">
+              <span class="elotrack"><span class="elobar" style="width:59.1%"></span></span>
+              <span class="eloval">1561</span></div></td>
           <td class="num">1.18</td>
           <td class="num">0.95</td></tr>
 <tr>
           <td class="tm">Brighton</td>
-          <td class="elowrap"><span class="elobar" style="width:54.8%"></span>
-              <span class="eloval">1546</span></td>
+          <td class="elowrap"><div class="elorow">
+              <span class="elotrack"><span class="elobar" style="width:54.8%"></span></span>
+              <span class="eloval">1546</span></div></td>
           <td class="num">1.22</td>
           <td class="num">0.93</td></tr>
 <tr>
           <td class="tm">Brentford</td>
-          <td class="elowrap"><span class="elobar" style="width:54.1%"></span>
-              <span class="eloval">1543</span></td>
+          <td class="elowrap"><div class="elorow">
+              <span class="elotrack"><span class="elobar" style="width:54.1%"></span></span>
+              <span class="eloval">1543</span></div></td>
           <td class="num">1.21</td>
           <td class="num">0.94</td></tr>
 <tr>
           <td class="tm">Chelsea</td>
-          <td class="elowrap"><span class="elobar" style="width:54.0%"></span>
-              <span class="eloval">1543</span></td>
+          <td class="elowrap"><div class="elorow">
+              <span class="elotrack"><span class="elobar" style="width:54.0%"></span></span>
+              <span class="eloval">1543</span></div></td>
           <td class="num">1.31</td>
           <td class="num">0.94</td></tr>
 <tr>
           <td class="tm">Newcastle United</td>
-          <td class="elowrap"><span class="elobar" style="width:52.4%"></span>
-              <span class="eloval">1538</span></td>
+          <td class="elowrap"><div class="elorow">
+              <span class="elotrack"><span class="elobar" style="width:52.4%"></span></span>
+              <span class="eloval">1538</span></div></td>
           <td class="num">1.30</td>
           <td class="num">0.95</td></tr>
 <tr>
           <td class="tm">Aston Villa</td>
-          <td class="elowrap"><span class="elobar" style="width:51.0%"></span>
-              <span class="eloval">1533</span></td>
+          <td class="elowrap"><div class="elorow">
+              <span class="elotrack"><span class="elobar" style="width:51.0%"></span></span>
+              <span class="eloval">1533</span></div></td>
           <td class="num">1.17</td>
           <td class="num">0.92</td></tr>
 <tr>
           <td class="tm">Nottingham Forest</td>
-          <td class="elowrap"><span class="elobar" style="width:47.1%"></span>
-              <span class="eloval">1520</span></td>
+          <td class="elowrap"><div class="elorow">
+              <span class="elotrack"><span class="elobar" style="width:47.1%"></span></span>
+              <span class="eloval">1520</span></div></td>
           <td class="num">1.04</td>
           <td class="num">0.90</td></tr>
 <tr>
           <td class="tm">Hull City</td>
-          <td class="elowrap"><span class="elobar" style="width:46.9%"></span>
-              <span class="eloval">1519</span></td>
+          <td class="elowrap"><div class="elorow">
+              <span class="elotrack"><span class="elobar" style="width:46.9%"></span></span>
+              <span class="eloval">1519</span></div></td>
           <td class="num">0.88</td>
           <td class="num">0.45</td></tr>
 <tr>
           <td class="tm">Everton</td>
-          <td class="elowrap"><span class="elobar" style="width:46.5%"></span>
-              <span class="eloval">1518</span></td>
+          <td class="elowrap"><div class="elorow">
+              <span class="elotrack"><span class="elobar" style="width:46.5%"></span></span>
+              <span class="eloval">1518</span></div></td>
           <td class="num">0.94</td>
           <td class="num">0.85</td></tr>
 <tr>
           <td class="tm">Leeds United</td>
-          <td class="elowrap"><span class="elobar" style="width:45.9%"></span>
-              <span class="eloval">1516</span></td>
+          <td class="elowrap"><div class="elorow">
+              <span class="elotrack"><span class="elobar" style="width:45.9%"></span></span>
+              <span class="eloval">1516</span></div></td>
           <td class="num">1.03</td>
           <td class="num">0.96</td></tr>
 <tr>
           <td class="tm">Sunderland</td>
-          <td class="elowrap"><span class="elobar" style="width:41.3%"></span>
-              <span class="eloval">1500</span></td>
+          <td class="elowrap"><div class="elorow">
+              <span class="elotrack"><span class="elobar" style="width:41.3%"></span></span>
+              <span class="eloval">1500</span></div></td>
           <td class="num">0.89</td>
           <td class="num">0.85</td></tr>
 <tr>
           <td class="tm">Fulham</td>
-          <td class="elowrap"><span class="elobar" style="width:35.8%"></span>
-              <span class="eloval">1482</span></td>
+          <td class="elowrap"><div class="elorow">
+              <span class="elotrack"><span class="elobar" style="width:35.8%"></span></span>
+              <span class="eloval">1482</span></div></td>
           <td class="num">1.03</td>
           <td class="num">0.97</td></tr>
 <tr>
           <td class="tm">Crystal Palace</td>
-          <td class="elowrap"><span class="elobar" style="width:34.5%"></span>
-              <span class="eloval">1477</span></td>
+          <td class="elowrap"><div class="elorow">
+              <span class="elotrack"><span class="elobar" style="width:34.5%"></span></span>
+              <span class="eloval">1477</span></div></td>
           <td class="num">1.00</td>
           <td class="num">0.98</td></tr>
 <tr>
           <td class="tm">Tottenham</td>
-          <td class="elowrap"><span class="elobar" style="width:21.8%"></span>
-              <span class="eloval">1434</span></td>
+          <td class="elowrap"><div class="elorow">
+              <span class="elotrack"><span class="elobar" style="width:21.8%"></span></span>
+              <span class="eloval">1434</span></div></td>
           <td class="num">1.10</td>
           <td class="num">1.06</td></tr>
 <tr>
           <td class="tm">Coventry City</td>
-          <td class="elowrap"><span class="elobar" style="width:12.6%"></span>
-              <span class="eloval">1403</span></td>
+          <td class="elowrap"><div class="elorow">
+              <span class="elotrack"><span class="elobar" style="width:12.6%"></span></span>
+              <span class="eloval">1403</span></div></td>
           <td class="num">0.55</td>
           <td class="num">0.93</td></tr>
 <tr>
           <td class="tm">Ipswich Town</td>
-          <td class="elowrap"><span class="elobar" style="width:6.0%"></span>
-              <span class="eloval">1381</span></td>
+          <td class="elowrap"><div class="elorow">
+              <span class="elotrack"><span class="elobar" style="width:6.0%"></span></span>
+              <span class="eloval">1381</span></div></td>
           <td class="num">0.84</td>
           <td class="num">1.49</td></tr></tbody></table></div>
     <p class="lede" style="margin-top:12px">Attack is goals scored against an average side;
