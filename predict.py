@@ -236,7 +236,13 @@ if __name__ == "__main__":
     keep = ["season", "matchweek", "date", "time", "home", "away",
             "p_H", "p_D", "p_A", "prediction", "confidence", "likely_scores",
             "home_elo", "away_elo", "elo_diff"]
-    upcoming[keep].to_csv(OUT_CSV, index=False)
+    out = upcoming[keep].copy()
+    # Round before writing: full float precision differs in the last bit or
+    # two between runs, which would otherwise commit a meaningless diff every
+    # week even when no new results have come in.
+    for c in ["p_H", "p_D", "p_A", "home_elo", "away_elo", "elo_diff"]:
+        out[c] = out[c].round(4)
+    out.to_csv(OUT_CSV, index=False)
     write_report(current_played, upcoming, stats)
 
     print(f"Trained on {stats['n_prior']:,} prior matches")
