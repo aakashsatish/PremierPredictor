@@ -1,7 +1,7 @@
 ==============================================================================
 PREMIER LEAGUE PREDICTIONS - 2026/2027
 ==============================================================================
-Generated: 2026-09-07 01:49
+Generated: 2026-09-07 01:58
 Model: calibrated Random Forest blended with a Dixon-Coles Poisson
        goals model (65% / 35%), three-way outcome (home / draw / away)
 Trained on 3,800 matches from earlier seasons
@@ -183,7 +183,7 @@ UPCOMING FIXTURES (352)
         likely scores: 1-1 (11%), 2-1 (10%), 2-0 (8%)
     Sun 11 Oct 14:00  Crystal Palace vs Nottingham Forest
         HOME WIN  [Low]   H 36% / D 29% / A 35%
-        likely scores: 1-1 (14%), 0-0 (9%), 1-0 (9%)
+        likely scores: 1-1 (14%), 1-0 (9%), 0-0 (9%)
     Sun 11 Oct 14:00  Hull City vs Everton
         HOME WIN  [Low]   H 40% / D 30% / A 30%
         likely scores: 0-0 (22%), 1-0 (21%), 1-1 (12%)
@@ -305,7 +305,7 @@ UPCOMING FIXTURES (352)
         likely scores: 1-1 (13%), 2-1 (9%), 1-0 (8%)
     Sat 07 Nov 15:00  Manchester United vs Aston Villa
         HOME WIN  [Medium]   H 59% / D 22% / A 20%
-        likely scores: 1-1 (12%), 2-1 (9%), 1-0 (7%)
+        likely scores: 1-1 (12%), 2-1 (9%), 1-0 (8%)
     Sat 07 Nov 15:00  Fulham vs Newcastle United
         HOME WIN  [Low]   H 44% / D 24% / A 32%
         likely scores: 1-1 (13%), 1-2 (9%), 2-1 (8%)
@@ -404,7 +404,7 @@ UPCOMING FIXTURES (352)
         likely scores: 1-1 (13%), 0-1 (11%), 0-2 (10%)
     Wed 02 Dec 20:00  Hull City vs Nottingham Forest
         HOME WIN  [Low]   H 41% / D 30% / A 29%
-        likely scores: 1-0 (20%), 0-0 (20%), 1-1 (13%)
+        likely scores: 1-0 (20%), 0-0 (19%), 1-1 (13%)
     Wed 02 Dec 20:00  Tottenham vs Fulham
         HOME WIN  [Low]   H 42% / D 26% / A 32%
         likely scores: 1-1 (13%), 2-1 (9%), 1-0 (8%)
@@ -671,7 +671,7 @@ UPCOMING FIXTURES (352)
         HOME WIN  [High]   H 62% / D 22% / A 16%
         likely scores: 1-1 (10%), 2-1 (10%), 2-0 (10%)
     Sat 16 Jan 15:00  Aston Villa vs Manchester United
-        AWAY WIN  [Low]   H 33% / D 26% / A 41%
+        AWAY WIN  [Low]   H 33% / D 25% / A 41%
         likely scores: 1-1 (12%), 2-1 (9%), 1-2 (8%)
 
   Matchweek 22
@@ -1162,7 +1162,7 @@ UPCOMING FIXTURES (352)
         AWAY WIN  [Low]   H 30% / D 26% / A 44%
         likely scores: 1-1 (12%), 1-2 (9%), 2-1 (8%)
     Sun 23 May 15:00  Brentford vs Hull City
-        HOME WIN  [Medium]   H 45% / D 28% / A 27%
+        HOME WIN  [Medium]   H 46% / D 28% / A 27%
         likely scores: 0-0 (18%), 0-1 (16%), 1-1 (14%)
     Sun 23 May 15:00  Manchester City vs Aston Villa
         HOME WIN  [High]   H 68% / D 18% / A 13%
