@@ -3799,31 +3799,33 @@ season,matchweek,date,time,day,home,away,home_goals,away_goals,attendance,venue,
 2025-2026,38,2026-05-24,16:00,Sun,Liverpool,Brentford,1.0,1.0,60325.0,Anfield,D England,0.0,0.0,24.0,11.0,8.0,2.0,14.0,2.0,9.0,9.0,2.0,3.0,0.0,0.0,1.8,4.2,3.8,D
 2025-2026,38,2026-05-24,16:00,Sun,Crystal Palace,Arsenal,1.0,2.0,25192.0,Selhurst Park,F Hallam,0.0,1.0,8.0,17.0,3.0,7.0,3.0,4.0,9.0,12.0,0.0,1.0,0.0,0.0,4.2,4.0,1.75,A
 2025-2026,38,2026-05-24,16:00,Sun,West Ham,Leeds United,3.0,0.0,62471.0,London Stadium,A Taylor,0.0,0.0,16.0,13.0,9.0,3.0,6.0,4.0,11.0,14.0,0.0,3.0,0.0,0.0,1.85,4.0,3.75,H
-2026-2027,1,2026-08-21,20:00,Fri,Arsenal,Coventry City,3.0,0.0,60098.0,Emirates Stadium,T Bramall,2.0,0.0,20.0,4.0,6.0,1.0,8.0,2.0,10.0,13.0,1.0,1.0,0.0,0.0,1.2,7.0,13.0,H
-2026-2027,1,2026-08-22,12:30,Sat,Hull City,Manchester United,2.0,0.0,24470.0,MKM Stadium,D England,2.0,0.0,8.0,21.0,4.0,5.0,1.0,6.0,10.0,9.0,2.0,1.0,0.0,0.0,8.5,5.0,1.36,H
-2026-2027,1,2026-08-22,15:00,Sat,Ipswich Town,Sunderland,2.0,1.0,29669.0,Portman Road Stadium,F Hallam,1.0,1.0,10.0,11.0,3.0,4.0,3.0,5.0,12.0,14.0,0.0,3.0,0.0,0.0,2.7,3.3,2.63,H
-2026-2027,1,2026-08-22,15:00,Sat,Nottingham Forest,Leeds United,0.0,1.0,30739.0,The City Ground,R Jones,0.0,0.0,12.0,11.0,2.0,3.0,3.0,2.0,15.0,14.0,2.0,1.0,0.0,0.0,2.3,3.4,3.1,A
-2026-2027,1,2026-08-22,15:00,Sat,Everton,Crystal Palace,2.0,0.0,51820.0,Hill Dickinson Stadium,P Tierney,1.0,0.0,16.0,11.0,5.0,4.0,4.0,0.0,5.0,15.0,0.0,1.0,0.0,0.0,2.15,3.5,3.3,H
-2026-2027,1,2026-08-22,17:30,Sat,Brentford,Tottenham,3.0,0.0,17180.0,Gtech Community Stadium,M Oliver,2.0,0.0,26.0,9.0,8.0,4.0,7.0,3.0,17.0,14.0,1.0,1.0,0.0,0.0,2.4,3.7,2.75,H
-2026-2027,1,2026-08-23,14:00,Sun,Manchester City,Bournemouth,2.0,1.0,60645.0,Etihad Stadium,J Gillett,0.0,1.0,13.0,5.0,6.0,4.0,8.0,3.0,11.0,11.0,1.0,2.0,0.0,0.0,1.48,4.5,6.25,H
-2026-2027,1,2026-08-23,14:00,Sun,Brighton,Aston Villa,4.0,0.0,31746.0,The American Express Stadium,P Bankes,4.0,0.0,21.0,6.0,6.0,0.0,5.0,2.0,12.0,11.0,2.0,3.0,0.0,1.0,2.15,3.6,3.0,H
-2026-2027,1,2026-08-23,16:30,Sun,Newcastle United,Liverpool,2.0,2.0,52630.0,St James' Park,S Attwell,1.0,0.0,13.0,27.0,4.0,7.0,2.0,6.0,16.0,15.0,5.0,3.0,0.0,0.0,4.0,3.8,1.9,D
-2026-2027,1,2026-08-24,20:00,Mon,Fulham,Chelsea,2.0,3.0,27461.0,Craven Cottage,J Brooks,1.0,2.0,14.0,18.0,6.0,6.0,6.0,4.0,12.0,7.0,2.0,3.0,0.0,0.0,3.6,3.8,1.9,A
-2026-2027,2,2026-08-28,20:00,Fri,Crystal Palace,Manchester City,1.0,4.0,24874.0,Selhurst Park,A Madley,0.0,1.0,9.0,18.0,1.0,9.0,2.0,6.0,8.0,11.0,1.0,2.0,0.0,0.0,5.0,3.9,1.67,A
-2026-2027,2,2026-08-29,12:30,Sat,Liverpool,Nottingham Forest,2.0,2.0,60415.0,Anfield,S Barrott,0.0,1.0,13.0,12.0,4.0,3.0,3.0,5.0,13.0,10.0,4.0,2.0,0.0,0.0,1.5,4.5,5.75,D
-2026-2027,2,2026-08-29,15:00,Sat,Coventry City,Hull City,0.0,1.0,31239.0,Coventry Building Society Arena,J Smith,0.0,0.0,11.0,6.0,3.0,2.0,6.0,2.0,11.0,8.0,1.0,4.0,0.0,0.0,1.9,3.5,4.2,A
-2026-2027,2,2026-08-29,15:00,Sat,Bournemouth,Everton,1.0,1.0,11135.0,Vitality Stadium,C Kavanagh,1.0,0.0,17.0,13.0,5.0,7.0,10.0,7.0,11.0,14.0,3.0,2.0,0.0,0.0,2.05,3.5,3.6,D
-2026-2027,2,2026-08-29,17:30,Sat,Tottenham,Newcastle United,0.0,2.0,61025.0,Tottenham Hotspur Stadium,P Bankes,0.0,0.0,17.0,11.0,6.0,2.0,9.0,7.0,15.0,9.0,1.0,2.0,0.0,0.0,2.25,3.75,2.9,A
-2026-2027,2,2026-08-30,14:00,Sun,Chelsea,Brighton,4.0,3.0,39497.0,Stamford Bridge,M Oliver,3.0,1.0,17.0,15.0,6.0,6.0,4.0,7.0,6.0,12.0,1.0,3.0,0.0,0.0,1.83,4.0,4.0,H
-2026-2027,2,2026-08-30,14:00,Sun,Sunderland,Fulham,1.0,0.0,46781.0,Stadium of Light,M Salisbury,0.0,0.0,12.0,11.0,4.0,0.0,3.0,4.0,10.0,15.0,0.0,2.0,0.0,0.0,2.4,3.2,3.1,H
-2026-2027,2,2026-08-30,14:00,Sun,Leeds United,Brentford,1.0,1.0,35974.0,Elland Road,T Harrington,0.0,1.0,12.0,22.0,2.0,5.0,5.0,6.0,5.0,13.0,0.0,4.0,0.0,0.0,2.6,3.3,2.7,D
-2026-2027,2,2026-08-30,16:30,Sun,Manchester United,Ipswich Town,5.0,2.0,74148.0,Old Trafford,C Pawson,1.0,1.0,33.0,9.0,11.0,5.0,8.0,4.0,7.0,12.0,1.0,3.0,0.0,0.0,1.42,5.0,7.0,H
-2026-2027,2,2026-08-31,20:00,Mon,Aston Villa,Arsenal,0.0,1.0,36804.0,Villa Park,J Gillett,0.0,0.0,7.0,7.0,0.0,2.0,2.0,4.0,17.0,6.0,3.0,1.0,0.0,0.0,6.0,4.1,1.53,A
+2026-2027,1,2026-08-21,20:00,Fri,Arsenal,Coventry City,3.0,0.0,60098.0,Emirates Stadium,,,,,,,,,,,,,,,,,,,H
+2026-2027,1,2026-08-22,12:30,Sat,Hull City,Manchester United,2.0,0.0,24470.0,MKM Stadium,,,,,,,,,,,,,,,,,,,H
+2026-2027,1,2026-08-22,15:00,Sat,Ipswich Town,Sunderland,2.0,1.0,29669.0,Portman Road Stadium,,,,,,,,,,,,,,,,,,,H
+2026-2027,1,2026-08-22,15:00,Sat,Nottingham Forest,Leeds United,0.0,1.0,30739.0,The City Ground,,,,,,,,,,,,,,,,,,,A
+2026-2027,1,2026-08-22,15:00,Sat,Everton,Crystal Palace,2.0,0.0,51820.0,Hill Dickinson Stadium,,,,,,,,,,,,,,,,,,,H
+2026-2027,1,2026-08-22,17:30,Sat,Brentford,Tottenham,3.0,0.0,17180.0,Gtech Community Stadium,,,,,,,,,,,,,,,,,,,H
+2026-2027,1,2026-08-23,14:00,Sun,Manchester City,Bournemouth,2.0,1.0,60645.0,Etihad Stadium,,,,,,,,,,,,,,,,,,,H
+2026-2027,1,2026-08-23,14:00,Sun,Brighton,Aston Villa,4.0,0.0,31746.0,The American Express Stadium,,,,,,,,,,,,,,,,,,,H
+2026-2027,1,2026-08-23,16:30,Sun,Newcastle United,Liverpool,2.0,2.0,52630.0,St James' Park,,,,,,,,,,,,,,,,,,,D
+2026-2027,1,2026-08-24,20:00,Mon,Fulham,Chelsea,2.0,3.0,27461.0,Craven Cottage,,,,,,,,,,,,,,,,,,,A
+2026-2027,2,2026-08-28,20:00,Fri,Crystal Palace,Manchester City,1.0,4.0,24874.0,Selhurst Park,,,,,,,,,,,,,,,,,,,A
+2026-2027,2,2026-08-29,12:30,Sat,Liverpool,Nottingham Forest,2.0,2.0,60415.0,Anfield,,,,,,,,,,,,,,,,,,,D
+2026-2027,2,2026-08-29,15:00,Sat,Coventry City,Hull City,0.0,1.0,31239.0,Coventry Building Society Arena,,,,,,,,,,,,,,,,,,,A
+2026-2027,2,2026-08-29,15:00,Sat,Bournemouth,Everton,1.0,1.0,11135.0,Vitality Stadium,,,,,,,,,,,,,,,,,,,D
+2026-2027,2,2026-08-29,17:30,Sat,Tottenham,Newcastle United,0.0,2.0,61025.0,Tottenham Hotspur Stadium,,,,,,,,,,,,,,,,,,,A
+2026-2027,2,2026-08-30,14:00,Sun,Chelsea,Brighton,4.0,3.0,39497.0,Stamford Bridge,,,,,,,,,,,,,,,,,,,H
+2026-2027,2,2026-08-30,14:00,Sun,Sunderland,Fulham,1.0,0.0,46781.0,Stadium of Light,,,,,,,,,,,,,,,,,,,H
+2026-2027,2,2026-08-30,14:00,Sun,Leeds United,Brentford,1.0,1.0,35974.0,Elland Road,,,,,,,,,,,,,,,,,,,D
+2026-2027,2,2026-08-30,16:30,Sun,Manchester United,Ipswich Town,5.0,2.0,74148.0,Old Trafford,,,,,,,,,,,,,,,,,,,H
+2026-2027,2,2026-08-31,20:00,Mon,Aston Villa,Arsenal,0.0,1.0,36804.0,Villa Park,,,,,,,,,,,,,,,,,,,A
 2026-2027,3,2026-09-04,20:00,Fri,Ipswich Town,Liverpool,0.0,2.0,30019.0,Portman Road Stadium,,,,,,,,,,,,,,,,,,,A
 2026-2027,3,2026-09-05,12:30,Sat,Newcastle United,Bournemouth,2.0,2.0,52643.0,St James' Park,,,,,,,,,,,,,,,,,,,D
 2026-2027,3,2026-09-05,15:00,Sat,Nottingham Forest,Tottenham,0.0,0.0,30686.0,The City Ground,,,,,,,,,,,,,,,,,,,D
 2026-2027,3,2026-09-05,15:00,Sat,Fulham,Crystal Palace,2.0,3.0,,Craven Cottage,,,,,,,,,,,,,,,,,,,A
 2026-2027,3,2026-09-05,15:00,Sat,Brentford,Sunderland,1.0,1.0,17131.0,Gtech Community Stadium,,,,,,,,,,,,,,,,,,,D
 2026-2027,3,2026-09-05,15:00,Sat,Manchester City,Coventry City,1.0,0.0,60765.0,Etihad Stadium,,,,,,,,,,,,,,,,,,,H
-2026-2027,3,2026-09-05,15:00,Sat,Brighton,Leeds United,1.0,1.0,,The American Express Stadium,,,,,,,,,,,,,,,,,,,D
+2026-2027,3,2026-09-05,15:00,Sat,Brighton,Leeds United,1.0,1.0,31661.0,The American Express Stadium,,,,,,,,,,,,,,,,,,,D
 2026-2027,3,2026-09-05,17:30,Sat,Hull City,Aston Villa,0.0,0.0,24425.0,MKM Stadium,,,,,,,,,,,,,,,,,,,D
+2026-2027,3,2026-09-06,14:00,Sun,Everton,Manchester United,2.0,2.0,52302.0,Hill Dickinson Stadium,,,,,,,,,,,,,,,,,,,D
+2026-2027,3,2026-09-06,16:30,Sun,Arsenal,Chelsea,2.0,1.0,60240.0,Emirates Stadium,,,,,,,,,,,,,,,,,,,H
