@@ -396,8 +396,9 @@ details.grp:not([open]) .chev{transform:rotate(-135deg)}
 
 @media (max-width:640px){
   .match{grid-template-columns:minmax(0,1fr) 104px minmax(0,1fr);
-    grid-template-areas:"status status call" "home mid away";row-gap:8px;padding:12px 12px}
-  .status{grid-area:status}.call{grid-area:call;flex-direction:row;align-items:center;gap:8px}
+    grid-template-areas:"status call call" "home mid away";row-gap:8px;padding:12px 12px}
+  .status{grid-area:status}.call{grid-area:call;flex-direction:row;align-items:center;gap:8px;justify-content:flex-end}
+  .call small{white-space:nowrap}
   .team.home{grid-area:home}.mid{grid-area:mid}.team.away{grid-area:away}
   .team{font-size:13px;flex-direction:column;gap:6px;text-align:center}
   .team.home{justify-content:flex-start;text-align:center}
