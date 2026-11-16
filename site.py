@@ -61,6 +61,38 @@ def short(team: str) -> str:
     return SHORT_NAME.get(team, team)
 
 
+CRESTS_DIR = SITE / "crests"
+_IMG_EXT = {".svg", ".png", ".webp", ".jpg", ".jpeg"}
+
+
+def _norm(s: str) -> str:
+    return "".join(ch for ch in s.lower() if ch.isalnum())
+
+
+def crest_files() -> dict[str, str]:
+    """Map club -> crest path for every image found in docs/crests.
+
+    Files can be named by the three-letter code (MCI.png), the club name
+    (manchester-city.svg) or the short name (man_city.png); matching ignores
+    case, spaces and punctuation. Clubs with no file keep their monogram.
+    """
+    if not CRESTS_DIR.exists():
+        return {}
+    found: dict[str, str] = {}
+    files = [f for f in CRESTS_DIR.iterdir() if f.suffix.lower() in _IMG_EXT]
+    for team in set(TEAM_ABBR) | set(SHORT_NAME):
+        keys = {_norm(team), _norm(SHORT_NAME.get(team, team)), _norm(TEAM_ABBR.get(team, ""))}
+        keys.discard("")
+        for f in files:
+            if _norm(f.stem) in keys:
+                found[team] = f"crests/{f.name}"
+                break
+    return found
+
+
+CRESTS: dict[str, str] = {}
+
+
 def hue(name: str) -> int:
     h = 0
     for ch in name:
@@ -73,9 +105,11 @@ def esc(s) -> str:
 
 
 def crest(team: str, small: bool = False) -> str:
+    cls = "crest sm" if small else "crest"
+    if team in CRESTS:
+        return f'<img class="{cls}" src="{CRESTS[team]}" alt="" loading="lazy">'
     code = TEAM_ABBR.get(team, team[:3].upper())
-    return (f'<span class="crest{" sm" if small else ""}" style="--h:{hue(team)}" '
-            f'aria-hidden="true">{code}</span>')
+    return f'<span class="{cls}" style="--h:{hue(team)}" aria-hidden="true">{code}</span>'
 
 
 # --------------------------------------------------------------- data prep
@@ -106,6 +140,8 @@ def recent_form(cur: pd.DataFrame, team: str, n: int = 5) -> list[str]:
 
 # ------------------------------------------------------------------ build
 def build() -> str:
+    CRESTS.clear()
+    CRESTS.update(crest_files())
     matches_df = pd.read_csv(config.MATCHES_CSV, parse_dates=["date"])
     preds = pd.read_csv(
         config.DATA / f"predictions_{config.CURRENT_SEASON.replace('-', '_')}.csv",
@@ -206,7 +242,7 @@ def build() -> str:
 
     data = {
         "season": season_txt, "nextMw": next_mw, "mws": mws,
-        "abbr": TEAM_ABBR, "short": SHORT_NAME, "matches": matches,
+        "abbr": TEAM_ABBR, "short": SHORT_NAME, "crests": CRESTS, "matches": matches,
     }
     data_json = json.dumps(data, separators=(",", ":")).replace("</", "<\\/")
 
@@ -365,6 +401,7 @@ details.grp:not([open]) .chev{transform:rotate(-135deg)}
   background:hsl(var(--h) var(--crest-s) var(--crest-l));color:#fff;font-weight:800;font-size:10px;
   letter-spacing:.03em}
 .crest.sm{width:22px;height:22px;font-size:8px}
+img.crest{background:transparent;object-fit:contain;padding:1px}
 .mid{text-align:center}
 .mid .big{font-weight:800;font-size:19px;letter-spacing:-.01em;line-height:1.1;font-variant-numeric:tabular-nums}
 .mid .lbl{font-size:10px;font-weight:700;color:var(--muted);text-transform:uppercase;letter-spacing:.08em;margin-top:2px}
@@ -530,7 +567,9 @@ Predictions are model output, not advice.</footer>
   const esc = s => String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
   const ab  = n => D.abbr[n] || n.slice(0,3).toUpperCase();
   const nm  = n => D.short[n] || n;
-  const crest = n => `<span class="crest" style="--h:${hue(n)}" aria-hidden="true">${ab(n)}</span>`;
+  const crest = n => D.crests[n]
+    ? `<img class="crest" src="${D.crests[n]}" alt="" loading="lazy">`
+    : `<span class="crest" style="--h:${hue(n)}" aria-hidden="true">${ab(n)}</span>`;
   const pct = x => Math.round(x*100) + '%';
   const bar = m => `<div class="bar" role="img" aria-label="Home ${pct(m.pH)}, draw ${pct(m.pD)}, away ${pct(m.pA)}">` +
     `<span class="seg home" style="width:${m.pH*100}%"></span>` +
