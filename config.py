@@ -9,6 +9,7 @@ request rather than 1 -- see CREDITS_PER_REQUEST.
 from __future__ import annotations
 
 import os
+import random
 import time
 from pathlib import Path
 
@@ -64,16 +65,20 @@ def _api_key() -> str:
     return key
 
 
-def fetch(url: str, cache_name: str, force: bool = False, retries: int = 3) -> str:
-    """Return page HTML, reading from the on-disk cache when possible.
+def _get_with_retries(url: str, label: str, retries: int = 6,
+                      min_bytes: int = 5000) -> str:
+    """Fetch through ScraperAPI, retrying with exponential backoff.
 
-    Cached pages cost nothing, so re-running the pipeline during development is
-    free. Pass force=True only when you genuinely want fresh data.
+    ScraperAPI intermittently answers 500 for protected domains like fbref.
+    Observed in practice: two consecutive 500s followed by a clean 200 on the
+    third attempt. The original three-attempt limit meant a run died outright
+    whenever all three happened to land on a bad patch, which took out roughly
+    every other scheduled refresh through October and November 2026.
+
+    Six attempts with backoff of 5, 10, 20, 40 and 60 seconds costs at most a
+    few minutes on a weekly job and makes that failure mode very unlikely.
+    Failed requests are not billed, so retrying is free.
     """
-    path = CACHE / f"{cache_name}.html"
-    if path.exists() and not force:
-        return path.read_text()
-
     key = _api_key()
     last = None
     for attempt in range(1, retries + 1):
@@ -83,18 +88,35 @@ def fetch(url: str, cache_name: str, force: bool = False, retries: int = 3) -> s
                 params={"api_key": key, "url": url},
                 timeout=120,
             )
-            if r.status_code == 200 and len(r.text) > 5000:
-                path.write_text(r.text)
-                print(f"    fetched {cache_name} ({len(r.text):,} bytes, "
-                      f"~{CREDITS_PER_REQUEST} credits)")
+            if r.status_code == 200 and len(r.text) >= min_bytes:
                 return r.text
             last = f"status={r.status_code} len={len(r.text)}"
         except requests.RequestException as e:
-            last = str(e)
-        print(f"    attempt {attempt}/{retries} failed for {cache_name}: {last}")
+            last = f"{type(e).__name__}: {str(e)[:120]}"
+        print(f"    attempt {attempt}/{retries} failed for {label}: {last}")
         if attempt < retries:
-            time.sleep(5 * attempt)
-    raise RuntimeError(f"Could not fetch {url}: {last}")
+            # jitter so repeated runs do not retry in lockstep
+            time.sleep(min(60, 5 * 2 ** (attempt - 1)) + random.uniform(0, 3))
+    raise RuntimeError(
+        f"Could not fetch {label} after {retries} attempts. Last: {last}"
+    )
+
+
+def fetch(url: str, cache_name: str, force: bool = False, retries: int = 6) -> str:
+    """Return page HTML, reading from the on-disk cache when possible.
+
+    Cached pages cost nothing, so re-running the pipeline during development is
+    free. Pass force=True only when you genuinely want fresh data.
+    """
+    path = CACHE / f"{cache_name}.html"
+    if path.exists() and not force:
+        return path.read_text()
+
+    text = _get_with_retries(url, cache_name, retries=retries)
+    path.write_text(text)
+    print(f"    fetched {cache_name} ({len(text):,} bytes, "
+          f"~{CREDITS_PER_REQUEST} credits)")
+    return text
 
 
 def credits_remaining() -> dict:

@@ -124,20 +124,14 @@ def fetch_football_data(season: str, force: bool = False) -> str:
     if path.exists() and not force:
         return path.read_text()
 
-    import requests
-    r = requests.get(
-        "http://api.scraperapi.com/",
-        params={"api_key": config._api_key(), "url": football_data_url(season)},
-        timeout=120,
+    # Same retry treatment as fbref: this previously made a single attempt and
+    # raised on any blip, which is a needless way to lose a weekly run.
+    text = config._get_with_retries(
+        football_data_url(season), f"fd_{season}", min_bytes=1000
     )
-    if r.status_code != 200 or len(r.text) < 1000:
-        raise RuntimeError(
-            f"football-data fetch failed for {season}: "
-            f"status={r.status_code} len={len(r.text)}"
-        )
-    path.write_text(r.text)
-    print(f"    fetched fd_{season} ({len(r.text):,} bytes)")
-    return r.text
+    path.write_text(text)
+    print(f"    fetched fd_{season} ({len(text):,} bytes)")
+    return text
 
 
 def fetch_all_football_data(seasons, force: bool = False) -> None:

@@ -48,7 +48,8 @@ jobs:
             echo "Add it under Settings -> Secrets and variables -> Actions."
             exit 1
           fi
-          python update.py
+          set -o pipefail
+          python update.py 2>&1 | tee /tmp/refresh.log
 
       - name: Commit refreshed predictions
         run: |
@@ -90,7 +91,14 @@ jobs:
             "  first run failed: scikit-learn had removed the \`multi_class\`" \
             "  argument to \`LogisticRegression\`)" \
             "" \
-            "To reproduce locally: \`python update.py\`")
+            "To reproduce locally: \`python update.py\`" \
+            "" \
+            "<details><summary>Last 25 lines of output</summary>" \
+            "" \
+            '\`\`\`' \
+            "$(tail -25 /tmp/refresh.log 2>/dev/null || echo 'no output captured')" \
+            '\`\`\`' \
+            "</details>")
 
           # Comment on the open alert rather than opening a fresh issue every
           # week, so a long-running breakage stays a single thread.
