@@ -449,8 +449,9 @@ table{width:100%;border-collapse:collapse;font-size:13px}
 th{font-size:10px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--faint);
   text-align:right;padding:4px 10px 8px;white-space:nowrap}
 th:first-child,th.l{text-align:left}
-td{padding:7px 8px;border-top:1px solid var(--line);text-align:right;white-space:nowrap}
-td.tm{text-align:left;font-weight:700;display:flex;align-items:center;gap:8px;max-width:160px}
+td{padding:7px 6px;border-top:1px solid var(--line);text-align:right;white-space:nowrap}
+td.tm{text-align:left;font-weight:700;display:flex;align-items:center;gap:8px;max-width:132px}
+.form{min-width:52px}
 td.tm span:last-child{overflow:hidden;text-overflow:ellipsis}
 td.pos{color:var(--faint);width:26px;text-align:left}
 td.pts{font-weight:800}
