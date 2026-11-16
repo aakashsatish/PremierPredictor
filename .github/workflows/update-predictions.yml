@@ -95,9 +95,9 @@ jobs:
             "" \
             "<details><summary>Last 25 lines of output</summary>" \
             "" \
-            '\`\`\`' \
+            '```' \
             "$(tail -25 /tmp/refresh.log 2>/dev/null || echo 'no output captured')" \
-            '\`\`\`' \
+            '```' \
             "</details>")
 
           # Comment on the open alert rather than opening a fresh issue every
